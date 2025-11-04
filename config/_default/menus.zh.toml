@@ -1,12 +1,12 @@
 [[main]]
-name = "Posts"
+name = "文章列表"
 pre = "list"
 pageRef = "posts"
 identifier = "CSm9U46jPy"
 weight = 9_999
 
 [[main]]
-  name = "Topics"
+  name = "主題"
   pageRef = "topics"
   weight = 20
 
