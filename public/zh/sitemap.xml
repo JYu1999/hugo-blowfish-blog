@@ -3,18 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://jyu1999.com/zh/</loc>
+    <loc>http://localhost:1313/hugo-blowfish-blog/zh/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
+      hreflang="zh"
+      href="http://localhost:1313/hugo-blowfish-blog/zh-tw/"
+    />
+    <xhtml:link
+      rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/"
+      href="http://localhost:1313/hugo-blowfish-blog/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh"
-      href="https://jyu1999.com/zh/"
+      href="http://localhost:1313/hugo-blowfish-blog/zh/"
     />
   </url>
 </urlset>
