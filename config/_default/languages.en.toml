@@ -17,5 +17,5 @@ image = "img/author.png"
 headline = "A generally awesome human"
 bio = "A little bit about me"
 links = [
-  { twitter = "https://twitter.com/username" }
+  { twitter = "#" }
 ]
