@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jyu1999.com/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="zh"
-      href="http://localhost:1313/zh/"
+      href="https://jyu1999.com/zh/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/"
+      href="https://jyu1999.com/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://jyu1999.com/posts/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/1762151274137-new-article/</loc>
+    <loc>https://jyu1999.com/posts/1762151274137-new-article/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
