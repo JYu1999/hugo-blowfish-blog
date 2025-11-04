@@ -14,8 +14,8 @@ logo = "img/author.png"
 [params.author]
 name = "結語JYu"
 image = "img/author.png"
-headline = "A generally awesome human"
-bio = "A little bit about me"
+headline = "你好"
+bio = "我是結語JYu"
 links = [
-  { twitter = "https://twitter.com/username" }
+  { twitter = "#" }
 ]
