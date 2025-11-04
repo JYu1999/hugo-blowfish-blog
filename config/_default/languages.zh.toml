@@ -1,0 +1,21 @@
+disabled = false
+languageCode = "zh"
+languageName = "Chinese"
+weight = 1
+title = "結語JYu 的筆記"
+
+[params]
+displayName = "中文"
+isoCode = "zh"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "img/author.png"
+
+[params.author]
+name = "結語JYu"
+image = "img/author.png"
+headline = "A generally awesome human"
+bio = "A little bit about me"
+links = [
+  { twitter = "https://twitter.com/username" }
+]
