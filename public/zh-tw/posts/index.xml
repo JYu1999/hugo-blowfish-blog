@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 結語JYu 的筆記</title>
-    <link>https://jyu1999.com/zh-tw/posts/</link>
+    <link>http://localhost:1313/zh-tw/posts/</link>
     <description>Recent content in Posts on 結語JYu 的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Mon, 03 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jyu1999.com/zh-tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>測試文章</title>
-      <link>https://jyu1999.com/zh-tw/posts/1762151274137-new-article/</link>
+      <link>http://localhost:1313/zh-tw/posts/1762151274137-new-article/</link>
       <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://jyu1999.com/zh-tw/posts/1762151274137-new-article/</guid>
+      <guid>http://localhost:1313/zh-tw/posts/1762151274137-new-article/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/1762151274137-new-article/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1762151274137-new-article/featured.png" />
     </item>
     
   </channel>
