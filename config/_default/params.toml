@@ -1,4 +1,4 @@
-colorScheme = "Terminal"
+colorScheme = "terminal"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 enableA11y = false
