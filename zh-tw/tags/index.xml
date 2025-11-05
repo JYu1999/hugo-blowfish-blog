@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on 結語JYu 的筆記</title><link>https://jyu1999.com/zh-tw/tags/</link><description>Recent content in Tags on 結語JYu 的筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>© 2025 結語JYu</copyright><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jyu1999.com/zh-tw/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>好想工作室</title><link>https://jyu1999.com/zh-tw/tags/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>https://jyu1999.com/zh-tw/tags/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4/</guid><description/></item><item><title>Example</title><link>https://jyu1999.com/zh-tw/tags/example/</link><pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate><guid>https://jyu1999.com/zh-tw/tags/example/</guid><description/></item><item><title>Tag</title><link>https://jyu1999.com/zh-tw/tags/tag/</link><pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate><guid>https://jyu1999.com/zh-tw/tags/tag/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 結語JYu 的筆記</title>
+    <link>http://localhost:1313/zh-tw/tags/</link>
+    <description>Recent content in Tags on 結語JYu 的筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 結語JYu</copyright>
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>好想工作室</title>
+      <link>http://localhost:1313/zh-tw/tags/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/tags/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Example</title>
+      <link>http://localhost:1313/zh-tw/tags/example/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/tags/example/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tag</title>
+      <link>http://localhost:1313/zh-tw/tags/tag/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/tags/tag/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
