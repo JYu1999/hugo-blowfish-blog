@@ -14,8 +14,11 @@ logo = "img/author.png"
 [params.author]
 name = "結語JYu"
 image = "img/author.png"
-headline = "A generally awesome human"
-bio = "A little bit about me"
+headline = "Keep growing, pursue peace."
+bio = "Hi, I'm JYu"
 links = [
-  { twitter = "#" }
+  { twitter = "#" },
+  { threads = "#" },
+  { medium = "#" },
+  { linkedin = "#" },
 ]
