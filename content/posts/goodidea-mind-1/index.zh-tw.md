@@ -1,12 +1,13 @@
 ---
 title: "好想工作室 — 後端 (Backend Camp) 培訓心得（一）：好想工作室簡介"
 date: 2025-11-05
-draft: true
+draft: false
 description: "a description"
 tags:
   - 好想工作室 
 categories:
   - goodidea-mind 
+series: ["好想工作室 — 後端 (Backend Camp) 培訓心得"]
 keywords:
   - 結語
   - JYu
@@ -29,7 +30,10 @@ keywords:
 （本文同步更新在 [vocus](https://vocus.cc/article/64282945fd89780001119de4) 和 [medium](https://jyu1999.medium.com/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%BE%8C%E7%AB%AF-backend-camp-%E5%9F%B9%E8%A8%93%E5%BF%83%E5%BE%97-%E4%B8%80-%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%B0%A1%E4%BB%8B-e484bb7993f2) 上）
 
 ## 前言
-嗨大家好，我是結語 JYu。
+
+{{< typeit lifeLike="true" loop="true">}}
+嗨大家好，我是結語 JYu。 
+{{< /typeit >}}
 
 開始撰寫這個系列的時間是 2023 四月，也是我在好想工作室 backend camp 培訓的倒數一個月，想說可以分享一些心得，給對轉職為後端工程師的人參考。
 
@@ -56,7 +60,7 @@ keywords:
 ---
 
 ## 好想工作室？
-![好想工作室的 logo](1.webp)
+![好想工作室的 logo](/posts/goodidea-mind-1/1.webp)
 
 如果你是透過搜尋而找到這篇文章，想必你早已知道好想工作室在幹嘛了，但這裡我還是快速說明一下。
 
@@ -74,12 +78,10 @@ keywords:
 
 ## 軟體工程師培訓？
 
-好想工作室非常佛心的提供了**免費**的軟體工程師培訓，根據專業不同，分為四個 camp：
+好想工作室非常佛心的提供了**免費**的軟體工程師培訓，根據專業不同，分為 2 個 camp：
 
 - 前端：主要負責一個網頁中你看得到的部分。
-- 後端：主要負責一個網頁的後台。
-- Android：寫 android 手機的 app
-- IOS：寫 IOS 系統的 app
+- 後端：主要負責一個網頁的資料流。
 
 每次培訓會是**六個月**，在這六個月的期間完全免費。在這六個月當中你必須在好想工作室裡面**全職自學**。
 
@@ -103,7 +105,7 @@ keywords:
 
 如果你需要作業，也有人針對語言設計了互動式的網頁和題目可以給你練習，甚至你可以直接請 chatgpt 幫忙出作業。
 
-![chatgpt 幫忙出測驗題](2.webp)
+![chatgpt 幫忙出測驗題](/posts/goodidea-mind-1/2.webp)
 
 可能又有人會問：「那我怎麼知道哪些東西重要？」
 
