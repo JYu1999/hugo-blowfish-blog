@@ -3,57 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://jyu1999.com/zh-tw/posts/</loc>
+    <loc>https://jyu1999.com/posts/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
       href="https://jyu1999.com/posts/"
     />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/zh-tw/posts/"
-    />
   </url>
   <url>
-    <loc>https://jyu1999.com/zh-tw/posts/goodidea-mind-1/</loc>
+    <loc>https://jyu1999.com/posts/goodidea-mind-1/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://jyu1999.com/zh-tw/</loc>
+    <loc>https://jyu1999.com/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/"
+      href="https://jyu1999.com/en/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/zh-tw/"
+      href="https://jyu1999.com/"
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/zh-tw/posts/1762151274137-new-article/</loc>
+    <loc>https://jyu1999.com/posts/1762151274137-new-article/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/posts/1762151274137-new-article/"
+      href="https://jyu1999.com/en/posts/1762151274137-new-article/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/zh-tw/posts/1762151274137-new-article/"
+      href="https://jyu1999.com/posts/1762151274137-new-article/"
     />
   </url>
 </urlset>

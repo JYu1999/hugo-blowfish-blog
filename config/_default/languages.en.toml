@@ -1,7 +1,7 @@
 disabled = false
 languageCode = "en"
 languageName = "English"
-weight = 0.9
+weight = 2
 title = "JYu's Notes"
 
 [params]

@@ -4,6 +4,9 @@
 
 theme = "blowfish" # UNCOMMENT THIS LINE
 
+# Set default content language to Chinese (Traditional)
+defaultContentLanguage = "zh-tw"
+
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
