@@ -8,6 +8,7 @@ tags:
 categories:
   - goodidea-mind 
 series: ["好想工作室 — 後端 (Backend Camp) 培訓心得"]
+featureimage: "/posts/goodidea-mind-1/featured.png"
 keywords:
   - 結語
   - JYu
