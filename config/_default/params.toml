@@ -22,7 +22,7 @@ rssnext = { }
 advertisement = { }
 
 [header]
-layout = "basic"
+layout = "fixed-fill-blur"
 
 [footer]
 showMenu = true

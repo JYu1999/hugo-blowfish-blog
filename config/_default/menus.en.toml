@@ -4,3 +4,20 @@ pre = "list"
 pageRef = "posts"
 identifier = "CSm9U46jPy"
 weight = 9_999
+
+[[main]]
+name = "tags"
+pre = "tag"
+pageRef = "tags"
+identifier = "IARIuWG0v1"
+weight = 9_998
+
+[[main]]
+name = "categories"
+pre = "substack"
+pageRef = "categories"
+identifier = "I52PdQ9sah"
+weight = 9_997
+
+[[footer]]
+none = "none"

@@ -125,7 +125,3 @@ keywords:
 於是，我比後端 camp 的其他成員晚一個月開始培訓，也要比大家晚一個月走QQ
 
 培訓的辛酸血淚史也從這邊開始了…
-
----
-
-下一篇：[【好想工作室 — 後端 (backend Camp)培訓心得（二）：backend camp 在幹嘛】](https://jyu1999.com/post/goodidea-mind-2/)：會講後端培訓的點點滴滴。

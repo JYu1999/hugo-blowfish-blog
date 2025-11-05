@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on JYu&#39;s Notes</title>
-    <link>https://jyu1999.com/en/authors/</link>
+    <link>http://localhost:1313/en/authors/</link>
     <description>Recent content in Authors on JYu&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 結語JYu</copyright>
-    <atom:link href="https://jyu1999.com/en/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/authors/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
