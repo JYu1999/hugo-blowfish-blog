@@ -5,7 +5,7 @@ weight = 1
 title = "結語JYu 的筆記"
 
 [params]
-displayName = "中文"
+displayName = "繁體中文"
 isoCode = "zh"
 rtl = false
 dateFormat = "2 January 2006"
