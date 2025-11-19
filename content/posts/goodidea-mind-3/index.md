@@ -5,7 +5,7 @@ draft: false
 tags:
   - 好想工作室
 categories:
-  - goodidea-mind
+  - goodidea-training-experience
 series: ["好想工作室 — 後端 (Backend Camp) 培訓心得"]
 series_order: 3
 keywords:
