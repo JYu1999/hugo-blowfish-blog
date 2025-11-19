@@ -6,14 +6,14 @@ identifier = "CSm9U46jPy"
 weight = 9_999
 
 [[main]]
-name = "tags"
+name = "Tags"
 pre = "tag"
 pageRef = "tags"
 identifier = "IARIuWG0v1"
 weight = 9_998
 
 [[main]]
-name = "categories"
+name = "Categories"
 pre = "substack"
 pageRef = "categories"
 identifier = "I52PdQ9sah"
