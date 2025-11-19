@@ -16,8 +16,8 @@ image = "img/author.png"
 headline = "Keep growing, pursue peace."
 bio = "Hi, I'm JYu"
 links = [
-  { x-twitter = "#" },
-  { threads = "#" },
-  { medium = "#" },
-  { linkedin = "#" },
+  { x-twitter = "https://x.com/IamJYu" },
+  { threads = "https://www.threads.com/@backend.cat" },
+  { medium = "https://medium.com/@jyu1999" },
+  { linkedin = "https://www.linkedin.com/in/chieh-yu-chan-123814190/" },
 ]
