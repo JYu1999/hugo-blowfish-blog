@@ -1,5 +1,5 @@
 ---
-title: "測試文章"
+title: "Testing Article"
 date: 2025-11-03
 draft: false
 description: "a description"
