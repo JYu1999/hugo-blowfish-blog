@@ -1,6 +1,6 @@
 ---
 title: "Why This Blog"
-date: 2024-11-19
+date: 2025-11-19
 draft: false
 description: "The purpose of this blog"
 ---
@@ -28,15 +28,6 @@ Over time, the blog becomes a personal knowledge base. When I need to review tec
 ### 🎯 Continuous Growth
 
 Regular writing is also a form of self-motivation, keeping the drive to learn and grow continuously.
-
----
-
-## 🎨 About This Blog
-
-- Built with [Hugo](https://gohugo.io/)
-- Using [Blowfish](https://blowfish.page/) theme
-- Deployed on GitHub Pages
-- Automated deployment with GitHub Actions
 
 ---
 

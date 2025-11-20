@@ -1,6 +1,6 @@
 ---
 title: "為什麼有這個部落格"
-date: 2024-11-19
+date: 2025-11-19
 draft: false
 description: "寫部落格的初衷"
 ---
@@ -28,15 +28,6 @@ description: "寫部落格的初衷"
 ### 🎯 持續成長
 
 定期寫作也是一種自我督促，讓自己保持學習的動力，持續成長。
-
----
-
-## 🎨 關於這個部落格
-
-- 使用 [Hugo](https://gohugo.io/) 建立
-- 採用 [Blowfish](https://blowfish.page/) 主題
-- 部署在 GitHub Pages
-- 使用 GitHub Actions 自動化部署
 
 ---
 
