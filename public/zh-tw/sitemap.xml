@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/why-blog/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/why-blog/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/why-blog/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/now/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/now/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/now/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -35,19 +83,19 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+    <loc>https://jyu1999.com/about/</loc>
+    <lastmod>2024-11-19T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/"
+      href="https://jyu1999.com/en/about/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/"
+      href="https://jyu1999.com/about/"
     />
   </url>
   <url>

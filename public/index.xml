@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Mon, 03 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jyu1999.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jyu1999.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>為什麼有這個部落格</title>
+      <link>https://jyu1999.com/why-blog/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jyu1999.com/why-blog/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>最近的生活</title>
+      <link>https://jyu1999.com/now/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jyu1999.com/now/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>測試文章</title>
@@ -17,6 +37,16 @@
       <guid>https://jyu1999.com/posts/1762151274137-new-article/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/1762151274137-new-article/featured.png" />
+    </item>
+    
+    <item>
+      <title>關於我</title>
+      <link>https://jyu1999.com/about/</link>
+      <pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jyu1999.com/about/</guid>
+      <description></description>
+      
     </item>
     
     <item>
