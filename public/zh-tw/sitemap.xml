@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/posts/</loc>
+    <lastmod>2025-11-20T19:18:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/japan-gogogo-preface/</loc>
+    <lastmod>2025-11-20T19:18:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/japan-gogogo-preface/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/japan-gogogo-preface/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-11-20T19:18:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/why-blog/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -32,54 +80,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/now/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/posts/</loc>
-    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/posts/1762151274137-new-article/</loc>
-    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/1762151274137-new-article/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/1762151274137-new-article/"
     />
   </url>
   <url>
