@@ -7,7 +7,7 @@ tags:
 categories:
   - 日本軟體工程師轉職記
 series: ["日本軟體工程師轉職記"]
-series_order: 2
+series_order: 1
 ---
 
 不知從什麼時候開始，我就有一個夢想：
