@@ -13,4 +13,4 @@ Occasionally there will also be some other life updates~
 
 If you're new here and don't know where to start, you can begin with these places:
 
-[About Me](/en/about/)  |  [What I'm Up To](/en/tweets/)  |  [Why This Blog](/en/why-blog/)
+[About Me](/en/about/)  |  [Tweets](/en/tweets/)  |  [Why This Blog](/en/why-blog/)
