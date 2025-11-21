@@ -4,6 +4,10 @@ date: 2025-11-21T17:04:52+08:00
 draft: false
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 I visited the bookstore the other day and stumbled upon this book.
 
 The book band featured some hyperbolic taglines, such as: "Absolutely impossible to publish as an ebook—a moving experience only possible with a physical book," and "Taiwan is likely the only place in the world capable of perfectly translating this novel." Naturally, this piqued my curiosity.
