@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://jyu1999.com/vi/</loc><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link rel="alternate" hreflang="zh-tw" href="https://jyu1999.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://jyu1999.com/en/"/><xhtml:link rel="alternate" hreflang="ja" href="https://jyu1999.com/ja/"/><xhtml:link rel="alternate" hreflang="vi" href="https://jyu1999.com/vi/"/></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://jyu1999.com/vi/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://jyu1999.com/ja/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="vi"
+      href="https://jyu1999.com/vi/"
+    />
+  </url>
+</urlset>
