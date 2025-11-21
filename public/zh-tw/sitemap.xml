@@ -46,6 +46,16 @@
     />
     <xhtml:link
       rel="alternate"
+      hreflang="vi"
+      href="https://jyu1999.com/vi/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://jyu1999.com/ja/"
+    />
+    <xhtml:link
+      rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/"
     />
