@@ -1,0 +1,55 @@
+{{ define "main" }}
+{{ .Scratch.Set "scope" "list" }}
+{{ partial "hero/background.html" . }}
+
+{{/* Header */}}
+<header>
+  {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+  {{ partial "breadcrumbs.html" . }}
+  {{ end }}
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
+  </div>
+</header>
+
+{{/* Description */}}
+<section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+  <div class="min-w-0 min-h-0 max-w-prose">
+    <div class="mb-10 text-lg text-neutral-600 dark:text-neutral-400">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{/* Notes Feed */}}
+<section class="space-y-10 w-full max-w-prose">
+  {{ range (.Paginate (.Pages.ByDate.Reverse)).Pages }}
+  <article
+    class="relative flex flex-col gap-2 p-6 border rounded-2xl border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
+
+    {{/* Title */}}
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+      <a href="{{ .RelPermalink }}" class="hover:underline">
+        {{ .Title }}
+      </a>
+    </h2>
+
+    {{/* Note Meta */}}
+    <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
+      <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+        {{ .Date.Format (i18n "dateFormat") }}
+      </time>
+    </div>
+
+    {{/* Note Content */}}
+    <div class="prose dark:prose-invert max-w-none mt-2">
+      {{ .Content }}
+    </div>
+
+  </article>
+  {{ end }}
+</section>
+
+{{ partial "pagination.html" . }}
+{{ end }}

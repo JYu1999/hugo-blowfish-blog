@@ -13,6 +13,11 @@ identifier = "IARIuWG0v1"
 weight = 9_998
 
 [[main]]
+  name = "碎碎念"
+  pageRef = "tweets"
+  weight = 40
+
+[[main]]
 name = "分類"
 pre = "substack"
 pageRef = "categories"

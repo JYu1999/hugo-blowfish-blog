@@ -13,6 +13,11 @@ identifier = "IARIuWG0v1"
 weight = 9_998
 
 [[main]]
+  name = "Tweets"
+  pageRef = "tweets"
+  weight = 40
+
+[[main]]
 name = "Categories"
 pre = "substack"
 pageRef = "categories"
