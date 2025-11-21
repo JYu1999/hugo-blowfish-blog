@@ -93,6 +93,22 @@
     />
   </url>
   <url>
+    <loc>https://jyu1999.com/posts/are-your-sure-that-your-code-is-safe/</loc>
+    <lastmod>2025-07-26T19:07:31+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/are-your-sure-that-your-code-is-safe/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/are-your-sure-that-your-code-is-safe/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/about/</loc>
     <lastmod>2024-11-19T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
