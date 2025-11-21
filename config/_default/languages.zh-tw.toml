@@ -8,7 +8,7 @@ title = "結語JYu 的筆記"
 displayName = "繁體中文"
 isoCode = "zh"
 rtl = false
-dateFormat = "2 January 2006"
+dateFormat = "2006/01/02"
 
 [params.author]
 name = "結語JYu"
