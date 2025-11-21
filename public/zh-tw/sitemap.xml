@@ -105,6 +105,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://jyu1999.com/posts/jetbrains_shortcut/</loc>
+    <lastmod>2023-05-22T10:47:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/jetbrains_shortcut/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/jetbrains_shortcut/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/goodidea-mind-5/</loc>
     <lastmod>2023-05-18T19:18:20+08:00</lastmod>
     <changefreq>daily</changefreq>
