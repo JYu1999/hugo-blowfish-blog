@@ -2,7 +2,6 @@
 title: "Review: The Clearest Story in the World by Hikaru Sugii"
 date: 2025-11-21T17:04:52+08:00
 draft: false
-hideFeatureImage: true
 ---
 
 {{< alert "circle-info">}}
