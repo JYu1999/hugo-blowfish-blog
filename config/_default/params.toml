@@ -41,9 +41,9 @@ showMoreLink = false
 showMoreLinkDest = "/posts/"
 cardView = false
 cardViewScreenWidth = ""
-layoutBackgroundBlur = ""
+layoutBackgroundBlur = true
 disableHeroImageFilter = false
-homepageImage = ""
+homepageImage = "img/background.jpg"
 
 [article]
 showDate = true
