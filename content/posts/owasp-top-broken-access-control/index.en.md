@@ -4,6 +4,10 @@ date: 2025-08-24T10:47:46+08:00
 draft: false
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 ## Preface
 
 I wrote an article about information security a while back, and it suddenly occurred to me that I had never systematically studied common security issues; I had always learned directly through practical experience.
