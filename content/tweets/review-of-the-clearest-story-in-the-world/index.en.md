@@ -4,10 +4,6 @@ date: 2025-11-21T17:04:52+08:00
 draft: false
 ---
 
-{{< alert "circle-info">}}
-This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
-{{< /alert >}}
-
 <img src="/tweets/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="Book Cover" style="max-width: 400px; width: 100%;" />
 
 I visited the bookstore the other day and stumbled upon this book.
