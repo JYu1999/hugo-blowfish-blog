@@ -126,7 +126,19 @@
   </url>
   <url>
     <loc>https://jyu1999.com/posts/goodidea-mind-6/</loc>
-    <lastmod>2023-06-07T19:18:36+08:00</lastmod>
+    <lastmod>2023-06-30T19:18:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/goodidea-mind-5/</loc>
+    <lastmod>2023-06-18T19:18:20+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/goodidea-mind-2/</loc>
+    <lastmod>2023-06-01T19:07:31+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -147,12 +159,6 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/posts/goodidea-mind-5/</loc>
-    <lastmod>2023-05-18T19:18:20+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://jyu1999.com/posts/goodidea-mind-4/</loc>
     <lastmod>2023-05-18T19:18:13+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -165,14 +171,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://jyu1999.com/posts/goodidea-mind-2/</loc>
-    <lastmod>2023-05-18T19:07:31+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://jyu1999.com/posts/goodidea-mind-1/</loc>
-    <lastmod>2023-05-17T19:07:31+08:00</lastmod>
+    <lastmod>2023-05-11T19:07:31+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
