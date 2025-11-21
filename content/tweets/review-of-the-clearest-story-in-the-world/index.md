@@ -2,6 +2,7 @@
 title: "《世界上最透明的故事》閱讀心得"
 date: 2025-11-21T17:04:52+08:00
 draft: false
+hideFeatureImage: true
 ---
 
 <img src="/tweets/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="書本圖片" style="max-width: 400px; width: 100%;" />
