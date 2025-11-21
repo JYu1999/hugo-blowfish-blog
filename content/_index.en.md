@@ -3,7 +3,9 @@ title: "JYu's Notes"
 description: "Keep growing, pursue peace."
 ---
 
+{{< typeit lifeLike="true" loop="true">}}
 Welcome to this blog🎉
+{{< /typeit >}}
 
 This blog is pretty casual, basically I update whenever I learn something XD
 
