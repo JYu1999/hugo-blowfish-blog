@@ -83,6 +83,22 @@
     />
   </url>
   <url>
+    <loc>https://jyu1999.com/posts/owasp-top-broken-access-control/</loc>
+    <lastmod>2025-08-24T10:47:46+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/owasp-top-broken-access-control/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/owasp-top-broken-access-control/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/is-your-code-leaking-company-secrets/</loc>
     <lastmod>2025-07-26T19:07:31+08:00</lastmod>
     <changefreq>daily</changefreq>
