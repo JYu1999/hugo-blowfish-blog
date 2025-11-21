@@ -8,6 +8,8 @@ draft: false
 This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
 {{< /alert >}}
 
+<img src="/tweets/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="Book Cover" style="max-width: 400px; width: 100%;" />
+
 I visited the bookstore the other day and stumbled upon this book.
 
 The book band featured some hyperbolic taglines, such as: "Absolutely impossible to publish as an ebook—a moving experience only possible with a physical book," and "Taiwan is likely the only place in the world capable of perfectly translating this novel." Naturally, this piqued my curiosity.

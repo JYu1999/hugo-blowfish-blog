@@ -4,6 +4,8 @@ date: 2025-11-21T17:04:52+08:00
 draft: false
 ---
 
+<img src="/tweets/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="書本圖片" style="max-width: 400px; width: 100%;" />
+
 前幾天去了政大書局，無意間看到這本書。
 
 書腰上寫著：「絕對不可能出成電子書──只有紙本書可以體驗的感動」、「要完美翻譯這本小說，全世界恐怕就只有臺灣辦得到了。」等等誇張的標題，讓我不禁產生一些好奇心。
