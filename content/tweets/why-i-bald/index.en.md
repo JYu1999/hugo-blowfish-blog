@@ -13,8 +13,10 @@ So I'm writing this post to briefly organize my thoughts, haha. Next time someon
 Perhaps we can start by thinking about the purposes of hair:
 
 1. For others to see, which can be further divided into two types:
-    a. Professional Use: Some jobs might require giving clients a "professional" first impression, and sometimes a hairstyle can indeed be a bonus.
-    b. Attracting the opposite/same sex.
+   
+   a. Professional Use: Some jobs might require giving clients a "professional" first impression, and sometimes a hairstyle can indeed be a bonus.
+   
+   b. Attracting the opposite/same sex.
 2. For myself to see: Being happy with how I look.
 3. Protecting the scalp/keeping warm.
 
