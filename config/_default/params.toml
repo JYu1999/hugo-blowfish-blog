@@ -18,7 +18,13 @@ firebase = { }
 fathomAnalytics = { }
 umamiAnalytics = { }
 selineAnalytics = { }
-buymeacoffee = { }
+
+[buymeacoffee]
+identifier = "jyu1999"
+globalWidget = true
+globalWidgetColor = "#FF5F5F"
+globalWidgetPosition = "right"
+
 verification = { }
 rssnext = { }
 advertisement = { }
