@@ -58,6 +58,7 @@
         }
 
         .support-main-button {
+          position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -70,6 +71,7 @@
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           cursor: pointer;
           border: none;
+          overflow: visible;
         }
 
         .support-main-button:hover {
@@ -86,6 +88,112 @@
           height: 28px;
           fill: white;
           transition: transform 0.3s;
+        }
+
+        /* Click animation */
+        .support-main-button.clicked {
+          animation: heartBeat 0.6s ease-in-out;
+        }
+
+        @keyframes heartBeat {
+          0%, 100% { transform: scale(1); }
+          10% { transform: scale(0.85); }
+          20% { transform: scale(1.15); }
+          30% { transform: scale(1.05); }
+          40% { transform: scale(1.12); }
+          50% { transform: scale(1.08); }
+        }
+
+        /* Ripple effect */
+        .support-ripple {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.6);
+          pointer-events: none;
+          animation: ripple 0.8s ease-out;
+        }
+
+        @keyframes ripple {
+          from {
+            width: 0;
+            height: 0;
+            opacity: 1;
+          }
+          to {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+          }
+        }
+
+        /* Particle effect */
+        .support-particle {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          pointer-events: none;
+          animation: particle 1s ease-out forwards;
+        }
+
+        @keyframes particle {
+          0% {
+            transform: translate(0, 0) scale(1);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(0);
+            opacity: 0;
+          }
+        }
+
+        /* Heart bubble effect */
+        .support-heart-bubble {
+          position: absolute;
+          font-size: 20px;
+          pointer-events: none;
+          user-select: none;
+          animation: heartBubble var(--duration) ease-out forwards;
+          transform-origin: center;
+        }
+
+        @keyframes heartBubble {
+          0% {
+            transform: translate(0, 0) scale(0) rotate(0deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(var(--rotate));
+            opacity: 0;
+          }
+        }
+
+        /* Pulse effect when expanded */
+        .support-widget-container.expanded .support-main-button::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: rgba(255, 95, 95, 0.3);
+          animation: pulse 1.5s ease-out infinite;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0;
+          }
         }
 
         .support-options {
@@ -273,7 +381,7 @@
         </div>
 
         <button class="support-main-button" 
-                onclick="toggleSupportWidget()" 
+                onclick="toggleSupportWidget(event)" 
                 aria-label="{{ i18n "support.button_aria_label" }}"
                 type="button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -283,9 +391,107 @@
       </div>
 
       <script>
-        function toggleSupportWidget() {
+        function createRipple(button, x, y) {
+          const ripple = document.createElement('div');
+          ripple.className = 'support-ripple';
+          
+          const rect = button.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = '0px';
+          ripple.style.left = (x - rect.left) + 'px';
+          ripple.style.top = (y - rect.top) + 'px';
+          
+          button.appendChild(ripple);
+          
+          setTimeout(() => ripple.remove(), 800);
+        }
+
+        function createParticles(button, x, y) {
+          const colors = ['#FF5F5F', '#FF8E53', '#FFD93D', '#FF6B9D', '#C9EEFF'];
+          const particleCount = 12;
+          
+          for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'support-particle';
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            const rect = button.getBoundingClientRect();
+            const angle = (i / particleCount) * Math.PI * 2;
+            const velocity = 40 + Math.random() * 30;
+            const tx = Math.cos(angle) * velocity;
+            const ty = Math.sin(angle) * velocity;
+            
+            particle.style.left = (x - rect.left) + 'px';
+            particle.style.top = (y - rect.top) + 'px';
+            particle.style.setProperty('--tx', tx + 'px');
+            particle.style.setProperty('--ty', ty + 'px');
+            
+            button.appendChild(particle);
+            
+            setTimeout(() => particle.remove(), 1000);
+          }
+        }
+
+        function createHeartBubbles(button) {
+          const heartCount = 8;
+          const hearts = ['❤️', '💕', '💖', '💗', '💓', '💝'];
+          
+          for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'support-heart-bubble';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            
+            // Random starting position around the button
+            const angle = (i / heartCount) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
+            const startRadius = 35;
+            const startX = Math.cos(angle) * startRadius;
+            const startY = Math.sin(angle) * startRadius;
+            
+            // Movement parameters
+            const distance = 60 + Math.random() * 40;
+            const tx = Math.cos(angle) * distance + (Math.random() - 0.5) * 30;
+            const ty = Math.sin(angle) * distance - 40 - Math.random() * 20; // Float upward more
+            const rotate = (Math.random() - 0.5) * 60; // Random rotation
+            const duration = 1.5 + Math.random() * 0.5;
+            
+            heart.style.left = (28 + startX) + 'px';
+            heart.style.top = (28 + startY) + 'px';
+            heart.style.setProperty('--tx', tx + 'px');
+            heart.style.setProperty('--ty', ty + 'px');
+            heart.style.setProperty('--rotate', rotate + 'deg');
+            heart.style.setProperty('--duration', duration + 's');
+            
+            // Stagger the animation
+            heart.style.animationDelay = (i * 0.08) + 's';
+            
+            button.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), (duration + 0.08 * i) * 1000);
+          }
+        }
+
+        function toggleSupportWidget(event) {
           const widget = document.getElementById('supportWidget');
+          const button = event.currentTarget;
+          const rect = button.getBoundingClientRect();
+          const x = event.clientX;
+          const y = event.clientY;
+          
+          // Toggle expansion
           widget.classList.toggle('expanded');
+          
+          // Add click animation
+          button.classList.add('clicked');
+          setTimeout(() => button.classList.remove('clicked'), 600);
+          
+          // Create ripple effect
+          createRipple(button, x, y);
+          
+          // Create particles and heart bubbles when opening
+          if (widget.classList.contains('expanded')) {
+            createParticles(button, x, y);
+            createHeartBubbles(button);
+          }
         }
 
         // Close when clicking outside
