@@ -1,0 +1,322 @@
+<!doctype html>
+<html
+  lang="{{ with site.Params.isoCode | default (site.LanguageCode | default `en`) }}{{- . -}}{{ end }}"
+  dir="{{ cond (site.Params.rtl | default false) `rtl` `ltr` }}"
+  class="scroll-smooth"
+  data-default-appearance="{{ site.Params.defaultAppearance | default `light` }}"
+  data-auto-appearance="{{ site.Params.autoSwitchAppearance | default `true` }}">
+  {{- partial "head.html" . -}}
+  {{- partialCached "init.html" . -}}
+
+  {{ $bodyLayout := "flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32" }}
+  {{ $bodyColor := "text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral" }}
+  {{ $bodyScrollbar := "scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600" }}
+  <body class="{{ $bodyLayout }} {{ $bodyColor }} {{ $bodyScrollbar }}">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        {{ i18n "nav.skip_to_main" }}
+      </a>
+    </div>
+    {{ $header := print "header/" site.Params.header.layout ".html" }}
+    {{ if templates.Exists ( printf "partials/%s" $header ) }}
+      {{ partial $header . }}
+    {{ else }}
+      {{ partial "header/basic.html" . }}
+    {{ end }}
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        {{ block "main" . }}{{ end }}
+        {{ if and (site.Params.footer.showScrollToTop | default true) }}
+          {{- partial "scroll-to-top.html" . -}}
+        {{ end }}
+      </main>
+      {{- partial "footer.html" . -}}
+      {{ if site.Params.enableSearch | default false }}
+        {{- partial "search.html" . -}}
+      {{ end }}
+    </div>
+
+    {{/* Expandable Support Widget */}}
+    {{ if site.Params.supportWidget.enabled | default false }}
+      <style>
+        .support-widget-container {
+          position: fixed;
+          bottom: 18px;
+          {{ if eq (site.Params.supportWidget.position | default "right") "right" }}
+            right: 18px;
+          {{ else }}
+            left: 18px;
+          {{ end }}
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 12px;
+        }
+
+        .support-main-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          {{ $color := site.Params.supportWidget.color | default "#FF5F5F" }}
+          background: linear-gradient(135deg, {{ $color }} 0%, #FF8E53 100%);
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(255, 95, 95, 0.4);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+          border: none;
+        }
+
+        .support-main-button:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(255, 95, 95, 0.5);
+        }
+
+        .support-widget-container.expanded .support-main-button {
+          transform: rotate(45deg);
+        }
+
+        .support-main-button svg {
+          width: 28px;
+          height: 28px;
+          fill: white;
+          transition: transform 0.3s;
+        }
+
+        .support-options {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .support-widget-container.expanded .support-options {
+          max-height: 200px;
+        }
+
+        .support-option {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 12px 16px;
+          background: white;
+          border-radius: 28px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+          color: #333;
+          font-size: 14px;
+          font-weight: 500;
+          white-space: nowrap;
+          transition: all 0.3s;
+          transform: scale(0.8);
+          opacity: 0;
+        }
+
+        .support-widget-container.expanded .support-option {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(1) {
+          transition-delay: 0.05s;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(2) {
+          transition-delay: 0.1s;
+        }
+
+        .support-option:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .support-option-icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        .support-option-icon.bmc {
+          background-color: #FFDD00;
+        }
+
+        .support-option-icon.portaly {
+          background-color: #FF5F5F;
+        }
+
+        .support-option-icon svg {
+          width: 14px;
+          height: 14px;
+          fill: white;
+        }
+
+        .support-option-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .support-option-title {
+          font-weight: 600;
+          color: #1a1a1a;
+        }
+
+        .support-option-currency {
+          font-size: 11px;
+          color: #666;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+          .support-option {
+            background: rgba(38, 38, 38, 0.95);
+            color: #e5e5e5;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          .support-option-title {
+            color: #e5e5e5;
+          }
+
+          .support-option-currency {
+            color: #999;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .support-widget-container {
+            bottom: 16px;
+            {{ if eq (site.Params.supportWidget.position | default "right") "right" }}
+              right: 16px;
+            {{ else }}
+              left: 16px;
+            {{ end }}
+          }
+
+          .support-main-button {
+            width: 52px;
+            height: 52px;
+          }
+
+          .support-main-button svg {
+            width: 26px;
+            height: 26px;
+          }
+
+          .support-option {
+            padding: 10px 14px;
+            font-size: 13px;
+          }
+
+          .support-option-icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      </style>
+
+      <div class="support-widget-container" id="supportWidget">
+        <div class="support-options">
+          {{ if site.Params.buymeacoffee.identifier }}
+          <a href="https://www.buymeacoffee.com/{{ site.Params.buymeacoffee.identifier }}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="{{ i18n "support.bmc_title" }}">
+            <div class="support-option-icon bmc">
+              <svg viewBox="0 0 884 1279" xmlns="http://www.w3.org/2000/svg">
+                <path d="M791.109 297.518L790.231 297L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z" fill="#0D0C22"/>
+                <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="#0D0C22"/>
+                <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.379 297.462 791.484 297.377Z" fill="#0D0C22"/>
+                <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="#0D0C22"/>
+                <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="#0D0C22"/>
+                <path d="M793.669 299.515L792.223 298.138L793.669 299.515Z" fill="#0D0C22"/>
+                <path d="M430.019 1186.18C428.864 1186.68 427.852 1187.46 427.076 1188.45L427.988 1187.87C428.608 1187.3 429.485 1186.63 430.019 1186.18Z" fill="#0D0C22"/>
+                <path d="M641.187 1144.63C641.187 1143.33 640.551 1143.57 640.705 1148.21C640.705 1147.84 640.86 1147.46 640.929 1147.1C641.015 1146.27 641.084 1145.46 641.187 1144.63Z" fill="#0D0C22"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">{{ i18n "support.bmc_title" }}</span>
+              <span class="support-option-currency">{{ i18n "support.bmc_currency" }}</span>
+            </div>
+          </a>
+          {{ end }}
+          
+          {{ if site.Params.portaly.url }}
+          <a href="{{ site.Params.portaly.url }}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="{{ i18n "support.portaly_title" }}">
+            <div class="support-option-icon portaly">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12,12.5c-0.83,0-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5C13.5,11.83,12.83,12.5,12,12.5z M12,3 c-4.97,0-9,4.03-9,9H1l3.89,3.89L9,12H6c0-3.31,2.69-6,6-6s6,2.69,6,6s-2.69,6-6,6c-1.01,0-1.97-0.25-2.8-0.7l-1.46,1.46 C8.97,19.54,10.43,20,12,20c4.97,0,9-4.03,9-9S16.97,3,12,3z"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">{{ i18n "support.portaly_title" }}</span>
+              <span class="support-option-currency">{{ i18n "support.portaly_currency" }}</span>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+
+        <button class="support-main-button" 
+                onclick="toggleSupportWidget()" 
+                aria-label="{{ i18n "support.button_aria_label" }}"
+                type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </button>
+      </div>
+
+      <script>
+        function toggleSupportWidget() {
+          const widget = document.getElementById('supportWidget');
+          widget.classList.toggle('expanded');
+        }
+
+        // Close when clicking outside
+        document.addEventListener('click', function(event) {
+          const widget = document.getElementById('supportWidget');
+          if (widget && !widget.contains(event.target)) {
+            widget.classList.remove('expanded');
+          }
+        });
+
+        // Prevent closing when clicking inside
+        document.getElementById('supportWidget')?.addEventListener('click', function(event) {
+          event.stopPropagation();
+        });
+      </script>
+    {{ end }}
+
+    {{/* Original Buy Me a Coffee Widget */}}
+    {{ if site.Params.buymeacoffee.globalWidget | default false }}
+      <script
+        data-name="BMC-Widget"
+        data-cfasync="false"
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="{{ site.Params.buymeacoffee.identifier }}"
+        data-description="Support me on Buy me a coffee!"
+        {{ with site.Params.buymeacoffee.globalWidgetMessage }}data-message="{{ . }}"{{ end }}
+        {{ with site.Params.buymeacoffee.globalWidgetColor | default `#FFDD00` }}data-color="{{ . }}"{{ end }}
+        {{ with site.Params.buymeacoffee.globalWidgetPosition }}data-position="{{ . }}"{{ end }}
+        data-x_margin="18"
+        data-y_margin="18"></script>
+    {{ end }}
+  </body>
+</html>
+

@@ -1,0 +1,8 @@
+# Support Widget translations for English
+support:
+  button_aria_label: "Support Options"
+  bmc_title: "Buy Me a Coffee"
+  bmc_currency: "💵 USD"
+  portaly_title: "Support via Portaly"
+  portaly_currency: "💰 TWD"
+

@@ -19,8 +19,4 @@ description: "持續成長，追求平靜"
 
 ---
 
-如果你喜歡我的內容，歡迎請我吃個 Seven i 珍食🥺
-
-{{< button href="https://www.buymeacoffee.com/jyu1999" target="_blank" >}}
-➡️  請客按鈕  ⬅️
-{{< /button >}}
+如果你喜歡我的內容，點擊右下角的 ❤️ 按鈕即可贊助（支援美金/台幣）🥺

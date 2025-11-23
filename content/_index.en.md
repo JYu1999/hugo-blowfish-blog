@@ -19,8 +19,4 @@ If you're new here and don't know where to start, you can begin with these place
 
 ---
 
-If you like my content, feel free to buy me a coffee️☕️
-
-{{< button href="https://www.buymeacoffee.com/jyu1999" target="_blank" >}}
-☕ Buy me a coffee
-{{< /button >}}
+If you like my content, click the ❤️ button at the bottom-right corner to support me (USD/TWD available)☕️

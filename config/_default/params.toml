@@ -21,9 +21,15 @@ selineAnalytics = { }
 
 [buymeacoffee]
 identifier = "jyu1999"
-globalWidget = true
-globalWidgetColor = "#FF5F5F"
-globalWidgetPosition = "right"
+globalWidget = false
+
+[portaly]
+url = "https://portaly.cc/jyu1999/support"
+
+[supportWidget]
+enabled = true
+position = "right"
+color = "#FF5F5F"
 
 verification = { }
 rssnext = { }
