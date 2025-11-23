@@ -1,37 +1,50 @@
 ---
-title: "Why This Blog"
+title: "Why This Blog Exists"
 date: 2025-11-19
+lastmod: 2025-11-20T10:30:00+08:00 
 draft: false
-description: "The purpose of this blog"
+description: "The original intention of writing this blog"
 ---
 
-## 🤔 Why Start a Blog?
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
 
-### 📝 Document Learning Journey
+## 📝 Self-Growth
 
-While learning new technologies, I often encounter various problems and solutions. Writing them down not only helps me review, but also helps others who face similar issues.
+I think the core reason is that I want to become better.
 
-> "The best way to learn is to teach others"
+Writing contributes to my self-growth in four main ways:
 
-### 🧠 Organize Thoughts
+1. **Practice Narrating**: I can practice how to explain things clearly.
+2. **Record the Moment**: I can record my thoughts at every moment, so the future me knows the logic behind my judgments at that time.
+3. **Deepen Learning through Writing**: According to the Feynman Technique, the best way to test if you have truly learned something is to share it with others.
+4. **Brains are for Thinking**: When I write down my thoughts, I can free up my brain's memory, allowing it to think about other things.
 
-The writing process is also a process of organizing thoughts. Converting ideas into words makes thinking clearer.
+However, all the above benefits can be achieved by writing articles locally for myself. Why share it on the internet?
 
-### 🌐 Share and Exchange
+This brings me to the second point: "Helping Others".
 
-The internet makes knowledge sharing easy. I've learned so much from the open source community and other bloggers, and I hope to give back by sharing my experiences and insights.
+## 🌐 Helping Others
 
-### 📚 Build a Knowledge Base
+Whether before or after the advent of AI, I have always learned a lot from the articles of selfless sharers in the community.
 
-Over time, the blog becomes a personal knowledge base. When I need to review technical details, I can quickly find my notes from back then.
+I also hope that I won't just be a Taker, but also a Giver.
 
-### 🎯 Continuous Growth
+I share what I know, hoping to help some people or provide others with food for thought.
 
-Regular writing is also a form of self-motivation, keeping the drive to learn and grow continuously.
+## 🎯 Accumulate Influence
+
+Finally, I hope the content I create can generate some personal influence for me, which might eventually translate into opportunities, reputation, etc.
+
+But I won't spend too much time focusing on this part; my primary consideration will still be self-growth.
+
+Although it feels a bit too early to think about this now, I don't want to be held hostage by traffic and become someone who only creates content for others.
 
 ---
 
-Hope this small space can become a place for knowledge sharing and exchange.
+Thank you for reading this far. I hope we can all become better together!
 
-If you have any thoughts or suggestions, feel free to reach out! ✨
+If you have any thoughts or suggestions, feel free to reach out to me via the following method! ✨
 
+[jk29666338@gmail.com](mailto:jk29666338@gmail.com)
