@@ -67,19 +67,35 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/en/tweets/review-of-the-clearest-story-in-the-world/</loc>
+    <loc>https://jyu1999.com/en/posts/</loc>
     <lastmod>2025-11-21T17:04:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/review-of-the-clearest-story-in-the-world/"
+      href="https://jyu1999.com/posts/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/review-of-the-clearest-story-in-the-world/"
+      href="https://jyu1999.com/en/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/posts/review-of-the-clearest-story-in-the-world/</loc>
+    <lastmod>2025-11-21T17:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/review-of-the-clearest-story-in-the-world/"
     />
   </url>
   <url>
@@ -96,22 +112,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/posts/japan-gogogo-preface/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/posts/</loc>
-    <lastmod>2025-11-20T19:18:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
     />
   </url>
   <url>
