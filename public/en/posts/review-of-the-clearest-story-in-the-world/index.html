@@ -1285,6 +1285,8 @@
         
 
 
+  
+
 
 
 
@@ -1292,7 +1294,7 @@
 
 <div
   id="scroll-to-top"
-  class="fixed bottom-24 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
   <a
     href="#the-top"
     class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
@@ -1406,18 +1408,475 @@
 </div>
 
     </div>
+
+    
+    
+      <style>
+        .support-widget-container {
+          position: fixed;
+          bottom: 18px;
+          
+            right: 18px;
+          
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 12px;
+        }
+
+        .support-main-button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          
+          background: linear-gradient(135deg, #FF5F5F 0%, #FF8E53 100%);
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(255, 95, 95, 0.4);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+          border: none;
+          overflow: visible;
+        }
+
+        .support-main-button:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(255, 95, 95, 0.5);
+        }
+
+        .support-widget-container.expanded .support-main-button {
+          transform: rotate(45deg);
+        }
+
+        .support-main-button svg {
+          width: 28px;
+          height: 28px;
+          fill: white;
+          transition: transform 0.3s;
+        }
+
+         
+        .support-main-button.clicked {
+          animation: heartBeat 0.6s ease-in-out;
+        }
+
+        @keyframes heartBeat {
+          0%, 100% { transform: scale(1); }
+          10% { transform: scale(0.85); }
+          20% { transform: scale(1.15); }
+          30% { transform: scale(1.05); }
+          40% { transform: scale(1.12); }
+          50% { transform: scale(1.08); }
+        }
+
+         
+        .support-ripple {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.6);
+          pointer-events: none;
+          animation: ripple 0.8s ease-out;
+        }
+
+        @keyframes ripple {
+          from {
+            width: 0;
+            height: 0;
+            opacity: 1;
+          }
+          to {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+          }
+        }
+
+         
+        .support-particle {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          pointer-events: none;
+          animation: particle 1s ease-out forwards;
+        }
+
+        @keyframes particle {
+          0% {
+            transform: translate(0, 0) scale(1);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(0);
+            opacity: 0;
+          }
+        }
+
+         
+        .support-heart-bubble {
+          position: absolute;
+          font-size: 20px;
+          pointer-events: none;
+          user-select: none;
+          animation: heartBubble var(--duration) ease-out forwards;
+          transform-origin: center;
+        }
+
+        @keyframes heartBubble {
+          0% {
+            transform: translate(0, 0) scale(0) rotate(0deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(var(--rotate));
+            opacity: 0;
+          }
+        }
+
+         
+        .support-widget-container.expanded .support-main-button::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: rgba(255, 95, 95, 0.3);
+          animation: pulse 1.5s ease-out infinite;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0;
+          }
+        }
+
+        .support-options {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .support-widget-container.expanded .support-options {
+          max-height: 200px;
+        }
+
+        .support-option {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 12px 16px;
+          background: white;
+          border-radius: 28px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+          color: #333;
+          font-size: 14px;
+          font-weight: 500;
+          white-space: nowrap;
+          transition: all 0.3s;
+          transform: scale(0.8);
+          opacity: 0;
+        }
+
+        .support-widget-container.expanded .support-option {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(1) {
+          transition-delay: 0.05s;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(2) {
+          transition-delay: 0.1s;
+        }
+
+        .support-option:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .support-option-icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        .support-option-icon.bmc {
+          background-color: #FFDD00;
+        }
+
+        .support-option-icon.portaly {
+          background-color: #FF5F5F;
+        }
+
+        .support-option-icon svg {
+          width: 14px;
+          height: 14px;
+          fill: white;
+        }
+
+        .support-option-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .support-option-title {
+          font-weight: 600;
+          color: #1a1a1a;
+        }
+
+        .support-option-currency {
+          font-size: 11px;
+          color: #666;
+        }
+
+         
+        @media (prefers-color-scheme: dark) {
+          .support-option {
+            background: rgba(38, 38, 38, 0.95);
+            color: #e5e5e5;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          .support-option-title {
+            color: #e5e5e5;
+          }
+
+          .support-option-currency {
+            color: #999;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .support-widget-container {
+            bottom: 16px;
+            
+              right: 16px;
+            
+          }
+
+          .support-main-button {
+            width: 52px;
+            height: 52px;
+          }
+
+          .support-main-button svg {
+            width: 26px;
+            height: 26px;
+          }
+
+          .support-option {
+            padding: 10px 14px;
+            font-size: 13px;
+          }
+
+          .support-option-icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      </style>
+
+      <div class="support-widget-container" id="supportWidget">
+        <div class="support-options">
+          
+          <a href="https://www.buymeacoffee.com/jyu1999" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="Buy Me a Coffee">
+            <div class="support-option-icon bmc">
+              <svg viewBox="0 0 884 1279" xmlns="http://www.w3.org/2000/svg">
+                <path d="M791.109 297.518L790.231 297L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z" fill="#0D0C22"/>
+                <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="#0D0C22"/>
+                <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.379 297.462 791.484 297.377Z" fill="#0D0C22"/>
+                <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="#0D0C22"/>
+                <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="#0D0C22"/>
+                <path d="M793.669 299.515L792.223 298.138L793.669 299.515Z" fill="#0D0C22"/>
+                <path d="M430.019 1186.18C428.864 1186.68 427.852 1187.46 427.076 1188.45L427.988 1187.87C428.608 1187.3 429.485 1186.63 430.019 1186.18Z" fill="#0D0C22"/>
+                <path d="M641.187 1144.63C641.187 1143.33 640.551 1143.57 640.705 1148.21C640.705 1147.84 640.86 1147.46 640.929 1147.1C641.015 1146.27 641.084 1145.46 641.187 1144.63Z" fill="#0D0C22"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">Buy Me a Coffee</span>
+              <span class="support-option-currency">💵 USD</span>
+            </div>
+          </a>
+          
+          
+          
+          <a href="https://portaly.cc/jyu1999/support" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="Support via Portaly">
+            <div class="support-option-icon portaly">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12,12.5c-0.83,0-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5C13.5,11.83,12.83,12.5,12,12.5z M12,3 c-4.97,0-9,4.03-9,9H1l3.89,3.89L9,12H6c0-3.31,2.69-6,6-6s6,2.69,6,6s-2.69,6-6,6c-1.01,0-1.97-0.25-2.8-0.7l-1.46,1.46 C8.97,19.54,10.43,20,12,20c4.97,0,9-4.03,9-9S16.97,3,12,3z"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">Support via Portaly</span>
+              <span class="support-option-currency">💰 TWD</span>
+            </div>
+          </a>
+          
+        </div>
+
+        <button class="support-main-button" 
+                onclick="toggleSupportWidget(event)" 
+                aria-label="Support Options"
+                type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </button>
+      </div>
+
+      <script>
+        function createRipple(button, x, y) {
+          const ripple = document.createElement('div');
+          ripple.className = 'support-ripple';
+          
+          const rect = button.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = '0px';
+          ripple.style.left = (x - rect.left) + 'px';
+          ripple.style.top = (y - rect.top) + 'px';
+          
+          button.appendChild(ripple);
+          
+          setTimeout(() => ripple.remove(), 800);
+        }
+
+        function createParticles(button, x, y) {
+          const colors = ['#FF5F5F', '#FF8E53', '#FFD93D', '#FF6B9D', '#C9EEFF'];
+          const particleCount = 12;
+          
+          for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'support-particle';
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            const rect = button.getBoundingClientRect();
+            const angle = (i / particleCount) * Math.PI * 2;
+            const velocity = 40 + Math.random() * 30;
+            const tx = Math.cos(angle) * velocity;
+            const ty = Math.sin(angle) * velocity;
+            
+            particle.style.left = (x - rect.left) + 'px';
+            particle.style.top = (y - rect.top) + 'px';
+            particle.style.setProperty('--tx', tx + 'px');
+            particle.style.setProperty('--ty', ty + 'px');
+            
+            button.appendChild(particle);
+            
+            setTimeout(() => particle.remove(), 1000);
+          }
+        }
+
+        function createHeartBubbles(button) {
+          const heartCount = 8;
+          const hearts = ['❤️', '💕', '💖', '💗', '💓', '💝'];
+          
+          for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'support-heart-bubble';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            
+            
+            const angle = (i / heartCount) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
+            const startRadius = 35;
+            const startX = Math.cos(angle) * startRadius;
+            const startY = Math.sin(angle) * startRadius;
+            
+            
+            const distance = 60 + Math.random() * 40;
+            const tx = Math.cos(angle) * distance + (Math.random() - 0.5) * 30;
+            const ty = Math.sin(angle) * distance - 40 - Math.random() * 20; 
+            const rotate = (Math.random() - 0.5) * 60; 
+            const duration = 1.5 + Math.random() * 0.5;
+            
+            heart.style.left = (28 + startX) + 'px';
+            heart.style.top = (28 + startY) + 'px';
+            heart.style.setProperty('--tx', tx + 'px');
+            heart.style.setProperty('--ty', ty + 'px');
+            heart.style.setProperty('--rotate', rotate + 'deg');
+            heart.style.setProperty('--duration', duration + 's');
+            
+            
+            heart.style.animationDelay = (i * 0.08) + 's';
+            
+            button.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), (duration + 0.08 * i) * 1000);
+          }
+        }
+
+        function toggleSupportWidget(event) {
+          const widget = document.getElementById('supportWidget');
+          const button = event.currentTarget;
+          const rect = button.getBoundingClientRect();
+          const x = event.clientX;
+          const y = event.clientY;
+          
+          
+          widget.classList.toggle('expanded');
+          
+          
+          button.classList.add('clicked');
+          setTimeout(() => button.classList.remove('clicked'), 600);
+          
+          
+          createRipple(button, x, y);
+          
+          
+          if (widget.classList.contains('expanded')) {
+            createParticles(button, x, y);
+            createHeartBubbles(button);
+          }
+        }
+
+        
+        document.addEventListener('click', function(event) {
+          const widget = document.getElementById('supportWidget');
+          if (widget && !widget.contains(event.target)) {
+            widget.classList.remove('expanded');
+          }
+        });
+
+        
+        document.getElementById('supportWidget')?.addEventListener('click', function(event) {
+          event.stopPropagation();
+        });
+      </script>
+    
+
+    
+    
   </body>
-  
-    <script
-      data-name="BMC-Widget"
-      data-cfasync="false"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="jyu1999"
-      data-description="Support me on Buy me a coffee!"
-      
-      data-color="#FF5F5F"
-      data-position="right"
-      data-x_margin="18"
-      data-y_margin="18"></script>
-  
 </html>
+
