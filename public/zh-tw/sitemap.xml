@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/posts/</loc>
+    <lastmod>2025-11-26T09:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/the-difference-between-post-and-tweet/</loc>
+    <lastmod>2025-11-26T09:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/the-difference-between-post-and-tweet/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/the-difference-between-post-and-tweet/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-11-26T09:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/tweets/using-other-blog-platform-or-not/</loc>
     <lastmod>2025-11-24T01:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,22 +64,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/using-other-blog-platform-or-not/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-11-24T01:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
     />
   </url>
   <url>
@@ -96,22 +128,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/posts/</loc>
-    <lastmod>2025-11-21T17:04:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
     />
   </url>
   <url>
