@@ -16,7 +16,7 @@ However, there are a few things I evaluated and decided to put on hold for now. 
 
 - **Blogroll:** Essentially, a list to record other people's blogs. But I don't seem to be regularly following any specific blogs 😅.
 - **Who Visited Me (Guestbook/Footprints):** A way for visitors to leave their mark and interact in a friendly manner. But I don't want to open up any comment functions yet; I'm afraid things might go wrong if commenters become unruly 😟. Plus, if someone starts trolling, my mood might be affected.
-- **Current Status/Updates:** I seriously considered this, but I feel like it overlaps a bit with "Tweets."
+- **Current Status/Updates:** I seriously considered this, but I feel like it overlaps a bit with "Tweets." Besides, I currently can't think of how writing down my recent updates would bring any help or impact to myself or the readers.
 - **Favorites/Tools I Use:** This might happen later, but I'm a bit too lazy to organize it in the short term.
 - **RSS:** I'll save this for when I decide to start sending out a newsletter 😂.
 
