@@ -1,6 +1,7 @@
 ---
 title: "Some Unfulfilled Aspirations for the Blog?"
 date: 2025-11-21T21:00:00+08:00
+lastmod: 2025-11-27T02:30:00+08:00 
 draft: false
 ---
 
