@@ -80,7 +80,7 @@ default "sha512") }}
 {{ end }}
 
 {{/* youtubeLite */}}
-{{ if .Page.HasShortcode "youtubeLite" }}
+{{ if or (.Page.HasShortcode "youtubeLite") (eq .Section "tweets") }}
 {{ $youtubeLiteCSS := resources.Get "lib/lite-youtube-embed/lite-yt-embed.css" }}
 {{ $youtubeLiteCSS = $youtubeLiteCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
 <link type="text/css" rel="stylesheet" href="{{ $youtubeLiteCSS.RelPermalink }}"
