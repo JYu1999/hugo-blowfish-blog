@@ -1,0 +1,15 @@
+{{- /* local-video shortcode */ -}}
+{{- $src := .Get 0 -}}
+{{- $width := .Get 1 | default "100%" -}}
+{{- $video := .Page.Resources.GetMatch $src -}}
+
+{{- if $video -}}
+<div style="width: {{ $width }}; max-width: 100%; margin: 0 auto;">
+    <video style="width: 100%; height: auto;" controls preload="metadata">
+        <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType }}">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{{- else -}}
+<p style="color: red;">Video not found: {{ $src }}</p>
+{{- end -}}
