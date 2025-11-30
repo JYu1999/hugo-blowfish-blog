@@ -227,6 +227,22 @@
     />
   </url>
   <url>
+    <loc>https://jyu1999.com/tweets/traveling-alone/</loc>
+    <lastmod>2025-09-17T21:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/traveling-alone/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/traveling-alone/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/owasp-top-broken-access-control/</loc>
     <lastmod>2025-08-24T10:47:46+08:00</lastmod>
     <changefreq>daily</changefreq>
