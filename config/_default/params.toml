@@ -2,6 +2,7 @@ colorScheme = "terminal"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 enableA11y = false
+mainSections = ["posts"]
 enableSearch = true
 enableCodeCopy = false
 smartTOC = true
@@ -112,7 +113,7 @@ showTableOfContents = false
 cardView = false
 
 [term]
-showHero = false
+showHero = true
 showBreadcrumbs = false
 showViews = false
 showLikes = false
