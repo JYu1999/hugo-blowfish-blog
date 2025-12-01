@@ -1,0 +1,43 @@
+---
+title: "Is My Effort Invisible? My Painful Personal Experience"
+date: 2025-12-01T17:04:52+08:00
+draft: false
+categories:
+  - becoming-a-better-professional
+series: ["You Might Be Losing Out Just Because of Poor Reporting"]
+series_order: 1
+---
+
+Before getting to the main topic, I want to share a personal story.
+
+The first one happened during my university days. We had a class where we had to build a software project.
+
+The professor required us to give a group progress report every week. And to prevent anyone from slacking off, the professor would grade each person individually during every report.
+
+In that project, I mainly played the role of Product Manager. That is, I was mainly responsible for managing requirements and delivery, and I also had to ensure that UI/UX and engineers could work well together.
+
+At that time, I felt that there wasn't much to report about PM work. After all, the final output relied on engineers and UI/UX. In this role of coordination and requirement management, my traces were not visible in the final result.
+
+So during the weekly regular reports, I would just breeze through with a few sentences, trying to leave as much time as possible for other team members.
+
+Later, after one of the reports, the teaching assistant secretly pulled me aside and said:
+
+"I know you did a lot of things. You might want to try to say a bit more when you report." The TA paused for a moment, then continued: "Otherwise, the professor thinks that the work was done by Team Member A, but I know that you are actually the one who did the most."
+
+Honestly, I didn't care about grades myself, but I felt it was unfair to other team members if someone who didn't do work got a higher grade.
+
+That was the first time I felt the importance of progress reporting. Even though I did more work, the credit was all taken by others.
+
+---
+
+Later, when I entered the workplace, the company had meetings similar to progress reports every week/day. I also mainly talked about what tasks I did in the previous cycle, what tasks I am doing now, and when I expect to finish them.
+
+It took less than 15 seconds to finish talking, very brief.
+
+And recently, a colleague at the company told me in a private meeting:
+
+"I know you are working, but maybe you can speak up every time you report, so that others will know, and you will have a better chance of promotion."
+
+These words woke me up and made me determined not to continue like this.
+
+So I started on the journey of "improving the quality of work reporting".
