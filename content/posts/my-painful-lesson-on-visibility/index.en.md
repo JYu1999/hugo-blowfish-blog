@@ -8,6 +8,10 @@ series: ["You Might Be Losing Out Just Because of Poor Reporting"]
 series_order: 1
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 Before getting to the main topic, I want to share a personal story.
 
 The first one happened during my university days. We had a class where we had to build a software project.
@@ -41,3 +45,15 @@ And recently, a colleague at the company told me in a private meeting:
 These words woke me up and made me determined not to continue like this.
 
 So I started on the journey of "improving the quality of work reporting".
+
+## Reflection Questions
+
+Before getting into the formal content, I want to invite everyone to think with me:
+
+> In the workplace, what kind of person is most likely to get promotion opportunities and be entrusted with important tasks?
+
+If you feel that capitalism is the root of all evil, and you don't care about promotions or being valued, and think that bosses/managers are just running dogs of capital, then I think you can think about it from another angle:
+
+> In the workplace, how can you ensure you don't get screwed over by others? (e.g., being framed, having credit stolen, passing the buck)
+
+In the last article of this series, I will share my answer after thinking about it. I also welcome everyone to see if your answer is the same as mine after reading this series XD.

@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/en/</loc>
+    <lastmod>2025-12-05T17:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/posts/</loc>
+    <lastmod>2025-12-05T17:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/posts/value-of-progress-report/</loc>
+    <lastmod>2025-12-05T17:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/value-of-progress-report/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/value-of-progress-report/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/en/tweets/join-wutheringwaves/</loc>
     <lastmod>2025-12-03T09:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,22 +64,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/tweets/join-wutheringwaves/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/</loc>
-    <lastmod>2025-12-03T09:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
     />
   </url>
   <url>
@@ -64,22 +96,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/posts/my-painful-lesson-on-visibility/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/posts/</loc>
-    <lastmod>2025-12-01T17:04:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
     />
   </url>
   <url>
