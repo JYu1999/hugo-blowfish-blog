@@ -108,6 +108,10 @@ Of course, you should be grateful when meeting such people, and if there is a ch
 
 But unfortunately, there are not many such people, so it is best to rely on yourself to claim credit.
 
+In addition, I believe that progress reporting essentially helps us build our resume content.
+
+If you consistently report progress and document it, you will be able to easily answer questions about what problems you helped the company solve when looking for your next job.
+
 ### As an "Opportunity to Get Assistance"
 
 This is one of the most important functions of reporting —— "Avoiding Surprises".
