@@ -1,7 +1,7 @@
 ---
 title: "Is It Possible for Me to Work in Japan?"
 date: 2025-11-20T19:18:36+08:00
-draft: false 
+draft: true
 tags:
   - Japan
 categories:
