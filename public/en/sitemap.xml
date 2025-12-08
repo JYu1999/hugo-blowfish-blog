@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/en/</loc>
+    <lastmod>2025-12-08T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/tweets/maybe-i-am-not-morning-guy/</loc>
+    <lastmod>2025-12-08T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/maybe-i-am-not-morning-guy/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/maybe-i-am-not-morning-guy/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/tweets/</loc>
+    <lastmod>2025-12-08T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/en/posts/how-to-report-progress/</loc>
     <lastmod>2025-12-07T18:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,22 +64,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/posts/how-to-report-progress/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/</loc>
-    <lastmod>2025-12-07T18:30:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
     />
   </url>
   <url>
@@ -80,22 +112,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/tweets/join-wutheringwaves/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/tweets/</loc>
-    <lastmod>2025-12-03T09:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/tweets/"
     />
   </url>
   <url>
