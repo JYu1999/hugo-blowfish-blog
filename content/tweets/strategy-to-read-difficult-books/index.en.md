@@ -2,6 +2,8 @@
 title: "It's almost 2026, how to use AI to assist in reading difficult books"
 date: 2025-12-10T10:00:00+08:00
 draft: false
+tags:
+    - AI
 ---
 
 Recently, due to some circumstances, I wanted to start reading some high-quality technical books.
