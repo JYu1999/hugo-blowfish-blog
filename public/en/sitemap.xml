@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://jyu1999.com/en/</loc>
-    <lastmod>2025-12-12T18:00:00+08:00</lastmod>
+    <lastmod>2025-12-13T01:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -100,7 +100,7 @@
   </url>
   <url>
     <loc>https://jyu1999.com/en/posts/</loc>
-    <lastmod>2025-12-07T18:30:00+08:00</lastmod>
+    <lastmod>2025-12-13T01:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -288,6 +288,22 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/posts/review-of-the-clearest-story-in-the-world/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/posts/is-it-possible-for-me-to-work-in-japan/</loc>
+    <lastmod>2025-12-13T01:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/is-it-possible-for-me-to-work-in-japan/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/is-it-possible-for-me-to-work-in-japan/"
     />
   </url>
   <url>
