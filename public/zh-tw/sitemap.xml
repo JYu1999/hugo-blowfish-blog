@@ -3,24 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://jyu1999.com/tweets/let-it-go/</loc>
-    <lastmod>2025-12-12T18:00:00+08:00</lastmod>
+    <loc>https://jyu1999.com/posts/review-of-kasanariau-hito-e/</loc>
+    <lastmod>2025-12-15T13:00:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/let-it-go/"
+      href="https://jyu1999.com/en/posts/review-of-kasanariau-hito-e/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/let-it-go/"
+      href="https://jyu1999.com/posts/review-of-kasanariau-hito-e/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/</loc>
+    <lastmod>2025-12-15T13:00:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
     />
   </url>
   <url>
     <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-12-13T01:30:00+08:00</lastmod>
+    <lastmod>2025-12-15T13:00:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -36,7 +52,7 @@
   </url>
   <url>
     <loc>https://jyu1999.com/tweets/</loc>
-    <lastmod>2025-12-12T18:00:00+08:00</lastmod>
+    <lastmod>2025-12-14T09:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +64,22 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/let-it-go/</loc>
+    <lastmod>2025-12-12T18:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/let-it-go/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/let-it-go/"
     />
   </url>
   <url>
@@ -80,22 +112,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/maybe-i-am-not-morning-guy/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/posts/</loc>
-    <lastmod>2025-12-13T01:30:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
     />
   </url>
   <url>
