@@ -4,6 +4,10 @@ date: 2025-12-15T13:00:52+08:00
 draft: false
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 <img src="/posts/review-of-kasanariau-hito-e/featured.png" alt="Book cover image" style="max-width: 400px; width: 100%;" />
 
 Actually, I don't have too many thoughts. Overall, it's an easy and enjoyable read.
