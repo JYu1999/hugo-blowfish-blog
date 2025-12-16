@@ -4,7 +4,7 @@ date: 2025-11-21T17:04:52+08:00
 draft: false
 ---
 
-<img src="/tweets/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="書本圖片" style="max-width: 400px; width: 100%;" />
+<img src="/posts/review-of-the-clearest-story-in-the-world/book-cover.jpg" alt="書本圖片" style="max-width: 400px; width: 100%;" />
 
 前幾天去了政大書局，無意間看到這本書。
 
