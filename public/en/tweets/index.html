@@ -868,6 +868,258 @@
 
     
     <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+      <a href="/en/tweets/mcp-first-experience/" class="hover:underline">
+        First Experience with MCP
+      </a>
+    </h2>
+
+    
+    <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
+      <time datetime=" 2025-12-20T09:00:00&#43;08:00">
+        20 December 2025
+      </time>
+    </div>
+
+    
+    <div class="prose dark:prose-invert max-w-none mt-2">
+      <p>Recently, I had a need: I wanted to polish my resume.</p>
+<p>However, the awkward part is that during my first two years at this company, I didn&rsquo;t diligently record my work.</p>
+<p>So, if someone asked me, &ldquo;What kind of issues did you resolve at your previous company?&rdquo;</p>
+<p>I could only respond with, &ldquo;Uh&hellip;&rdquo;</p>
+<p>Coincidentally, I&rsquo;ve been wanting to try MCP (Model Context Protocol) for a while but never had a practical need for it. So, I decided to see if MCP could help with this.</p>
+<p>My idea was simple: use a local MCP Client to access Jira and GitLab MCP Servers, then ask an AI to analyze the issues I&rsquo;ve solved and organize them into a resume format.</p>
+<hr>
+
+<h2 class="relative group">Jira
+    <div id="jira" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#jira" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Antigravity
+    <div id="antigravity" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#antigravity" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The first one I tried was Antigravity, simply because I&rsquo;ve been using it a lot lately.</p>
+<p>Connecting Antigravity to Jira is very straightforward. In the Agent screen, select <strong>MCP Servers</strong>, choose <strong>Atlassian</strong>, and complete the OAuth authentication.</p>
+
+<h3 class="relative group">Cursor
+    <div id="cursor" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cursor" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Next, I tried Cursor. Based on my experience with Antigravity, I simply copied the configuration.</p>
+<p>You can find <strong>Manage MCP Servers</strong> in the MCP Store, then click <strong>View Raw Config</strong> to find <code>mcp_config.json</code>.</p>
+<p>Go to Cursor settings, find <strong>New MCP Server</strong>, and fill in the configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;mcpServers&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;atlassian-mcp-server&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;npx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;-y&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;mcp-remote&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;https://mcp.atlassian.com/v1/sse&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">],</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;env&#34;</span><span class="p">:</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+
+<h2 class="relative group">GitLab
+    <div id="gitlab" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#gitlab" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>GitLab officially seems to still be testing MCP, so the setup is more complex. I had to use a community-developed one called <code>@zereight/mcp-gitlab</code>.</p>
+<p>For the specific installation process, please refer to: <a
+  href="https://github.com/zereight/gitlab-mcp/blob/main/docs/oauth-setup.md"
+    target="_blank"
+  >zereight/gitlab-mcp</a></p>
+<p>However, I should point out that this MCP has quite a few tools. If you&rsquo;re working on important projects, I recommend turning off dangerous permissions like Create, Update, and Delete to avoid accidental triggers.</p>
+<p>The installation for Antigravity and Cursor is similar, so I won&rsquo;t go into detail.</p>
+<hr>
+
+<h2 class="relative group">Testing
+    <div id="testing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#testing" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>Since it was just a test, I wrote a rather casual prompt:</p>
+<pre tabindex="0"><code>I am JYu.
+
+I have been working at company xxx for n years and am preparing my resume.
+
+I need you to use Jira MCP and GitLab MCP to help me organize and analyze all the projects I&#39;ve worked on during this period, so I can prepare my resume.
+</code></pre><p>I first tried it with Cursor, but it ran out of context immediately XD.</p>
+<p>Then I switched to Antigravity using Planning mode + Gemini 1.5 Flash, and here is the result:</p>
+
+<h3 class="relative group">Final Result
+    <div id="final-result" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#final-result" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+
+<h4 class="relative group">Career Summary: JYu (Software Engineer @ xxx)
+    <div id="career-summary-jyu-software-engineer--xxx" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#career-summary-jyu-software-engineer--xxx" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>Analytical and impact-driven Software Engineer with n years of experience at xxx. Expertise in backend development (PHP/Laravel), DevOps automation, and technical security. Lead contributor to critical infrastructure and financial modules.</p>
+
+<h5 class="relative group">🚀 Key Impact Areas
+    <div id="-key-impact-areas" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-key-impact-areas" aria-label="Anchor">#</a>
+    </span>
+    
+</h5>
+
+<h6 class="relative group">1. DevOps &amp; Infrastructure Optimization
+    <div id="1-devops--infrastructure-optimization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-devops--infrastructure-optimization" aria-label="Anchor">#</a>
+    </span>
+    
+</h6>
+<ul>
+<li><strong>CI/CD Pipeline Acceleration</strong>: Directed initiatives to optimize CI/CD workflows, significantly reducing build and deployment times.</li>
+<li><strong>Deployment Automation</strong>: Developed and integrated robust deployment scripts (<code>deploy.sh</code>, <code>reload-app.sh</code>) and automated database migration triggers to enhance system stability during releases.</li>
+<li><strong>Server Lifecycle Management</strong>: Orchestrated server transitions and handled infrastructure updates (SRE tasks) before transitioning to backend lead roles.</li>
+</ul>
+
+<h6 class="relative group">2. Financial &amp; Payment Systems
+    <div id="2-financial--payment-systems" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-financial--payment-systems" aria-label="Anchor">#</a>
+    </span>
+    
+</h6>
+<ul>
+<li><strong>Complex Withdrawal Logic</strong>: Designed and implemented the &ldquo;Creator Withdrawal System,&rdquo; including automated withdrawal processing and tax-compliant exports (Withholding Tax).</li>
+<li><strong>Payment Stability</strong>: Monitored and fixed critical payment/refund failures, ensuring high reliability for financial transactions.</li>
+<li><strong>Architecture Refactoring</strong>: Decoupled business logic from report export modules, centralizing domain logic in Services to improve maintainability and scalability.</li>
+</ul>
+
+<h6 class="relative group">3. Security &amp; Compliance
+    <div id="3-security--compliance" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-security--compliance" aria-label="Anchor">#</a>
+    </span>
+    
+</h6>
+<ul>
+<li><strong>CVE Mitigation</strong>: Identified and patched security vulnerabilities, including CVE-2025-14761 (Key Commitment Issue in AWS SDK for PHP), protecting S3-based encrypted assets.</li>
+<li><strong>Invoice &amp; Taxation</strong>: Built systems for order invoice processing and taxation module verification, ensuring financial compliance for the platform.</li>
+</ul>
+
+<h6 class="relative group">4. Product &amp; Feature Engineering
+    <div id="4-product--feature-engineering" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-product--feature-engineering" aria-label="Anchor">#</a>
+    </span>
+    
+</h6>
+<ul>
+<li><strong>Domain Modeling</strong>: Refined product taxonomy and tagging systems to support complex content discovery.</li>
+<li><strong>V3 Platform Transition</strong>: Contributed to the backend architecture for the next-generation creator application flow.</li>
+</ul>
+
+<h5 class="relative group">🛠 Technical Stack
+    <div id="-technical-stack" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-technical-stack" aria-label="Anchor">#</a>
+    </span>
+    
+</h5>
+<ul>
+<li><strong>Languages &amp; Frameworks</strong>: PHP, Laravel, Bash.</li>
+<li><strong>Integrations</strong>: AWS SDK (S3, Encryption), Payment Providers (Ecpay, etc.), Spout (Exporters).</li>
+<li><strong>Tools</strong>: Jira, GitLab CI/CD, Confluence (Technical documentation/Whiteboarding).</li>
+</ul>
+
+<h5 class="relative group">🏆 Notable Jira/GitLab Projects
+    <div id="-notable-jiragitlab-projects" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-notable-jiragitlab-projects" aria-label="Anchor">#</a>
+    </span>
+    
+</h5>
+<ul>
+<li><strong>xxx project (Main Platform)</strong>: Heavy focus on financial reliability and security.</li>
+<li><strong>xxx Deploy Script</strong>: Standalone toolset for platform maintenance.</li>
+<li><strong>CatalystV3</strong>: Next-generation platform development.</li>
+</ul>
+<hr>
+
+<h2 class="relative group">Conclusion
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conclusion" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>I wonder what you think of the result? XD</p>
+<p>Personally, I think it&rsquo;s a bit subpar, but then again, I didn&rsquo;t put much effort into the prompt. With the right &ldquo;tuning,&rdquo; it definitely feels promising.</p>
+<p>The reason I hadn&rsquo;t wanted to try MCP before was that I felt it only saved some Copy &amp; Paste time without providing much substantial help.</p>
+<p>In fact, using the &ldquo;traditional&rdquo; ChatGPT approach—manually copying relevant information to the model—often feels more efficient because it prevents the model from looking at too many unnecessary files or engaging in meaningless reasoning.</p>
+<p>However, for scenarios like &ldquo;summarizing a resume&rdquo; where there is a lot of context and I don&rsquo;t even know how much &ldquo;relevant information&rdquo; there is, MCP seems perfectly suited for the task.</p>
+<p>Overall, it was an interesting little experiment. I probably won&rsquo;t use MCP very often in the short term, but I&rsquo;ll think about more suitable use cases for it.</p>
+
+    </div>
+
+  </article>
+  
+  <article
+    class="relative flex flex-col gap-2 p-6 border rounded-2xl border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
+
+    
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
       <a href="/en/tweets/stop-chasing-motivation/" class="hover:underline">
         Stop Chasing Passion
       </a>
@@ -2019,23 +2271,23 @@
 
 
 
-<div id="carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" class="relative" data-twe-carousel-init data-twe-ride="carousel"
+<div id="carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" class="relative" data-twe-carousel-init data-twe-ride="carousel"
   data-twe-interval="1500">
   <div class="absolute right-0 bottom-0 left-0 z-2 mx-[15%] mb-10 flex list-none justify-center p-0"
     data-twe-carousel-indicators>
     
     
-    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" data-twe-slide-to="0" data-twe-carousel-active aria-current="true" 
+    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" data-twe-slide-to="0" data-twe-carousel-active aria-current="true" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 0"></button>
     
     
-    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" data-twe-slide-to="1" 
+    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" data-twe-slide-to="1" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 1"></button>
     
     
-    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" data-twe-slide-to="2" 
+    <button type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" data-twe-slide-to="2" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 2"></button>
     
@@ -2078,7 +2330,7 @@
 
   <button
     class="absolute top-0 bottom-0 left-0 z-2 flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" data-twe-slide="prev">
+    type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" data-twe-slide="prev">
     <span class="inline-block h-8 w-8">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5" stroke="currentColor"
         class="h-6 w-6">
@@ -2091,7 +2343,7 @@
 
   <button
     class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766079892201292000" data-twe-slide="next">
+    type="button" data-twe-target="#carousel-ff6dac19d8220c12bd58fe622a18be9e-1766243255847354000" data-twe-slide="next">
     <span class="inline-block h-8 w-8">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5" stroke="currentColor"
         class="h-6 w-6">
