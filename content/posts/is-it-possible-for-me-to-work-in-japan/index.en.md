@@ -3,8 +3,7 @@ title: "Is It Possible for Me to Work in Japan?"
 date: 2025-11-20T19:18:36+08:00
 lastmod: 2025-12-13T01:30:00+08:00 
 draft: false
-tags:
-  - Japan
+tags: ["Career", "Japan"]
 categories:
   - Japan Software Engineer Career Switch
 series: ["Japan Software Engineer Career Switch"]

@@ -2,6 +2,7 @@
 title: "Let It Go"
 date: 2025-12-12T18:00:00+08:00
 draft: false
+tags: ["Life"]
 ---
 
 {{< youtubeLite id="69XwkAF8kbg" label="陳雷 / 歡喜就好【歌詞】" >}}

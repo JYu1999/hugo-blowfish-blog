@@ -2,6 +2,7 @@
 title: "The Difference Between Articles and Tweets"
 date: 2025-11-26T09:04:52+08:00
 draft: false
+tags: ["Blogging"]
 ---
 
 {{< alert "circle-info">}}

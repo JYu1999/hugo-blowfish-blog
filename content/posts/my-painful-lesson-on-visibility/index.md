@@ -7,6 +7,7 @@ categories:
   - becoming-a-better-professional
 series: ["你很有可能只是輸在不會工作匯報"]
 series_order: 1
+tags: ["職涯"]
 ---
 
 在開始正題前，我想要先講一個我個人的故事。

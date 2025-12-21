@@ -2,8 +2,7 @@
 title: "First Experience with MCP"
 date: 2025-12-20T9:00:00+08:00
 draft: false
-tags:
-    - AI
+tags: ["Technical", "AI"]
 ---
 
 {{< alert "circle-info">}}

@@ -2,6 +2,7 @@
 title: "The Charm of Solo Travel?"
 date: 2025-09-17T21:00:00+08:00
 draft: false
+tags: ["Travel", "Life"]
 ---
 
 In recent years, on social media in Taiwan, I often see people emphasizing where they went for "solo travel".

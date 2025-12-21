@@ -2,6 +2,7 @@
 title: "OWASP Top 10(1) - Broken Access Control"
 date: 2025-08-24T10:47:46+08:00
 draft: false
+tags: ["Technical", "Security"]
 ---
 
 {{< alert "circle-info">}}

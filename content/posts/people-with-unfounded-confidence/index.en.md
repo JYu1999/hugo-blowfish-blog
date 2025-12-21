@@ -2,6 +2,7 @@
 title: "People with Unfounded Confidence"
 date: 2025-12-16T09:00:00+08:00
 draft: false
+tags: ["Career"]
 ---
 
 {{< alert "circle-info">}}

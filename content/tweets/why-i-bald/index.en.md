@@ -2,6 +2,7 @@
 title: "Why I Bald Head?"
 date: 2025-11-22
 draft: false
+tags: ["Life"]
 ---
 
 In the past few years, anyone who meets me for the first time always asks: "Why did you shave your head bald?"

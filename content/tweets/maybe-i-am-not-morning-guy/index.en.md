@@ -2,6 +2,7 @@
 title: "Maybe I'm Just Not a Morning Person"
 date: 2025-12-08T09:00:00+08:00
 draft: false
+tags: ["Life"]
 ---
 
 In recent years, "waking up early" seems to have become synonymous with successful people.

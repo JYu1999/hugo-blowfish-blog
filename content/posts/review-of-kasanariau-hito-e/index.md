@@ -2,6 +2,7 @@
 title: "《有所交集的人》閱讀心得"
 date: 2025-12-15T13:00:52+08:00
 draft: false
+tags: ["閱讀"]
 ---
 
 <img src="/posts/review-of-kasanariau-hito-e/featured.png" alt="書本圖片" style="max-width: 400px; width: 100%;" />

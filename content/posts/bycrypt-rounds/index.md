@@ -3,6 +3,7 @@ title: "Bycrypt Rounds"
 date: 2025-12-03T09:07:31+08:00
 draft: true
 description: "a description"
+tags: ["技術"]
 ---
 
 最近在寫專案的時候，偶然發現 PHP Unit 有一個有趣的設定：

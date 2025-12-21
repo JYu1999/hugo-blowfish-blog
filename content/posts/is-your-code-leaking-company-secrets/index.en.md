@@ -3,6 +3,7 @@ title: "Is Your Code Leaking Company Secrets?"
 date: 2025-07-26T19:07:31+08:00
 draft: false
 description: "A reflection on common security pitfalls in software development."
+tags: ["Technical", "Security"]
 ---
 
 {{< alert "circle-info">}}

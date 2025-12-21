@@ -2,6 +2,7 @@
 title: "關於成就感"
 date: 2024-05-04T23:00:00+08:00
 draft: false
+tags: ["生活"]
 ---
 
 {{< youtubeLite id="0a6wQ4GmDkg" label="【不止遊戲】來跟大夥喝點" >}}

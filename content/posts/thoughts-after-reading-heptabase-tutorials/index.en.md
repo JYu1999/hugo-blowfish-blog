@@ -2,6 +2,7 @@
 title: "Reflections on the Official Heptabase Tutorials"
 date: 2024-10-02T19:04:52+08:00
 draft: false
+tags: ["Tools", "Reading"]
 ---
 
 {{< alert "circle-info">}}

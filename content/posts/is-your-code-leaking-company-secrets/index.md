@@ -3,6 +3,7 @@ title: "你寫的 Code，正在洩漏公司的機密嗎？"
 date: 2025-07-26T19:07:31+08:00
 draft: false
 description: "a description"
+tags: ["技術", "資安"]
 ---
 
 在當軟體工程師的這兩年，我遇過一些有趣的資安問題，想透過這篇文章和大家分享。

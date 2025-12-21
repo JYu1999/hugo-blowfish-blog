@@ -2,6 +2,7 @@
 title: "Joining Wuthering Waves"
 date: 2025-12-03T09:00:00+08:00
 draft: false
+tags: ["Life"]
 ---
 
 Recently, I inexplicably wanted to find a mobile game to play, so I looked around.

@@ -2,6 +2,7 @@
 title: "2025 Fukuoka Marathon Completed!"
 date: 2025-11-09T10:00:00+08:00
 draft: false
+tags: ["Travel", "Japan"]
 ---
 
 I completed my first marathon in Fukuoka this year! I was lucky enough to finish in about 4.5 hours~!

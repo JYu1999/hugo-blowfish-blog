@@ -4,6 +4,7 @@ date: 2025-11-19
 lastmod: 2025-11-20T10:30:00+08:00 
 draft: false
 description: "The original intention of writing this blog"
+tags: ["Blogging"]
 ---
 
 {{< alert "circle-info">}}

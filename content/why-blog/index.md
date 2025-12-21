@@ -4,6 +4,7 @@ date: 2025-11-19
 lastmod: 2025-11-20T10:30:00+08:00 
 draft: false
 description: "寫部落格的初衷"
+tags: ["部落格"]
 ---
 
 ### 📝 自我成長

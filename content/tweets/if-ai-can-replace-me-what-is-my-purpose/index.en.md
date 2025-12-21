@@ -2,8 +2,7 @@
 title: "The Most Touching and Thought-Provoking Video I Saw in 2025"
 date: 2025-11-28T23:00:00+08:00
 draft: false
-tags:
-    - AI
+tags: ["AI", "Life"]
 ---
 
 {{< youtubeLite id="euvZ8Z_5zK0" label="If AI can replace me, then what is my purpose?" >}}

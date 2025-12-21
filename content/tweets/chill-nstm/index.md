@@ -3,6 +3,7 @@ title: "Chill Chill 的高雄科工館下午"
 date: 2025-11-29T23:00:00+08:00
 lastmod: 2025-11-30T14:30:00+08:00 
 draft: false
+tags: ["旅遊", "生活"]
 ---
 
 {{< local-video "786122422.092845.mp4" "60%" >}}

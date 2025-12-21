@@ -2,6 +2,7 @@
 title: "Jetbrains 系列 IDE 的一些快捷鍵（PHPStorm & RubyMine）"
 date: 2023-05-22T10:47:46+08:00
 draft: false
+tags: ["技術", "生產力工具"]
 ---
 以下是我在 PHPStorm / RubyMine 裡面常用到的快捷鍵。
 指令以 Mac 為主，windows 自己換成 <kbd>Ctrl</kbd> 即可。

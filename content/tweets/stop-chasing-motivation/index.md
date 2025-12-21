@@ -2,6 +2,7 @@
 title: "停止追逐熱情"
 date: 2025-12-19T01:00:00+08:00
 draft: false
+tags: ["生活"]
 ---
 
 {{< youtubeLite id="r6zFZQm0hcc" label="Give me 54 Seconds and I’ll Make you Dangerously Motivated" >}}

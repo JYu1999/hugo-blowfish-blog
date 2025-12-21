@@ -2,6 +2,7 @@
 title: "About Sense of Achievement"
 date: 2024-05-04T23:00:00+08:00
 draft: false
+tags: ["Life"]
 ---
 
 {{< youtubeLite id="0a6wQ4GmDkg" label="[More Than Games] Let's have a drink with everyone" >}}

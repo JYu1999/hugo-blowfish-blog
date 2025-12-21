@@ -2,6 +2,7 @@
 title: "OWASP Top 10 - Broken Access Control"
 date: 2025-08-24T10:47:46+08:00
 draft: false
+tags: ["技術", "資安"]
 ---
 
 ## 前言

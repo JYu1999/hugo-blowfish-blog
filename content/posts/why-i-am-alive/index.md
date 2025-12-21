@@ -2,6 +2,7 @@
 title: "2025 改變我最大的一本書：《世界盡頭的咖啡館：這一生，我為何而存在？》"
 date: 2025-12-16T17:04:52+08:00
 draft: false
+tags: ["閱讀", "生活"]
 ---
 
 <img src="/posts/why-i-alive/featured.png" alt="書本圖片" style="max-width: 400px; width: 100%;" />

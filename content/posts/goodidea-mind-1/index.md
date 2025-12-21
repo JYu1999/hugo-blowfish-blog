@@ -4,8 +4,7 @@ date: 2023-05-11T19:07:31+08:00
 lastmod: 2025-11-20T10:30:00+08:00 
 draft: false
 description: "a description"
-tags:
-  - 好想工作室 
+tags: ["好想工作室"]
 categories:
   - goodidea-training-experience 
 series: ["好想工作室 — 後端 (Backend Camp) 培訓心得"]

@@ -2,6 +2,7 @@
 title: "Common Shortcuts for JetBrains IDEs (PHPStorm & RubyMine)"
 date: 2023-05-22T10:47:46+08:00
 draft: false
+tags: ["Technical", "Tools"]
 ---
 
 {{< alert "circle-info">}}

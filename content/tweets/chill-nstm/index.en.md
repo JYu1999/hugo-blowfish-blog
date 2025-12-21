@@ -3,6 +3,7 @@ title: "A Chill Afternoon at the Kaohsiung Science and Technology Museum"
 date: 2025-11-29T23:00:00+08:00
 lastmod: 2025-11-30T14:30:00+08:00
 draft: false
+tags: ["Travel", "Life"]
 ---
 
 {{< local-video "786122422.092845.mp4" "60%" >}}

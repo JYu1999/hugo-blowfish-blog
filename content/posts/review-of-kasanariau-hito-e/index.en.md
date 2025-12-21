@@ -2,6 +2,7 @@
 title: "Review of 'People Who Intersect'"
 date: 2025-12-15T13:00:52+08:00
 draft: false
+tags: ["Reading"]
 ---
 
 {{< alert "circle-info">}}

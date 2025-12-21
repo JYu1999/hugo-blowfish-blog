@@ -2,6 +2,7 @@
 title: "The Book That Changed Me Most in 2025: \"The Cafe on the Edge of the World: A Story About the Meaning of Life\""
 date: 2025-12-16T17:04:52+08:00
 draft: false
+tags: ["Reading", "Life"]
 ---
 
 {{< alert "circle-info">}}

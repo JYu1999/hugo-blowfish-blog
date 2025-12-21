@@ -2,8 +2,7 @@
 title: "2025 看到最感動、最發人深省的影片"
 date: 2025-11-28T23:00:00+08:00
 draft: false
-tags:
-    - AI
+tags: ["AI", "生活"]
 ---
 
 {{< youtubeLite id="euvZ8Z_5zK0" label="If AI can replace me, then what is my purpose?" >}}

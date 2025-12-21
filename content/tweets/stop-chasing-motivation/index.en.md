@@ -2,6 +2,7 @@
 title: "Stop Chasing Passion"
 date: 2025-12-19T01:00:00+08:00
 draft: false
+tags: ["Life"]
 ---
 
 {{< youtubeLite id="r6zFZQm0hcc" label="Give me 54 Seconds and I’ll Make you Dangerously Motivated" >}}
