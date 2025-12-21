@@ -6,6 +6,10 @@ tags:
     - AI
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 Recently, I had a need: I wanted to polish my resume.
 
 However, the awkward part is that during my first two years at this company, I didn't diligently record my work.

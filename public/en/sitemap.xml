@@ -51,19 +51,35 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/en/tweets/mcp-first-experience/</loc>
+    <loc>https://jyu1999.com/en/posts/mcp-first-experience/</loc>
     <lastmod>2025-12-20T09:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/mcp-first-experience/"
+      href="https://jyu1999.com/posts/mcp-first-experience/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/mcp-first-experience/"
+      href="https://jyu1999.com/en/posts/mcp-first-experience/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/posts/</loc>
+    <lastmod>2025-12-20T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
     />
   </url>
   <url>
@@ -83,22 +99,6 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/en/posts/</loc>
-    <lastmod>2025-12-16T17:04:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
-    />
-  </url>
-  <url>
     <loc>https://jyu1999.com/en/posts/why-i-am-alive/</loc>
     <lastmod>2025-12-16T17:04:52+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -115,19 +115,19 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/en/tweets/people-with-unfounded-confidence/</loc>
+    <loc>https://jyu1999.com/en/posts/people-with-unfounded-confidence/</loc>
     <lastmod>2025-12-16T09:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/people-with-unfounded-confidence/"
+      href="https://jyu1999.com/posts/people-with-unfounded-confidence/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/people-with-unfounded-confidence/"
+      href="https://jyu1999.com/en/posts/people-with-unfounded-confidence/"
     />
   </url>
   <url>

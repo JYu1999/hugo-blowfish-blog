@@ -4,6 +4,10 @@ date: 2025-12-16T09:00:00+08:00
 draft: false
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 There are all kinds of people in this world. There are some I try to avoid working with, and one of them is **people with unfounded confidence**.
 
 What are **people with unfounded confidence**? Simply put, they are people whose source of confidence is a mystery to me.

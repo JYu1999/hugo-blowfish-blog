@@ -873,257 +873,6 @@
 
     
     <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-      <a href="/tweets/mcp-first-experience/" class="hover:underline">
-        MCP 初體驗
-      </a>
-    </h2>
-
-    
-    <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-      <time datetime=" 2025-12-20T09:00:00&#43;08:00">
-        2025/12/20
-      </time>
-    </div>
-
-    
-    <div class="prose dark:prose-invert max-w-none mt-2">
-      <p>最近剛好有個需求，是想要整理一下履歷。</p>
-<p>但尷尬的是，我進來這件公司的前兩年，沒有很認真紀錄我的工作。</p>
-<p>所以如果有人問我說：「你之前在公司解過哪些議題？」</p>
-<p>我只能說：「呃&hellip;」</p>
-<p>剛好之前一直想試 MCP，但一直沒需求，所以來嘗試看看 MCP 能不能達到這個效果。</p>
-<p>我的構想很簡單：透過本地 MCP Client，去存取 Jira 和 Gitlab 的 MCP Server，然後再請 AI 幫我分析我之前在公司解過哪些議題，並整理成履歷。</p>
-<hr>
-
-<h2 class="relative group">Jira
-    <div id="jira" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#jira" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-
-<h3 class="relative group">Antigravity
-    <div id="antigravity" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#antigravity" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-<p>首先嘗試的是 Antigravity，沒有特別的原因，單純是因為最近很常用。</p>
-<p>Antigravity 連結 Jira 很簡單，只需要在 Agent 畫面，選擇 MCP Servers，並選擇 Atlassian，然後進行 OAuth 驗證即可。</p>
-
-<h3 class="relative group">Cursor
-    <div id="cursor" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cursor" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-<p>再來嘗試 Cursor，有了前面 Antigraviry 的經驗，直接去複製 Antigravity 的設定即可。</p>
-<p>可以在 MCP Store 找到 <strong>Manage MCP Servers</strong>，然後按 <strong>View Raw Config</strong>，就可以找到 <code>mcp_config.json</code>。</p>
-<p>進到 Cursor 設定，找到 New MCP Server，並填入設定即可：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;mcpServers&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;atlassian-mcp-server&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;npx&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="s2">&#34;-y&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="s2">&#34;mcp-remote&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="s2">&#34;https://mcp.atlassian.com/v1/sse&#34;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">],</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;env&#34;</span><span class="p">:</span> <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><hr>
-
-<h2 class="relative group">Gitlab
-    <div id="gitlab" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#gitlab" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-<p>Gitlab 官方似乎還在測試 MCP，所以設定比較複雜，需要先使用民間的 <code>@zereight/mcp-gitlab</code>。</p>
-<p>具體安裝流程請參考：<a
-  href="https://github.com/zereight/gitlab-mcp/blob/main/docs/oauth-setup.md"
-    target="_blank"
-  >zereight/gitlab-mcp</a></p>
-<p>不過這邊要特別提醒，這個 MCP Tools 有點多，如果是比較重要的專案，建議把 Create、Update、Delete 等危險權限都關掉，以免誤觸。</p>
-<p>Antigraviry 和 Cursor 安裝方式雷同，不贅述</p>
-<hr>
-
-<h2 class="relative group">測試
-    <div id="測試" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%b8%ac%e8%a9%a6" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-<p>因為是測試，所以我亂寫了提示詞：</p>
-<pre tabindex="0"><code>我是結語JYu
-
-我在 xxx 這間公司工作滿 n 年了，正在準備履歷。
-
-需要你根據 Jira MCP、Gitlab MCP，幫我整理並分析過去這段時間，我在公司裡面做過的所有專案。讓我可以準備履歷。
-</code></pre><p>先嘗試用 Cursor，結果 context 直接不夠用 XD</p>
-<p>改用 Antigravity，使用 Planning + Gemini 3 Flash，成果如下：</p>
-
-<h3 class="relative group">最終成果
-    <div id="最終成果" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%9c%80%e7%b5%82%e6%88%90%e6%9e%9c" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-
-<h4 class="relative group">Career Summary: JYu (Software Engineer @ xxx)
-    <div id="career-summary-jyu-software-engineer--xxx" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#career-summary-jyu-software-engineer--xxx" aria-label="定位點">#</a>
-    </span>
-    
-</h4>
-<p>Analytical and impact-driven Software Engineer with n years of experience at xxx. Expertise in backend development (PHP/Laravel), DevOps automation, and technical security. Lead contributor to critical infrastructure and financial modules.</p>
-
-<h5 class="relative group">🚀 Key Impact Areas
-    <div id="-key-impact-areas" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-key-impact-areas" aria-label="定位點">#</a>
-    </span>
-    
-</h5>
-
-<h6 class="relative group">1. DevOps &amp; Infrastructure Optimization
-    <div id="1-devops--infrastructure-optimization" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-devops--infrastructure-optimization" aria-label="定位點">#</a>
-    </span>
-    
-</h6>
-<ul>
-<li>CI/CD Pipeline Acceleration: Directed initiatives to optimize CI/CD workflows, significantly reducing build and deployment times.</li>
-<li>Deployment Automation: Developed and integrated robust deployment scripts (deploy.sh, reload-app.sh) and automated database migration triggers to enhance system stability during releases.</li>
-<li>Server Lifecycle Management: Orchestrated server transitions and handled infrastructure updates (SRE tasks) before transitioning to backend lead roles.</li>
-</ul>
-
-<h6 class="relative group">2. Financial &amp; Payment Systems
-    <div id="2-financial--payment-systems" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-financial--payment-systems" aria-label="定位點">#</a>
-    </span>
-    
-</h6>
-<ul>
-<li>Complex Withdrawal Logic: Designed and implemented the &ldquo;Creator Withdrawal System,&rdquo; including automated withdrawal processing and tax-compliant exports (Withholding Tax/扣繳匯出單).</li>
-<li>Payment Stability: Monitored and fixed critical payment/refund failures, ensuring high reliability for financial transactions.</li>
-<li>Architecture Refactoring: Decoupled business logic from report export modules, centralizing domain logic in Services to improve maintainability and scalability.</li>
-</ul>
-
-<h6 class="relative group">3. Security &amp; Compliance
-    <div id="3-security--compliance" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-security--compliance" aria-label="定位點">#</a>
-    </span>
-    
-</h6>
-<ul>
-<li>CVE Mitigation: Identified and patched security vulnerabilities, including CVE-2025-14761 (Key Commitment Issue in AWS SDK for PHP), protecting S3-based encrypted assets.</li>
-<li>Invoice &amp; Taxation: Built systems for order invoice processing and taxation module verification, ensuring financial compliance for the platform.</li>
-</ul>
-
-<h6 class="relative group">4. Product &amp; Feature Engineering
-    <div id="4-product--feature-engineering" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-product--feature-engineering" aria-label="定位點">#</a>
-    </span>
-    
-</h6>
-<ul>
-<li>Domain Modeling: Refined product taxonomy and tagging systems to support complex content discovery.
-V3 Platform Transition: Contributed to the backend architecture for the next-generation creator application flow.</li>
-</ul>
-
-<h5 class="relative group">🛠 Technical Stack
-    <div id="-technical-stack" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-technical-stack" aria-label="定位點">#</a>
-    </span>
-    
-</h5>
-<ul>
-<li>Languages &amp; Frameworks: PHP, Laravel, Bash.</li>
-<li>Integrations: AWS SDK (S3, Encryption), Payment Providers (Ecpay, etc.), Spout (Exporters).</li>
-<li>Tools: Jira, GitLab CI/CD, Confluence (Technical documentation/Whiteboarding).</li>
-</ul>
-
-<h5 class="relative group">🏆 Notable Jira/GitLab Projects
-    <div id="-notable-jiragitlab-projects" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-notable-jiragitlab-projects" aria-label="定位點">#</a>
-    </span>
-    
-</h5>
-<ul>
-<li>xxx project (Main Platform): Heavy focus on financial reliability and security.</li>
-<li>xxx Deploy Script: Standalone toolset for platform maintenance.</li>
-<li>CatalystV3: Next-generation platform development.</li>
-</ul>
-<hr>
-
-<h2 class="relative group">結語
-    <div id="結語" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%b5%90%e8%aa%9e" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-<p>不知道讀者覺得成果如何XD</p>
-<p>我是覺得蠻鳥的，不過我也沒有很認真去下提示詞就是了，感覺認真調教一下應該是大有可為。</p>
-<p>我之前一直沒有想要試 MCP 的原因是因為，我覺得它只是省下了一些 Copy &amp; Paste 的時間，但沒有太多實質的幫助。</p>
-<p>反而我用「傳統」ChatGPT 這種方式，直接把相關資訊複製給模型，避免模型去看太多不必要的檔案，或進行無意義的思考，這樣會比較有效率。</p>
-<p>不過像整理履歷這種「上下文很多」，而且我自己都不知道「相關資訊」有多少的情境，好像就很適合用 MCP 來處理。</p>
-<p>整體來說是個有趣的小實驗，不過短期內我應該還是不會很常用 MCP 就是了，可能會再想一下適合的使用情境。</p>
-
-    </div>
-
-  </article>
-  
-  <article
-    class="relative flex flex-col gap-2 p-6 border rounded-2xl border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
-
-    
-    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
       <a href="/tweets/stop-chasing-motivation/" class="hover:underline">
         停止追逐熱情
       </a>
@@ -1144,111 +893,6 @@ V3 Platform Transition: Contributed to the backend architecture for the next-gen
 <p>然後我就會對自己說：「嗯或許軟體不是我的熱情，我應該要找其他熱情來學習。」</p>
 <p>結果就是我也沒有找到其他熱情來學，時間白白被浪費掉。</p>
 <p>這個很短的影片提醒了我，熱情是來自於自律，而不是可以「找」到的東西。</p>
-
-    </div>
-
-  </article>
-  
-  <article
-    class="relative flex flex-col gap-2 p-6 border rounded-2xl border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50">
-
-    
-    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-      <a href="/tweets/people-with-unfounded-confidence/" class="hover:underline">
-        有謎之自信的人
-      </a>
-    </h2>
-
-    
-    <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-      <time datetime=" 2025-12-16T09:00:00&#43;08:00">
-        2025/12/16
-      </time>
-    </div>
-
-    
-    <div class="prose dark:prose-invert max-w-none mt-2">
-      <p>這世界上有各式各樣的人，有些人我會盡量避免與其合作，而其中一種人就是<strong>有謎之自信的人</strong>。</p>
-<p>什麼是<strong>有謎之自信的人</strong>？簡單來說，就是我搞不懂他的自信來自於何處的人。</p>
-<p>正常人的自信，可能來源自過往的成功經驗、別人的肯定、或是對某個領域的專業知識。</p>
-<p>跟<strong>有自信的人</strong>不同，<strong>有謎之自信的人</strong>有幾個常見的特徵：</p>
-<ul>
-<li>喜歡貶低別人的做法或看法</li>
-<li>總認為自己的做法是最佳解（手裡有錘子，看什麼都是釘子）</li>
-<li>有意無意透露自己很厲害</li>
-<li>好為人師</li>
-<li>會對自己不懂的事情侃侃而談</li>
-<li>（在網路上跟別人筆戰）</li>
-</ul>
-<p>也未必符合這些特徵就一定是<strong>有謎之自信的人</strong>，但八九不離十😂</p>
-
-<h2 class="relative group">為什麼我會避開這種人？
-    <div id="為什麼我會避開這種人" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%82%ba%e4%bb%80%e9%ba%bc%e6%88%91%e6%9c%83%e9%81%bf%e9%96%8b%e9%80%99%e7%a8%ae%e4%ba%ba" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-<p>其實這種人有時候未必會很討厭，我會避開的主要原因是：<strong>風險考量</strong>。</p>
-<p>我覺得人生是一場無限賽局，重點是「可以留在場上多久」，而不是「短期內的輸贏」。</p>
-<p>舉例來說，做非法產業看起來可以在短期內賺很多錢，但只要被抓到了，帶來的風險可能是牢獄之災，無法長期持續。</p>
-<p>而在職場或合作關係中，<strong>有謎之自信的人</strong>，本質上就是在進行一場高風險的賭博，理由如下：</p>
-
-<h3 class="relative group">1. 忽視潛在的「隱形成本」
-    <div id="1-忽視潛在的隱形成本" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-%e5%bf%bd%e8%a6%96%e6%bd%9b%e5%9c%a8%e7%9a%84%e9%9a%b1%e5%bd%a2%e6%88%90%e6%9c%ac" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-<p>這類人因為認定自己的方案是「最佳解」，往往會忽略執行過程中的細節與潛在坑洞，甚至常常忽視個體差異。</p>
-<p>當一個人看不見風險時，自然也不會去做風險控管。</p>
-<p>在專案中，可能表現為選用了極其冷門但自己喜歡的技術棧，完全不考慮後續維護的難度與人力成本。或是直接把其他團隊的協作風格，直接帶來現有的團隊，不考慮產品屬性和人力配置。</p>
-
-<h3 class="relative group">2. 缺乏修正航道的能力
-    <div id="2-缺乏修正航道的能力" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-%e7%bc%ba%e4%b9%8f%e4%bf%ae%e6%ad%a3%e8%88%aa%e9%81%93%e7%9a%84%e8%83%bd%e5%8a%9b" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-<p>人非聖賢，孰能無過？但合作最怕的不是犯錯，而是<strong>無法修正錯誤</strong>。</p>
-<p>正常人在遇到挫折時會反思：「是不是我哪裡沒考慮周全？」</p>
-<p>但有謎之自信的人，第一反應往往是：「一定是別人沒配合好」或是「環境有問題」。</p>
-<p>由於他們很難聽進別人的建議，這導致了當危機發生時，整個團隊會錯過止損的黃金時間，只能眼睜睜看著火車出軌。</p>
-
-<h3 class="relative group">3. 溝通成本過高
-    <div id="3-溝通成本過高" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-%e6%ba%9d%e9%80%9a%e6%88%90%e6%9c%ac%e9%81%8e%e9%ab%98" aria-label="定位點">#</a>
-    </span>
-    
-</h3>
-<p>與這類人溝通，你往往需要花費 80% 的力氣在照顧他們的面子與自尊，只有 20% 的力氣在處理事情。</p>
-<p>為了讓他們接受一個客觀的事實，你需要繞一大圈來避免觸碰他們那莫名其妙的自信心，這對講求效率的長期合作來說，是一種巨大的精神內耗。</p>
-
-<h2 class="relative group">結語
-    <div id="結語" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%b5%90%e8%aa%9e" aria-label="定位點">#</a>
-    </span>
-    
-</h2>
-<p>在職場上，我們都知道「信任感治百病」。其實很多團隊問題，都是源於對彼此不夠有信任感。</p>
-<p>而信任感說穿了，就是一種<strong>可以預測的感覺</strong>。</p>
-<p>我知道你的能力邊界在哪、我知道遇到問題你會求救而不是硬撐、我知道你會評估風險而非盲目衝刺。</p>
-<p>但那些擁有謎之自信的人，或許偶爾能帶來驚喜，但更多時候帶來的是驚嚇。</p>
-<p>人生苦短，為了能夠走得更遠、更穩，我寧願選擇與那些「知道自己有所不知」、謙遜且謹慎的人同行。</p>
 
     </div>
 
@@ -2275,23 +1919,23 @@ V3 Platform Transition: Contributed to the backend architecture for the next-gen
 
 
 
-<div id="carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" class="relative" data-twe-carousel-init data-twe-ride="carousel"
+<div id="carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" class="relative" data-twe-carousel-init data-twe-ride="carousel"
   data-twe-interval="1500">
   <div class="absolute right-0 bottom-0 left-0 z-2 mx-[15%] mb-10 flex list-none justify-center p-0"
     data-twe-carousel-indicators>
     
     
-    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" data-twe-slide-to="0" data-twe-carousel-active aria-current="true" 
+    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" data-twe-slide-to="0" data-twe-carousel-active aria-current="true" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 0"></button>
     
     
-    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" data-twe-slide-to="1" 
+    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" data-twe-slide-to="1" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 1"></button>
     
     
-    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" data-twe-slide-to="2" 
+    <button type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" data-twe-slide-to="2" 
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 2"></button>
     
@@ -2334,7 +1978,7 @@ V3 Platform Transition: Contributed to the backend architecture for the next-gen
 
   <button
     class="absolute top-0 bottom-0 left-0 z-2 flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" data-twe-slide="prev">
+    type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" data-twe-slide="prev">
     <span class="inline-block h-8 w-8">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5" stroke="currentColor"
         class="h-6 w-6">
@@ -2347,7 +1991,7 @@ V3 Platform Transition: Contributed to the backend architecture for the next-gen
 
   <button
     class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324554274188000" data-twe-slide="next">
+    type="button" data-twe-target="#carousel-0b82cdb55b8c434fccc83effdba28a9a-1766324911473451000" data-twe-slide="next">
     <span class="inline-block h-8 w-8">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5" stroke="currentColor"
         class="h-6 w-6">

@@ -4,6 +4,10 @@ date: 2025-11-27T02:00:00+08:00
 draft: false
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 Recently, I was discussing a topic with a colleague. We had different understandings of the issue, so he went back and discussed it with several friends.
 
 A few days later, he approached me to discuss it again. His opening line was:
