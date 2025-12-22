@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on JYu&#39;s Notes</title>
+    <link>http://localhost:1313/en/tags/tech/</link>
+    <description>Recent content in Tech on JYu&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 結語JYu</copyright>
+    <lastBuildDate>Mon, 22 Dec 2025 10:47:46 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>From 12 Minutes to 7 Minutes: A 43% CI Speedup in Two Days</title>
+      <link>http://localhost:1313/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
+      <pubDate>Mon, 22 Dec 2025 10:47:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
