@@ -1,5 +1,4 @@
----
-title: "From 12 Minutes to 7 Minutes: A 43% CI Speedup in Two Days"
+title: "From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days"
 date: 2025-12-22T10:47:46+08:00
 draft: false
 tags: ["Technical"]
@@ -35,7 +34,7 @@ We hit a short “off-season,” so I pitched my manager on optimizing CI.
 Before touching code, I took stock:
 
 - Current CI runtime: ~11–13 minutes
-- - I had at most 3 days to work on this task, so the sooner I could finish, the better.
+- I had at most 3 days to work on this task, so the sooner I could finish, the better.
 - I had zero experience with GitLab CI
 
 With that, I set some principles:
