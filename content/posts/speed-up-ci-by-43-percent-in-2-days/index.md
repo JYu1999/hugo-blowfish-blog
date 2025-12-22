@@ -149,7 +149,7 @@ class FeatureTest3
 {
   use WithFaker, RefreshDatabase;
   
-  public function warpUpCache()
+  public function warmUpCache()
   {
     // 建立資料並存入 Cache
   }
@@ -167,42 +167,42 @@ class FeatureTest3
 
   public function testFunction3()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction4()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction5()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction6()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction7()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 }
 ```
 
-大概說明一下，這個被測試 Function，資料是去拿 Cache DB 裡面的。
+大概說明一下，這個被測試 Function，資料是去拿 Cache 裡面的。
 
 所以我們在測試的時候，會用 Factory 建立資料並存入 DB，再存入 Cache，也就是 `warmUpCache()` 在做的事情。
 
@@ -229,7 +229,7 @@ class FeatureTest3
 
   protected static array $warmedUpCaches = [];
   
-  public function warpUpCache()
+  public function warmUpCache()
   {
     // 若已經暖機過且 Redis 仍然有對應快取，就直接取得目前 Redis 內的版本，
     // 並搭配先前計算好的標籤集合，避免重複建資料與跑 Command

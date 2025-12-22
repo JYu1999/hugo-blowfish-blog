@@ -126,7 +126,7 @@ class FeatureTest3
 {
   use WithFaker, RefreshDatabase;
   
-  public function warpUpCache()
+  public function warmUpCache()
   {
     // Build data and store in cache
   }
@@ -144,35 +144,35 @@ class FeatureTest3
 
   public function testFunction3()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction4()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction5()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction6()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
 
   public function testFunction7()
   {
-    $caches = $this->warpUpCache();
+    $caches = $this->warmUpCache();
 
     // assert
   }
@@ -195,7 +195,7 @@ class FeatureTest3
 
   protected static array $warmedUpCaches = [];
   
-  public function warpUpCache()
+  public function warmUpCache()
   {
     // If already warmed and Redis still has the cache, reuse it
     if (isset(self::$warmedUpCaches[$group]) && $redis->exists($cacheVersionKey)) {

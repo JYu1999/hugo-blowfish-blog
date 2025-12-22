@@ -235,7 +235,7 @@
     "keywords": ["技術"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1059"
+    "wordCount": "1058"
   }]
   </script>
 
@@ -1510,7 +1510,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">use</span> <span class="nx">WithFaker</span><span class="p">,</span> <span class="nx">RefreshDatabase</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  
-</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warpUpCache</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warmUpCache</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 建立資料並存入 Cache
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
@@ -1528,40 +1528,40 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction3</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpCache</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// assert
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction4</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpCache</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// assert
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction5</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpCache</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// assert
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction6</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpCache</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// assert
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction7</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpCache</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">// assert
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>大概說明一下，這個被測試 Function，資料是去拿 Cache DB 裡面的。</p>
+</span></span></code></pre></div><p>大概說明一下，這個被測試 Function，資料是去拿 Cache 裡面的。</p>
 <p>所以我們在測試的時候，會用 Factory 建立資料並存入 DB，再存入 Cache，也就是 <code>warmUpCache()</code> 在做的事情。</p>
 <p>而關鍵就在於，因為商業邏輯很複雜，所以 <code>warmUpCache()</code> 要建立的資料很多，導致每次執行都要很久。</p>
 <p>那有沒有可能優化 <code>warmUpCache()</code> 呢？有可能，但裡面商業邏輯很複雜，時間限制下很難做到。</p>
@@ -1584,7 +1584,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">protected</span> <span class="k">static</span> <span class="k">array</span> <span class="nv">$warmedUpCaches</span> <span class="o">=</span> <span class="p">[];</span>
 </span></span><span class="line"><span class="cl">  
-</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warpUpCache</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warmUpCache</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 若已經暖機過且 Redis 仍然有對應快取，就直接取得目前 Redis 內的版本，
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 並搭配先前計算好的標籤集合，避免重複建資料與跑 Command
