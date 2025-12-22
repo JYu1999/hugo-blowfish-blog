@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Mon, 22 Dec 2025 10:47:46 +0800</lastBuildDate><atom:link href="https://jyu1999.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Dec 2025 00:04:52 +0800</lastBuildDate><atom:link href="https://jyu1999.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>沒有人預料到的事永遠是最大的風險</title>
+      <link>https://jyu1999.com/posts/unexpected-risks/</link>
+      <pubDate>Tue, 23 Dec 2025 00:04:52 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/posts/unexpected-risks/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/unexpected-risks/featured.png" />
+    </item>
     
     <item>
       <title>從 12 分鐘到 7 分鐘：我在兩天內將公司 CI 時間減少 43% 的實戰紀錄</title>

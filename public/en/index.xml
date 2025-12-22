@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Sun, 21 Dec 2025 21:30:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Dec 2025 00:04:52 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Biggest Risk is Always What No One Expected</title>
+      <link>https://jyu1999.com/en/posts/unexpected-risks/</link>
+      <pubDate>Tue, 23 Dec 2025 00:04:52 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/posts/unexpected-risks/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/unexpected-risks/featured.png" />
+    </item>
+    
+    <item>
+      <title>From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days</title>
+      <link>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
+      <pubDate>Mon, 22 Dec 2025 10:47:46 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
+    </item>
     
     <item>
       <title>What Should DCA Be?</title>
@@ -317,16 +337,6 @@
       <guid>https://jyu1999.com/en/posts/jetbrains_shortcut/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/jetbrains_shortcut/featured.png" />
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
     </item>
     
   </channel>

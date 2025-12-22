@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Sat, 20 Dec 2025 09:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Dec 2025 10:47:46 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days</title>
+      <link>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
+      <pubDate>Mon, 22 Dec 2025 10:47:46 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
+    </item>
     
     <item>
       <title>First Experience with MCP</title>

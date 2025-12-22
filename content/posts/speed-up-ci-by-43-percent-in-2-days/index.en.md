@@ -1,3 +1,4 @@
+---
 title: "From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days"
 date: 2025-12-22T10:47:46+08:00
 draft: false

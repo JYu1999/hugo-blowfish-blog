@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://jyu1999.com/posts/</loc>
-    <lastmod>2025-12-22T10:47:46+08:00</lastmod>
+    <lastmod>2025-12-23T00:04:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +16,38 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/unexpected-risks/</loc>
+    <lastmod>2025-12-23T00:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/unexpected-risks/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/unexpected-risks/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-12-23T00:04:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
     />
   </url>
   <url>
@@ -32,22 +64,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/posts/speed-up-ci-by-43-percent-in-2-days/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-12-22T10:47:46+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
     />
   </url>
   <url>
