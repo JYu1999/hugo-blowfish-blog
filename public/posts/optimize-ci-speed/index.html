@@ -1,0 +1,2538 @@
+<!doctype html>
+<html
+  lang="zh"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="zh-tw">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>兩天內，我讓公司 CI 速度快了 44 % &middot; 結語JYu 的筆記</title>
+    <meta name="title" content="兩天內，我讓公司 CI 速度快了 44 % &middot; 結語JYu 的筆記">
+  
+
+  
+  
+  
+    <meta name="keywords" content="技術,">
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/optimize-ci-speed/">
+  
+
+  
+  
+    <meta name="author" content="結語JYu">
+  
+  
+    
+      
+        
+          <link href="https://x.com/IamJYu" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://www.threads.com/@backend.cat" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://medium.com/@jyu1999" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://www.linkedin.com/in/chieh-yu-chan-123814190/" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/optimize-ci-speed/">
+  <meta property="og:site_name" content="結語JYu 的筆記">
+  <meta property="og:title" content="兩天內，我讓公司 CI 速度快了 44 %">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-22T10:47:46+08:00">
+    <meta property="article:modified_time" content="2025-12-22T10:47:46+08:00">
+    <meta property="article:tag" content="技術">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="兩天內，我讓公司 CI 速度快了 44 %">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.2028a88cfced6d5b344415a33ade070dc2df1b25ff170e8024bedc3074c0e07c6b5307558a78c2705c69e4ec42c7e8880eb7d2d87880470577c388a821481e89.css"
+    integrity="sha512-ICiojPztbVs0RBWjOt4HDcLfGyX/Fw6AJL7cMHTA4HxrUwdVinjCcFxp5OxCx&#43;iIDrfS2HiARwV3w4ioIUgeiQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.9df4fc14d50efcc9aa4cfc2b6f348e365f421f5ad491278f8f48c0360cf2f93f08882fda6da162d7ace8e5add57c2df4ac46bd3861306b1d4c452cd31f448d64.js"
+      integrity="sha512-nfT8FNUO/MmqTPwrbzSONl9CH1rUkSePj0jANgzy&#43;T8IiC/abaFi16zo5a3VfC30rEa9OGEwax1MRSzTH0SNZA=="
+      data-copy="複製"
+      data-copied="已複製"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "兩天內，我讓公司 CI 速度快了 44 %",
+    "headline": "兩天內，我讓公司 CI 速度快了 44 %",
+    
+    
+    "inLanguage": "zh-tw",
+    "url" : "http:\/\/localhost:1313\/posts\/optimize-ci-speed\/",
+    "author" : {
+      "@type": "Person",
+      "name": "結語JYu"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-12-22T10:47:46\u002b08:00",
+    "datePublished": "2025-12-22T10:47:46\u002b08:00",
+    
+    "dateModified": "2025-12-22T10:47:46\u002b08:00",
+    
+    "keywords": ["技術"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1213"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        快轉到主要內容
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          結語JYu 的筆記
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/tweets/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="碎碎念"
+  title="碎碎念">
+  
+    <span class="mr-1">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg></span>
+    </span>
+  
+  
+    <p class="text-base font-medium">
+      碎碎念
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/categories/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="分類"
+  title="Categories">
+  
+    <span class="mr-1">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 511.471"><path fill="currentColor" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"/></svg></span>
+    </span>
+  
+  
+    <p class="text-base font-medium">
+      分類
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/posts/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="文章列表"
+  title="Posts">
+  
+    <span class="mr-1">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M88 48C101.3 48 112 58.75 112 72V120C112 133.3 101.3 144 88 144H40C26.75 144 16 133.3 16 120V72C16 58.75 26.75 48 40 48H88zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96C160 78.33 174.3 64 192 64H480zM480 224C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H192C174.3 288 160 273.7 160 256C160 238.3 174.3 224 192 224H480zM480 384C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416C160 398.3 174.3 384 192 384H480zM16 232C16 218.7 26.75 208 40 208H88C101.3 208 112 218.7 112 232V280C112 293.3 101.3 304 88 304H40C26.75 304 16 293.3 16 280V232zM88 368C101.3 368 112 378.7 112 392V440C112 453.3 101.3 464 88 464H40C26.75 464 16 453.3 16 440V392C16 378.7 26.75 368 40 368H88z"/></svg>
+</span>
+    </span>
+  
+  
+    <p class="text-base font-medium">
+      文章列表
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/tags/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="標籤"
+  title="Tags">
+  
+    <span class="mr-1">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M48 32H197.5C214.5 32 230.7 38.74 242.7 50.75L418.7 226.7C443.7 251.7 443.7 292.3 418.7 317.3L285.3 450.7C260.3 475.7 219.7 475.7 194.7 450.7L18.75 274.7C6.743 262.7 0 246.5 0 229.5V80C0 53.49 21.49 32 48 32L48 32zM112 176C129.7 176 144 161.7 144 144C144 126.3 129.7 112 112 112C94.33 112 80 126.3 80 144C80 161.7 94.33 176 112 176z"/></svg>
+</span>
+    </span>
+  
+  
+    <p class="text-base font-medium">
+      標籤
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="搜尋 (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="搜尋 (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/tweets/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="碎碎念"
+    title="碎碎念">
+    
+      <div class="mr-2">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg></span>
+      </div>
+    
+    
+      <p class="text-bg font-bg">
+        碎碎念
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/categories/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="分類"
+    title="Categories">
+    
+      <div class="mr-2">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 511.471"><path fill="currentColor" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"/></svg></span>
+      </div>
+    
+    
+      <p class="text-bg font-bg">
+        分類
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="文章列表"
+    title="Posts">
+    
+      <div class="mr-2">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M88 48C101.3 48 112 58.75 112 72V120C112 133.3 101.3 144 88 144H40C26.75 144 16 133.3 16 120V72C16 58.75 26.75 48 40 48H88zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96C160 78.33 174.3 64 192 64H480zM480 224C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H192C174.3 288 160 273.7 160 256C160 238.3 174.3 224 192 224H480zM480 384C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416C160 398.3 174.3 384 192 384H480zM16 232C16 218.7 26.75 208 40 208H88C101.3 208 112 218.7 112 232V280C112 293.3 101.3 304 88 304H40C26.75 304 16 293.3 16 280V232zM88 368C101.3 368 112 378.7 112 392V440C112 453.3 101.3 464 88 464H40C26.75 464 16 453.3 16 440V392C16 378.7 26.75 368 40 368H88z"/></svg>
+</span>
+      </div>
+    
+    
+      <p class="text-bg font-bg">
+        文章列表
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/tags/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="標籤"
+    title="Tags">
+    
+      <div class="mr-2">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M48 32H197.5C214.5 32 230.7 38.74 242.7 50.75L418.7 226.7C443.7 251.7 443.7 292.3 418.7 317.3L285.3 450.7C260.3 475.7 219.7 475.7 194.7 450.7L18.75 274.7C6.743 262.7 0 246.5 0 229.5V80C0 53.49 21.49 32 48 32L48 32zM112 176C129.7 176 144 161.7 144 144C144 126.3 129.7 112 112 112C94.33 112 80 126.3 80 144C80 161.7 94.33 176 112 176z"/></svg>
+</span>
+      </div>
+    
+    
+      <p class="text-bg font-bg">
+        標籤
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
+  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+      
+      
+      
+      
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+      
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        兩天內，我讓公司 CI 速度快了 44 %
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-12-22T10:47:46&#43;08:00">2025/12/22</time>
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/%E6%8A%80%E8%A1%93/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    技術
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="結語JYu"
+        src="/img/author_hu_9c7b4603131a668f.png"
+        data-zoom-src="/img/author.png">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        作者
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        結語JYu
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">我是結語JYu</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://x.com/IamJYu"
+          target="_blank"
+          aria-label="X-Twitter"
+          title="X-Twitter"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.threads.com/@backend.cat"
+          target="_blank"
+          aria-label="Threads"
+          title="Threads"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg></span></span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://medium.com/@jyu1999"
+          target="_blank"
+          aria-label="Medium"
+          title="Medium"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+</span></span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.linkedin.com/in/chieh-yu-chan-123814190/"
+          target="_blank"
+          aria-label="Linkedin"
+          title="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#結果">結果</a></li>
+    <li><a href="#緣起">緣起</a></li>
+    <li><a href="#資源分析">資源分析</a></li>
+    <li><a href="#ci-分析">CI 分析</a>
+      <ul>
+        <li><a href="#job-流程">Job 流程</a></li>
+        <li><a href="#主要瓶頸分析">主要瓶頸分析</a></li>
+        <li><a href="#為什麼-phpunit-慢">為什麼 PHPUnit 慢？</a></li>
+      </ul>
+    </li>
+    <li><a href="#實際優化">實際優化</a>
+      <ul>
+        <li><a href="#feature-test-3">Feature Test 3</a></li>
+        <li><a href="#feature-test-4">Feature Test 4</a></li>
+        <li><a href="#feature-test-2">Feature Test 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#結語">結語</a></li>
+    <li><a href="#遺珠之憾">遺珠之憾</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#結果">結果</a></li>
+    <li><a href="#緣起">緣起</a></li>
+    <li><a href="#資源分析">資源分析</a></li>
+    <li><a href="#ci-分析">CI 分析</a>
+      <ul>
+        <li><a href="#job-流程">Job 流程</a></li>
+        <li><a href="#主要瓶頸分析">主要瓶頸分析</a></li>
+        <li><a href="#為什麼-phpunit-慢">為什麼 PHPUnit 慢？</a></li>
+      </ul>
+    </li>
+    <li><a href="#實際優化">實際優化</a>
+      <ul>
+        <li><a href="#feature-test-3">Feature Test 3</a></li>
+        <li><a href="#feature-test-4">Feature Test 4</a></li>
+        <li><a href="#feature-test-2">Feature Test 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#結語">結語</a></li>
+    <li><a href="#遺珠之憾">遺珠之憾</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h2 class="relative group">結果
+    <div id="結果" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%b5%90%e6%9e%9c" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<ul>
+<li>
+<p>CI 流程原平均時間：12 minutes 20 seconds</p>
+<ul>
+<li>
+<p>11 minutes 17 seconds</p>
+</li>
+<li>
+<p>12 minutes 38 seconds</p>
+</li>
+<li>
+<p>13 minutes 24 seconds</p>
+</li>
+<li>
+<p>13 minutes 15 seconds</p>
+</li>
+<li>
+<p>11 minutes 9 seconds</p>
+</li>
+</ul>
+</li>
+<li>
+<p>CI 流程改善後平均時間：</p>
+<ul>
+<li>7 minutes 07 seconds</li>
+</ul>
+</li>
+</ul>
+
+<h2 class="relative group">緣起
+    <div id="緣起" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%b7%a3%e8%b5%b7" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<p>我們公司一直以來都有 CI 流程，主要是在 Merge 之前，執行一些單元測試，和檢查套件是否過期之類的。</p>
+<p>最近因為公司進行了一些人員異動，讓我明確感受到：「我們好像花很多時間在等 CI 流程結束。」</p>
+<p>例如前後端共同開發時，前端要接 API，那就要後端的 Branch 先 Merge 進去才行。而就算後端已經做完，也需要等 CI 流程執行完。</p>
+<p>或是後端一起開發，但有一個兩邊都需要的功能，且這個功能又不太好 Cherry Pick 出來，這時候也只好等另外一個人 Merge，然後又要等 CI 流程。</p>
+<p>如果每次 CI 都能成功倒還好，有些時候是失敗，結果又要花時間 Debug，然後等待它重跑一次。</p>
+<p>整體來看，CI 流程雖然有其好處，但目前來說會帶來很多的等待時間，而且影響的幅度可能會隨著團隊規模增加而愈來愈大。</p>
+<p>最近我們剛好有一段「農閒時間」，於是我就主動跟主管提出，我想來優化 CI 流程試試看。</p>
+<hr>
+
+<h2 class="relative group">資源分析
+    <div id="資源分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%b3%87%e6%ba%90%e5%88%86%e6%9e%90" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<p>在開始實作之前，先來對整個狀況進行盤點：</p>
+<ul>
+<li>
+<p>目前 CI 流程執行時間落在 11 ~ 13 min 左右</p>
+</li>
+<li>
+<p>我只有 3 天的時間可以執行這個任務，而且愈快完成愈好</p>
+</li>
+<li>
+<p>在此之前，我對 gitlab CI 完全 0 經驗</p>
+</li>
+</ul>
+<p>盤點完上述資源之後，我大概整理出了幾個方向：</p>
+<ul>
+<li>
+<p>因為時間和（我的）經驗有限，我只能專注於<strong>影響最大</strong>的和<strong>最容易調整</strong>的。有些需要深入研究 Gitlab CI 機制的調整，可能要先跳過。</p>
+</li>
+<li>
+<p>我希望能減少 50 % 的 CI 時間</p>
+</li>
+</ul>
+<hr>
+
+<h2 class="relative group">CI 分析
+    <div id="ci-分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#ci-%e5%88%86%e6%9e%90" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Job 流程
+    <div id="job-流程" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#job-%e6%b5%81%e7%a8%8b" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>要優化 CI 速度，首先要知道的是目前究竟慢在哪裡。</p>
+<p>因此我去看了最近兩次的 CI 流程，確認各個階段的時間。</p>
+<p>因為怕涉及公司機密，這裡就不寫出實際 Log，只大概整理一下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Stage</th>
+          <th>Job 1</th>
+          <th>Job 2</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Preparing the &ldquo;docker&rdquo; executor</strong></td>
+          <td>14</td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td><strong>Preparing environment</strong></td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>Getting source from Git repository</strong></td>
+          <td>8</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td><strong>Restoring cache</strong></td>
+          <td>10</td>
+          <td>11</td>
+      </tr>
+      <tr>
+          <td><strong>Executing &ldquo;step_script&rdquo; stage of the job script</strong></td>
+          <td>593</td>
+          <td>686</td>
+      </tr>
+      <tr>
+          <td><strong>Saving cache for successful job</strong></td>
+          <td>48</td>
+          <td>36</td>
+      </tr>
+      <tr>
+          <td><strong>Cleaning up project directory and file based variables</strong></td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>總計時長*</strong></td>
+          <td>11 minutes 17 seconds</td>
+          <td>12 minutes 38 seconds</td>
+      </tr>
+  </tbody>
+</table>
+<p>*總計時長是取 Gitlab Pipeline 上面的 Duration，而不是把上面數字加總，所以可能會有些微誤差。</p>
+<p>從上表可以明顯看到：瓶頸基本上就是 <strong>Executing &ldquo;step_script&rdquo; stage of the job script</strong>，因此這個就是主要要優化的目標。</p>
+
+<h3 class="relative group">主要瓶頸分析
+    <div id="主要瓶頸分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%bb%e8%a6%81%e7%93%b6%e9%a0%b8%e5%88%86%e6%9e%90" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>一樣先來看看 <strong>Executing &ldquo;step_script&rdquo; stage of the job script</strong> 到底為什麼慢。首先來看那看哪裡面究竟做了什麼事情（下表由 AI 產生）：</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>階段</strong></th>
+          <th><strong>指令</strong></th>
+          <th><strong>詳細功能說明</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>安全性檢查</strong></td>
+          <td><code>sudo composer self-update --2</code></td>
+          <td>將 Composer 升級至第 2 版，確保相容性與安全性。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>composer config --global audit.abandoned report</code></td>
+          <td>設定 Composer 全域設定，遇到已被捨棄的套件時發出報告。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>composer audit</code></td>
+          <td>掃描 <code>composer.json</code> 中的套件是否有已知的安全漏洞。</td>
+      </tr>
+      <tr>
+          <td><strong>安裝依賴</strong></td>
+          <td><code>composer install --prefer-dist...</code></td>
+          <td>安裝 PHP 後端套件，並優化安裝速度（不顯示進度條、不互動）。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>yarn install</code></td>
+          <td>安裝前端 JavaScript 依賴套件。</td>
+      </tr>
+      <tr>
+          <td><strong>資料庫基礎建設</strong></td>
+          <td><code>sudo apt-get install -y mysql-client</code></td>
+          <td>在環境中安裝 MySQL 客戶端工具，以便執行 SQL 指令。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>mysql ... CREATE DATABASE...</code></td>
+          <td>建立 <code>testing</code> 與 <code>testing_sub</code> 兩個測試用資料庫。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>mysql ... CREATE USER...</code></td>
+          <td>建立一個名為 <code>user</code> 的資料庫使用者。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>mysql ... GRANT ALL PRIVILEGES...</code></td>
+          <td>賦予 <code>user</code> 對於兩個測試資料庫的所有操作權限。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>mysql ... &lt; mysql_sub-schema.sql</code></td>
+          <td>將預先定義好的 SQL Schema 匯入到 <code>testing_sub</code> 資料庫。</td>
+      </tr>
+      <tr>
+          <td><strong>Laravel 環境設定</strong></td>
+          <td><code>cp .env.testing.example .env</code></td>
+          <td>複製測試環境變數範本，產生正式的 <code>.env</code> 設定檔。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>php artisan key:generate</code></td>
+          <td>產生 Laravel 應用程式加密金鑰。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>php artisan config:cache</code></td>
+          <td>將設定檔寫入快取，以確保測試時讀取的是正確的環境變數。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>php artisan migrate --seed</code></td>
+          <td>執行資料庫遷移（建表）並寫入測試用的初始資料（Seeding）。</td>
+      </tr>
+      <tr>
+          <td><strong>執行測試</strong></td>
+          <td><code>./vendor/phpunit/phpunit/phpunit...</code></td>
+          <td>執行 <strong>PHPUnit</strong> 進行後端功能測試，並將錯誤輸出至標準錯誤流。</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>yarn test</code></td>
+          <td>執行前端測試（通常是 Jest 或 Vitest）。</td>
+      </tr>
+  </tbody>
+</table>
+<p>不過因為這裡面不是每個步驟都有寫時間，所以我這邊直接點出執行最久的，就是 <strong>PHPUnit 測試</strong>。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Job 1</th>
+          <th>Job 2</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PHPUnit 測試時間</td>
+          <td>09:06.684</td>
+          <td>10:34.911</td>
+      </tr>
+      <tr>
+          <td>Stage 總時間</td>
+          <td>593 sec</td>
+          <td>686 sec</td>
+      </tr>
+      <tr>
+          <td>CI 流程總時間</td>
+          <td>11 minutes 17 seconds</td>
+          <td>12 minutes 38 seconds</td>
+      </tr>
+      <tr>
+          <td>占 Stage 總時長比</td>
+          <td>92.1%</td>
+          <td>92.6%</td>
+      </tr>
+      <tr>
+          <td>占 Job 總時長比</td>
+          <td>80.6%</td>
+          <td>83.6%</td>
+      </tr>
+  </tbody>
+</table>
+<p>很明顯 PHPUnit 就是這次 CI 優化的最主要目標。</p>
+
+<h3 class="relative group">為什麼 PHPUnit 慢？
+    <div id="為什麼-phpunit-慢" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%82%ba%e4%bb%80%e9%ba%bc-phpunit-%e6%85%a2" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>所以為什麼 PHPUnit 會執行這麼久？</p>
+<p>我嘗試在本地執行測試，基本上每個測試 Function，大概在 0.1s 以內就能執行完。但我發現有幾個 Test 異常的久：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">...前略...
+</span></span><span class="line"><span class="cl">PASS  Tests\Feature\FeatureTest1
+</span></span><span class="line"><span class="cl">  ✓ TestFunction1                                                                                                      4.92s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.03s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.03s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.03s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.45s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.33s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.73s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.19s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.18s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.20s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.25s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.22s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.17s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.16s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.69s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.16s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.25s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.15s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.18s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.15s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.16s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.16s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.22s  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   PASS  Tests\Feature\FeatureTest2
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.15s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.14s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.97s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.96s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction2                                                                                                    6.21s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.50s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.34s  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   PASS  Tests\Feature\FeatureTest3
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.16s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.15s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction3                                                                                                    6.72s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction4                                                                                                    6.66s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction5                                                                                                    6.71s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction6                                                                                                    6.70s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction7                                                                                                    6.77s  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   PASS  Tests\Feature\FeatureTest4
+</span></span><span class="line"><span class="cl">  ✓ TestFunction8                                                                                                    6.67s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction9                                                                                                    8.85s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction10                                                                                                   8.92s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction11                                                                                                   8.96s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction12                                                                                                   9.03s  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   PASS  Tests\Feature\FeatureTest5
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.48s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.25s  
+</span></span><span class="line"><span class="cl">  ✓ ...                                                                                                               0.12s  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   PASS  Tests\Feature\FeatureTest6
+</span></span><span class="line"><span class="cl">  ✓ TestFunction13                                                                                                   2.85s  
+</span></span><span class="line"><span class="cl">  ✓ TestFunction14                                                                                                   2.96s
+</span></span></code></pre></div><p>這樣看就很明顯了，Feature Test 3 和 Feature Test 4 的執行時間完全不正常，另外 Feature Test 2 也有一個超過 6 秒的。</p>
+<p>可別小看 6 秒，本地 6 秒到 Gitlab Runner 上，可能會被放大好幾倍。</p>
+<p>我本地測試大概 130 秒左右就能執行完，相比上面執行 600 秒，差異高達 4 倍以上。</p>
+<p>於是這些超過 6 秒的測試就成為我的首要優化目標。</p>
+<p>至於 6 秒以內的，由於上面提到的「時間有限」，因此就不作為主要目標來執行。</p>
+<hr>
+
+<h2 class="relative group">實際優化
+    <div id="實際優化" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%af%a6%e9%9a%9b%e5%84%aa%e5%8c%96" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<p>那我們就來一起看看，這些測試到底做了什麼事情，導致速度如此悲慘吧。</p>
+
+<h3 class="relative group">Feature Test 3
+    <div id="feature-test-3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-test-3" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>我們先來看一下 Feature Test 3 做了什麼事情：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FeatureTest3</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">use</span> <span class="nx">WithFaker</span><span class="p">,</span> <span class="nx">RefreshDatabase</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warpUpCache</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 建立資料並存入 Cache
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">setUp</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">parent</span><span class="o">::</span><span class="na">setUp</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Cache
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// withoutMiddleware
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Seeder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction3</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction4</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction5</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction6</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction7</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$caches</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warpUpCache</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>大概說明一下，這個被測試 Function，資料是去拿 Cache DB 裡面的。</p>
+<p>所以我們在測試的時候，會用 Factory 建立資料並存入 DB，再存入 Cache，也就是 <code>warmUpCache()</code> 在做的事情。</p>
+<p>而關鍵就在於，因為商業邏輯很複雜，所以 <code>warmUpCache()</code> 要建立的資料很多，導致每次執行都要很久。</p>
+<p>那有沒有可能優化 <code>warmUpCache()</code> 呢？有可能，但裡面商業邏輯很複雜，時間限制下很難做到。</p>
+<p>此時我的思考方向變成：既然無法優化 <code>warmUpCache()</code> 本身的速度，那是否可以減少其執行的次數呢？經過一番研究之後我發現：</p>
+<ol>
+<li>
+<p>因為資料是直接從 Cache 拿，和 DB 無關</p>
+</li>
+<li>
+<p>每個 Test Function 要測試的東西是獨立的</p>
+</li>
+</ol>
+<p>所以每個 Test 都去 Refresh Database、執行 Seeder、清空 Cache、重新產生 Cache 根本就是多餘的步驟。</p>
+<p>於是我寫了一個邏輯：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FeatureTest3</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">use</span> <span class="nx">WithFaker</span><span class="p">,</span> <span class="nx">RefreshDatabase</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">protected</span> <span class="k">static</span> <span class="k">array</span> <span class="nv">$warmedUpCaches</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warpUpCache</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 若已經暖機過且 Redis 仍然有對應快取，就直接取得目前 Redis 內的版本，
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 並搭配先前計算好的標籤集合，避免重複建資料與跑 Command
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nx">self</span><span class="o">::</span><span class="nv">$warmedUpCaches</span><span class="p">[</span><span class="nv">$group</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$redis</span><span class="o">-&gt;</span><span class="na">exists</span><span class="p">(</span><span class="nv">$cacheVersionKey</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$cacheVersion</span> <span class="o">=</span> <span class="nv">$redis</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="nv">$cacheVersionKey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$cacheVersion</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">self</span><span class="o">::</span><span class="nv">$warmedUpCaches</span><span class="p">[</span><span class="nv">$group</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// 建立資料並存入 Cache
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">setUp</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">parent</span><span class="o">::</span><span class="na">setUp</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Cache -&gt; 改成不清空 Cache，所有 Function 共用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// withoutMiddleware
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Seeder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>ok，來看看結果差多少吧～！</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"> PASS  Tests\Feature\FeatureTest3
+</span></span><span class="line"><span class="cl">✓ ...                                                                                                               3.05s  
+</span></span><span class="line"><span class="cl">✓ ...                                                                                                               0.18s  
+</span></span><span class="line"><span class="cl">✓ TestFunction3                                                                                                    7.13s  
+</span></span><span class="line"><span class="cl">✓ TestFunction4                                                                                                    6.87s  
+</span></span><span class="line"><span class="cl">✓ TestFunction5                                                                                                    0.14s  
+</span></span><span class="line"><span class="cl">✓ TestFunction6                                                                                                    0.13s  
+</span></span><span class="line"><span class="cl">✓ TestFunction7                                                                                                    0.13s  
+</span></span></code></pre></div><p>基本上從 34s 縮短到 17.5 秒，縮短幅度接近一半！</p>
+<p>那實際 CI 流程呢？看了一下 Pipeline，時間縮短為 9 minutes 13 seconds，和原本平均 12 minutes 20 seconds 差異超過 3 分鐘。</p>
+<p>可能有人會問：欸還有兩個 Test 超過 6 秒欸。這邊因為涉及比較多商業邏輯，所以就不特別解釋，只能說這個是預期內的結果。</p>
+<p>這個測試的優化就先暫時告一段落，當然眼尖的讀者會發現：那 Refresh DB 和 Seeder 重複執行的問題還沒解決啊？</p>
+<p>但如同我一直強調的前提：我時間有限，所以應該先針對那些影響最大的議題。</p>
+<p>在這個測試，看起來 Refresh DB 和 Seeder 造成的影響沒有到很大，所以就暫時先忽略。</p>
+
+<h3 class="relative group">Feature Test 4
+    <div id="feature-test-4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-test-4" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>ok，接下來看 Feature Test 4，一樣先了解一下大致的架構：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FeatureTest4</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">use</span> <span class="nx">WithFaker</span><span class="p">,</span> <span class="nx">RefreshDatabase</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">setUp</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">parent</span><span class="o">::</span><span class="na">setUp</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Cache
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// withoutMiddleware
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Seeder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpSearchEngine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction8</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction9</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction10</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction11</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction12</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warmUpSearchEngine</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Search Engine
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 建立資料
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// 存入 Search Engine
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Sleep 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>看起來和 Feature Test 3 很像，應該可以直接套用 Feature Test 3 的解法？</p>
+<p>很遺憾，答案是不行。因為這個待測 Function 有涉及實際資料庫處理，如果改成單純從 Search Engine 拿資料，那測試會錯。</p>
+<p>不過有了上面的經驗，我們應該可以直接發現，每個 Function 都要執行 <code>warmUpSearchEngine()</code>，那問題一定就是出在這個 Function！</p>
+<p>果不其然在裡面看到了 <code>sleep(5)</code> 這個奇怪的邏輯，每個測試都要強制睡 5 秒，這個不慢才奇怪。除了睡 5 秒以外，建立資料也是花了不少時間。</p>
+<p>那可以把 <code>sleep(5)</code> 拿掉嗎？很可惜不行，是因為 import 到搜尋引擎的操作是異步的，所以上面 <code>存入 Search Engine</code> 執行完，不代表資料已成功同步到搜尋引擎內，會需要等待一小段時間讓搜尋引擎完成 import job。</p>
+<p>拿掉不行，那可以縮短嗎？很可惜也不行，如果再繼續縮短的話，那有機率來不及 import。</p>
+<p>那建立資料可以重構嗎？跟 Feature Test 3 一樣，這裡建立資料的邏輯很複雜，很難優化。</p>
+<p>ok，那要走老路了，有可能盡可能減少 <code>warmUpSearchEngine()</code> 的執行次數嗎？</p>
+<p>答案是可以的！原因是因為雖然每個測試都會依賴資料庫，但每個測試是獨立的，所以用一模一樣的資料沒關係！</p>
+<p>所以我進行了簡單的重構：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FeatureTest4</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">use</span> <span class="nx">WithFaker</span><span class="p">,</span> <span class="nx">RefreshDatabase</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">setUp</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">parent</span><span class="o">::</span><span class="na">setUp</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Cache
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// withoutMiddleware
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Seeder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">warmUpSearchEngine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">testAll</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertFunction8</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertFunction9</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertFunction10</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertFunction11</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertFunction12</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">assertFunction8</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">assertFunction9</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">assertFunction10</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">assertFunction11</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">assertFunction12</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// assert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">public</span> <span class="k">function</span> <span class="nf">warmUpSearchEngine</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空 Search Engine
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 建立資料
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// 存入 Search Engine
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Sleep 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>把所有的 Test Function 寫進同一個 Function，就可以最簡單暴力的解決了～！</p>
+<p>來看一下實際優化多少吧：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"> <span class="nx">PASS</span>  <span class="nx">Tests\Feature\FeatureTest4</span>
+</span></span><span class="line"><span class="cl"><span class="nx">✓</span> <span class="nx">all</span>                                                                                                                                           <span class="mf">11.75</span><span class="nx">s</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">Tests</span><span class="o">:</span>    <span class="mi">1</span> <span class="nx">passed</span> <span class="p">(</span><span class="mi">1819</span> <span class="nx">assertions</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Duration</span><span class="o">:</span> <span class="mf">12.02</span><span class="nx">s</span>
+</span></span></code></pre></div><p>直接從 42 秒優化成 12 秒，差距接近 30 秒。</p>
+<p>線上的話從 Feature Test 3 優化完的結果（9 minutes 13 seconds），變成 7 minutes 51 seconds，又減少了接近 1.5 分鐘！</p>
+<p>可能有厲害的工程師會說：這什麼鬼，到時候錯誤不是很難看出來嗎？</p>
+<p>這個我也有想到，但還是選擇這個做法的原因是：</p>
+<ul>
+<li>
+<p>這個待測試 Function 很少動，我進公司兩年多從來沒改過</p>
+</li>
+<li>
+<p>這個測試會錯，通常是 Search Engine 本身的問題，不是邏輯的問題</p>
+</li>
+<li>
+<p>公司目前正在進行一系列的重構，這個測試 Function 極有可能被淘汰</p>
+</li>
+</ul>
+<p>基於上述兩個原因，再綜合評估我可以執行這個任務的時間、後續效益，我覺得後續 Debug 的風險遠小於其效益，且這個風險也不值得我花時間去處理。</p>
+
+<h3 class="relative group">Feature Test 2
+    <div id="feature-test-2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#feature-test-2" aria-label="定位點">#</a>
+    </span>
+    
+</h3>
+<p>其實很單純，主要是 <code>TestFunction2</code> 裡面執行了：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">testFunction2</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$creators</span> <span class="o">=</span> <span class="nx">Creator</span><span class="o">::</span><span class="na">factory</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">count</span><span class="p">(</span><span class="mi">301</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>為什麼這行會這麼久？主要是因為 Creator 會有很多其他的關聯資料，會由 Factory 一併建立出，這部分涉及公司的核心商業邏輯，暫時無法變動。</p>
+<p>那再來就是為什麼需要建立這麼多創作者？是因為待測試 Command 裡面有個邏輯是要測試只取得資料庫的前 300 筆資料。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Creator</span><span class="o">::</span><span class="na">where</span><span class="p">(</span><span class="nx">xxx</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">-&gt;</span><span class="na">limit</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">-&gt;</span><span class="na">get</span><span class="p">()</span>
+</span></span></code></pre></div><p>對這個測試，其實我想了蠻多方式重構，但都因為一些原因無法執行：</p>
+<ul>
+<li>
+<p>不實際建立資料：這個不行，因為這樣就測不到待測試 Command</p>
+</li>
+<li>
+<p>跟其他 Function 建立 Creator 的部分整合：因為這個 Test 的其他 Function 也有建立一些 Creator，那是不是可以大家共用？這個後來也被我自己否決了，原因是這樣重構蠻複雜的，而且各個 Function 可能會耦合在一起。</p>
+</li>
+</ul>
+<p>那怎麼辦呢？</p>
+<p>……</p>
+<p>此時我突然靈光一現：是不是可以考慮移除這個測試？</p>
+<p>為什麼這樣說呢？因為其實這個測試的邏輯是大幅和其他測試重複的，唯一的差異就是這個 300 的 Limit。</p>
+<p>所以看起來的好處就只有：避免別人改到這個 300 的 Limit？</p>
+<p>但這裡改到看起來也不會有任何影響，因為我去看前端的程式碼，也沒有對 300 這個上線進行任何的依賴。</p>
+<p>於是經過評估之後，我認為這個測試的實際效益太低了，於是將其刪除。</p>
+<p>優化的結果是：</p>
+<ul>
+<li>
+<p>本地從 6.21 秒變成 0 秒</p>
+</li>
+<li>
+<p>線上的話從 Feature Test 4 優化完的結果（7 minutes 51 seconds），變成 7 minutes 07 seconds，又減少了 45 秒左右！</p>
+</li>
+</ul>
+<hr>
+
+<h2 class="relative group">結語
+    <div id="結語" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%b5%90%e8%aa%9e" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<p>至此優化暫時結束，從原本的 12.5 分鐘左右，大幅減低至 7 分鐘出頭，優化了將近 45 %～</p>
+<p>不知道讀者覺得如何，歡迎跟我分享XD</p>
+<p>這是我第一次執行 CI 優化的任務，老實說蠻好玩的。</p>
+<p>而身為開發者，不只是好玩而已，我知道 CI 速度優化可以提高整個開發團隊的效能。</p>
+<hr>
+
+<h2 class="relative group">遺珠之憾
+    <div id="遺珠之憾" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%81%ba%e7%8f%a0%e4%b9%8b%e6%86%be" aria-label="定位點">#</a>
+    </span>
+    
+</h2>
+<p>有一些在過程中我有 Survey 到的做法，但我自己評估後覺得效益相對還好，而且比較複雜。這邊紀錄一下：</p>
+<ul>
+<li>
+<p>改善 Job：似乎是可以把前後端測試拆開來，進行平行處理。但其實前端測試才 3 秒左右，我覺得拆分效益極低。</p>
+</li>
+<li>
+<p>測試平行處理：讓 PHP 所有測試用不同的 Process 去處理，但因為舊有技術債，我們不少測試都有操作資料庫，這個方式可能會出問題（但我沒實際測試）</p>
+</li>
+<li>
+<p>Migration Dump：應該可以發現我們使用了一些 Refresh Database，每次都會重新執行 Migration，而我們 Migration 有 100 多個。但這個因為一些技術問題，而且實際測試收益沒有預想中的大，所以最終沒有採用</p>
+</li>
+</ul>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_posts/optimize-ci-speed/index.md"
+          data-oid-likes="likes_posts/optimize-ci-speed/index.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/mcp-first-experience/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;MCP 初體驗
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2025-12-20T09:00:00&#43;08:00">2025/12/20</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="捲動到頁頂"
+    title="捲動到頁頂">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      
+      
+        
+      
+      
+      
+      
+      <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 overflow-x-auto py-2">
+        <ul class="flex list-none flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href=""
+                title="">
+                
+                
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          結語JYu
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        以 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 製作
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜尋"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="關閉 (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+
+    
+    
+      <style>
+        .support-widget-container {
+          position: fixed;
+          bottom: 18px;
+          
+            right: 18px;
+          
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 12px;
+        }
+
+        .support-main-button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          
+          background: linear-gradient(135deg, #FF5F5F 0%, #FF8E53 100%);
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(255, 95, 95, 0.4);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+          border: none;
+          overflow: visible;
+        }
+
+        .support-main-button:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(255, 95, 95, 0.5);
+        }
+
+        .support-widget-container.expanded .support-main-button {
+          transform: rotate(45deg);
+        }
+
+        .support-main-button svg {
+          width: 28px;
+          height: 28px;
+          fill: white;
+          transition: transform 0.3s;
+        }
+
+         
+        .support-main-button.clicked {
+          animation: heartBeat 0.6s ease-in-out;
+        }
+
+        @keyframes heartBeat {
+          0%, 100% { transform: scale(1); }
+          10% { transform: scale(0.85); }
+          20% { transform: scale(1.15); }
+          30% { transform: scale(1.05); }
+          40% { transform: scale(1.12); }
+          50% { transform: scale(1.08); }
+        }
+
+         
+        .support-ripple {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.6);
+          pointer-events: none;
+          animation: ripple 0.8s ease-out;
+        }
+
+        @keyframes ripple {
+          from {
+            width: 0;
+            height: 0;
+            opacity: 1;
+          }
+          to {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+          }
+        }
+
+         
+        .support-particle {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          pointer-events: none;
+          animation: particle 1s ease-out forwards;
+        }
+
+        @keyframes particle {
+          0% {
+            transform: translate(0, 0) scale(1);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(0);
+            opacity: 0;
+          }
+        }
+
+         
+        .support-heart-bubble {
+          position: absolute;
+          font-size: 20px;
+          pointer-events: none;
+          user-select: none;
+          animation: heartBubble var(--duration) ease-out forwards;
+          transform-origin: center;
+        }
+
+        @keyframes heartBubble {
+          0% {
+            transform: translate(0, 0) scale(0) rotate(0deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          100% {
+            transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(var(--rotate));
+            opacity: 0;
+          }
+        }
+
+         
+        .support-widget-container.expanded .support-main-button::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: rgba(255, 95, 95, 0.3);
+          animation: pulse 1.5s ease-out infinite;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0;
+          }
+        }
+
+        .support-options {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .support-widget-container.expanded .support-options {
+          max-height: 200px;
+        }
+
+        .support-option {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 12px 16px;
+          background: white;
+          border-radius: 28px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+          color: #333;
+          font-size: 14px;
+          font-weight: 500;
+          white-space: nowrap;
+          transition: all 0.3s;
+          transform: scale(0.8);
+          opacity: 0;
+        }
+
+        .support-widget-container.expanded .support-option {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(1) {
+          transition-delay: 0.05s;
+        }
+
+        .support-widget-container.expanded .support-option:nth-child(2) {
+          transition-delay: 0.1s;
+        }
+
+        .support-option:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .support-option-icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        .support-option-icon.bmc {
+          background-color: #FFDD00;
+        }
+
+        .support-option-icon.portaly {
+          background-color: #FF5F5F;
+        }
+
+        .support-option-icon svg {
+          width: 14px;
+          height: 14px;
+          fill: white;
+        }
+
+        .support-option-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .support-option-title {
+          font-weight: 600;
+          color: #1a1a1a;
+        }
+
+        .support-option-currency {
+          font-size: 11px;
+          color: #666;
+        }
+
+         
+        @media (prefers-color-scheme: dark) {
+          .support-option {
+            background: rgba(38, 38, 38, 0.95);
+            color: #e5e5e5;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          .support-option-title {
+            color: #e5e5e5;
+          }
+
+          .support-option-currency {
+            color: #999;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .support-widget-container {
+            bottom: 16px;
+            
+              right: 16px;
+            
+          }
+
+          .support-main-button {
+            width: 52px;
+            height: 52px;
+          }
+
+          .support-main-button svg {
+            width: 26px;
+            height: 26px;
+          }
+
+          .support-option {
+            padding: 10px 14px;
+            font-size: 13px;
+          }
+
+          .support-option-icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      </style>
+
+      <div class="support-widget-container" id="supportWidget">
+        <div class="support-options">
+          
+          <a href="https://www.buymeacoffee.com/jyu1999" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="Buy Me a Coffee">
+            <div class="support-option-icon bmc">
+              <svg viewBox="0 0 884 1279" xmlns="http://www.w3.org/2000/svg">
+                <path d="M791.109 297.518L790.231 297L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z" fill="#0D0C22"/>
+                <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="#0D0C22"/>
+                <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.379 297.462 791.484 297.377Z" fill="#0D0C22"/>
+                <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="#0D0C22"/>
+                <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="#0D0C22"/>
+                <path d="M793.669 299.515L792.223 298.138L793.669 299.515Z" fill="#0D0C22"/>
+                <path d="M430.019 1186.18C428.864 1186.68 427.852 1187.46 427.076 1188.45L427.988 1187.87C428.608 1187.3 429.485 1186.63 430.019 1186.18Z" fill="#0D0C22"/>
+                <path d="M641.187 1144.63C641.187 1143.33 640.551 1143.57 640.705 1148.21C640.705 1147.84 640.86 1147.46 640.929 1147.1C641.015 1146.27 641.084 1145.46 641.187 1144.63Z" fill="#0D0C22"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">Buy Me a Coffee</span>
+              <span class="support-option-currency">💵 美金</span>
+            </div>
+          </a>
+          
+          
+          
+          <a href="https://portaly.cc/jyu1999/support" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="support-option"
+             aria-label="Portaly 贊助">
+            <div class="support-option-icon portaly">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12,12.5c-0.83,0-1.5-0.67-1.5-1.5c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5C13.5,11.83,12.83,12.5,12,12.5z M12,3 c-4.97,0-9,4.03-9,9H1l3.89,3.89L9,12H6c0-3.31,2.69-6,6-6s6,2.69,6,6s-2.69,6-6,6c-1.01,0-1.97-0.25-2.8-0.7l-1.46,1.46 C8.97,19.54,10.43,20,12,20c4.97,0,9-4.03,9-9S16.97,3,12,3z"/>
+              </svg>
+            </div>
+            <div class="support-option-text">
+              <span class="support-option-title">Portaly 贊助</span>
+              <span class="support-option-currency">💰 台幣</span>
+            </div>
+          </a>
+          
+        </div>
+
+        <button class="support-main-button" 
+                onclick="toggleSupportWidget(event)" 
+                aria-label="贊助選項"
+                type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </button>
+      </div>
+
+      <script>
+        function createRipple(button, x, y) {
+          const ripple = document.createElement('div');
+          ripple.className = 'support-ripple';
+          
+          const rect = button.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = '0px';
+          ripple.style.left = (x - rect.left) + 'px';
+          ripple.style.top = (y - rect.top) + 'px';
+          
+          button.appendChild(ripple);
+          
+          setTimeout(() => ripple.remove(), 800);
+        }
+
+        function createParticles(button, x, y) {
+          const colors = ['#FF5F5F', '#FF8E53', '#FFD93D', '#FF6B9D', '#C9EEFF'];
+          const particleCount = 12;
+          
+          for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'support-particle';
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            const rect = button.getBoundingClientRect();
+            const angle = (i / particleCount) * Math.PI * 2;
+            const velocity = 40 + Math.random() * 30;
+            const tx = Math.cos(angle) * velocity;
+            const ty = Math.sin(angle) * velocity;
+            
+            particle.style.left = (x - rect.left) + 'px';
+            particle.style.top = (y - rect.top) + 'px';
+            particle.style.setProperty('--tx', tx + 'px');
+            particle.style.setProperty('--ty', ty + 'px');
+            
+            button.appendChild(particle);
+            
+            setTimeout(() => particle.remove(), 1000);
+          }
+        }
+
+        function createHeartBubbles(button) {
+          const heartCount = 8;
+          const hearts = ['❤️', '💕', '💖', '💗', '💓', '💝'];
+          
+          for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'support-heart-bubble';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            
+            
+            const angle = (i / heartCount) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
+            const startRadius = 35;
+            const startX = Math.cos(angle) * startRadius;
+            const startY = Math.sin(angle) * startRadius;
+            
+            
+            const distance = 60 + Math.random() * 40;
+            const tx = Math.cos(angle) * distance + (Math.random() - 0.5) * 30;
+            const ty = Math.sin(angle) * distance - 40 - Math.random() * 20; 
+            const rotate = (Math.random() - 0.5) * 60; 
+            const duration = 1.5 + Math.random() * 0.5;
+            
+            heart.style.left = (28 + startX) + 'px';
+            heart.style.top = (28 + startY) + 'px';
+            heart.style.setProperty('--tx', tx + 'px');
+            heart.style.setProperty('--ty', ty + 'px');
+            heart.style.setProperty('--rotate', rotate + 'deg');
+            heart.style.setProperty('--duration', duration + 's');
+            
+            
+            heart.style.animationDelay = (i * 0.08) + 's';
+            
+            button.appendChild(heart);
+            
+            setTimeout(() => heart.remove(), (duration + 0.08 * i) * 1000);
+          }
+        }
+
+        function toggleSupportWidget(event) {
+          const widget = document.getElementById('supportWidget');
+          const button = event.currentTarget;
+          const rect = button.getBoundingClientRect();
+          const x = event.clientX;
+          const y = event.clientY;
+          
+          
+          widget.classList.toggle('expanded');
+          
+          
+          button.classList.add('clicked');
+          setTimeout(() => button.classList.remove('clicked'), 600);
+          
+          
+          createRipple(button, x, y);
+          
+          
+          if (widget.classList.contains('expanded')) {
+            createParticles(button, x, y);
+            createHeartBubbles(button);
+          }
+        }
+
+        
+        document.addEventListener('click', function(event) {
+          const widget = document.getElementById('supportWidget');
+          if (widget && !widget.contains(event.target)) {
+            widget.classList.remove('expanded');
+          }
+        });
+
+        
+        document.getElementById('supportWidget')?.addEventListener('click', function(event) {
+          event.stopPropagation();
+        });
+      </script>
+    
+
+    
+    
+  </body>
+</html>
+
