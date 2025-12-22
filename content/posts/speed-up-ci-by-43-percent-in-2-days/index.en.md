@@ -35,7 +35,7 @@ We hit a short “off-season,” so I pitched my manager on optimizing CI.
 Before touching code, I took stock:
 
 - Current CI runtime: ~11–13 minutes
-- I had 3 days for this task (the sooner, the better)
+- - I had at most 3 days to work on this task, so the sooner I could finish, the better.
 - I had zero experience with GitLab CI
 
 With that, I set some principles:
