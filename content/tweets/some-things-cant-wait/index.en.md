@@ -31,7 +31,7 @@ When I got up, I suddenly had a realization and wrote this article.
 
 Many things can be clarified with time, but needing to pee in the middle of the night isn't one of them.
 
-When you need to pee, you just have to pee.
+When you need to pee, you just have to pee, as soon as possible.
 
 Okay, this article is really pointless XD
 
