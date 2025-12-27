@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Tue, 23 Dec 2025 09:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tweets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Dec 2025 23:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tweets/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Convention Over Configuration</title>
+      <link>https://jyu1999.com/en/tweets/convention-over-configuration/</link>
+      <pubDate>Wed, 24 Dec 2025 23:00:00 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/tweets/convention-over-configuration/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Time Will Clarify Many Things, Except...</title>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Mon, 22 Dec 2025 10:47:46 +0800</lastBuildDate><atom:link href="https://jyu1999.com/tags/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Dec 2025 23:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/tags/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>遵從社群共識</title>
+      <link>https://jyu1999.com/tweets/convention-over-configuration/</link>
+      <pubDate>Wed, 24 Dec 2025 23:00:00 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/tweets/convention-over-configuration/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>從 12 分鐘到 7 分鐘：我在兩天內將公司 CI 時間減少 43% 的實戰紀錄</title>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Mon, 22 Dec 2025 10:47:46 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Dec 2025 23:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Convention Over Configuration</title>
+      <link>https://jyu1999.com/en/tweets/convention-over-configuration/</link>
+      <pubDate>Wed, 24 Dec 2025 23:00:00 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/tweets/convention-over-configuration/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days</title>
