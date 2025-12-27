@@ -99,19 +99,19 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/tweets/-dca-rethink/</loc>
+    <loc>https://jyu1999.com/tweets/dca-rethink/</loc>
     <lastmod>2025-12-21T21:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/-dca-rethink/"
+      href="https://jyu1999.com/en/tweets/dca-rethink/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/-dca-rethink/"
+      href="https://jyu1999.com/tweets/dca-rethink/"
     />
   </url>
   <url>
@@ -208,6 +208,22 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/let-it-go/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/roadmap-sh-update-project/</loc>
+    <lastmod>2025-12-12T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/roadmap-sh-update-project/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/roadmap-sh-update-project/"
     />
   </url>
   <url>
