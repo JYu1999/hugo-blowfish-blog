@@ -3,24 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://jyu1999.com/en/tweets/convention-over-configuration/</loc>
-    <lastmod>2025-12-24T23:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/convention-over-configuration/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/tweets/convention-over-configuration/"
-    />
-  </url>
-  <url>
     <loc>https://jyu1999.com/en/</loc>
-    <lastmod>2025-12-24T23:00:00+08:00</lastmod>
+    <lastmod>2025-12-25T23:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -35,8 +19,24 @@
     />
   </url>
   <url>
+    <loc>https://jyu1999.com/en/tweets/uncertainty-of-ai/</loc>
+    <lastmod>2025-12-25T23:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/uncertainty-of-ai/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/uncertainty-of-ai/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/en/tweets/</loc>
-    <lastmod>2025-12-24T23:00:00+08:00</lastmod>
+    <lastmod>2025-12-25T23:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +48,22 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/tweets/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/tweets/convention-over-configuration/</loc>
+    <lastmod>2025-12-24T23:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/convention-over-configuration/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/convention-over-configuration/"
     />
   </url>
   <url>
