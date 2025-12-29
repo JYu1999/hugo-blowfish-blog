@@ -5,6 +5,10 @@ draft: false
 tags: ["Reading", "AI"]
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 Recently, due to some circumstances, I wanted to start reading some high-quality technical books.
 
 However, after actually trying, I found that my attention span is very low, and I easily give up reading.

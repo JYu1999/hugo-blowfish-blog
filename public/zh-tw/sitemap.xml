@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/posts/</loc>
+    <lastmod>2025-12-29T08:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/posts/facing-info-anxiety-in-the-ai-era/</loc>
+    <lastmod>2025-12-29T08:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/posts/facing-info-anxiety-in-the-ai-era/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/posts/facing-info-anxiety-in-the-ai-era/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-12-29T08:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/tweets/uncertainty-of-ai/</loc>
     <lastmod>2025-12-25T23:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -16,22 +64,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/uncertainty-of-ai/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-12-25T23:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
     />
   </url>
   <url>
@@ -80,22 +112,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/some-things-cant-wait/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/posts/</loc>
-    <lastmod>2025-12-23T00:04:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/posts/"
     />
   </url>
   <url>
@@ -259,19 +275,19 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/tweets/strategy-to-read-difficult-books/</loc>
+    <loc>https://jyu1999.com/posts/strategy-to-read-difficult-books/</loc>
     <lastmod>2025-12-10T10:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://jyu1999.com/en/tweets/strategy-to-read-difficult-books/"
+      href="https://jyu1999.com/en/posts/strategy-to-read-difficult-books/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/strategy-to-read-difficult-books/"
+      href="https://jyu1999.com/posts/strategy-to-read-difficult-books/"
     />
   </url>
   <url>
