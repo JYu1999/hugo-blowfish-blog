@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2025-12-30T01:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/</loc>
+    <lastmod>2025-12-30T01:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/take-what-your-need/</loc>
+    <lastmod>2025-12-30T01:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/take-what-your-need/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/take-what-your-need/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/</loc>
     <lastmod>2025-12-29T08:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -35,22 +83,6 @@
     />
   </url>
   <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-12-29T08:30:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
-    />
-  </url>
-  <url>
     <loc>https://jyu1999.com/tweets/uncertainty-of-ai/</loc>
     <lastmod>2025-12-25T23:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -64,22 +96,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/tweets/uncertainty-of-ai/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/tweets/</loc>
-    <lastmod>2025-12-25T23:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/tweets/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/"
     />
   </url>
   <url>

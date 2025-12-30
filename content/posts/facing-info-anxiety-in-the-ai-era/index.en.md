@@ -5,6 +5,10 @@ draft: false
 tags: ["AI"]
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 This year (2025), I experienced significant career burnout.
 
 And I wasn’t the only one.
