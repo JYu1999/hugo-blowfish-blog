@@ -1,0 +1,166 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+% --- CHINESE & SERIF FONT SUPPORT ---
+\usepackage{fontspec}
+\usepackage[chinese-traditional, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{chinese-traditional}
+
+% Use system fonts: Times New Roman for English, Songti TC for Traditional Chinese
+% Songti TC (宋體-繁) provides a professional serif look similar to Times New Roman
+\babelfont{rm}{Times New Roman}
+\babelfont{sf}{Times New Roman}
+
+% Assign Songti TC (宋體-繁) for Traditional Chinese text
+\babelfont[chinese-traditional]{rm}{Songti TC}
+\babelfont[chinese-traditional]{sf}{Songti TC}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape 詹傑宇 (Chieh-Yu Chan)} \\ \vspace{3pt}
+    \small
+    Location: Tainan, Taiwan $|$ 
+    Email: \href{mailto:jk29666338@gmail.com}{jk29666338@gmail.com} $|$ 
+    Website: \href{https://jyu1999.com/}{jyu1999.com}
+\end{center}
+
+%----------- SUMMARY -----------
+\section{Professional Summary}
+\vspace{3pt}
+\small{Results-oriented \textbf{Backend Developer and Technical Mentor} with over 3 years of experience specializing in PHP/Laravel and Ruby on Rails. A \textbf{problem solver} with a strong sense of \textbf{ownership}, excelling at translating business requirements into scalable architectures. Proven track record in delivering high-value outcomes, including a 100\% boost in database performance and a 43\% reduction in CI/CD cycles.}
+
+%----------- SKILLS -----------
+\section{Technical Skills}
+ \vspace{3pt}
+ \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages \& Frameworks:}{ PHP (Laravel), Ruby (Ruby on Rails), SQL} \\ \vspace{2pt}
+        \textbf{Databases \& Caching:}{ MySQL, Redis} \\ \vspace{2pt}
+        \textbf{DevOps \& Tools:}{ Docker, GitLab CI/CD, Linux, Git, Unit/Integration Testing} \\ \vspace{2pt}
+        \textbf{Soft Skills:}{ Business Logic Analysis, System Architecture, Technical Mentoring, Agile (Jira/Confluence)}
+    }}
+ \resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {芙洛可文化科技 (Furuke)}{Taipei, Taiwan (Remote)}
+      {Backend Developer}{Nov 2023 \textbf{--} Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Business Transformation}: Spearheaded the architecture of a high-precision tax and automated payout engine, ensuring \textbf{100\% data integrity} and legal compliance for creator distributions.}
+        \resumeItem{\textbf{User-Centric Automation}: Designed self-service tax verification and automated withdrawal features, replacing manual back-office tasks and significantly increasing satisfaction.}
+        \resumeItem{\textbf{Performance Optimization}: Proactively identified bottlenecks; refactored complex SQL and optimized indexing, resulting in over \textbf{100\% performance improvement} for critical API endpoints.}
+        \resumeItem{\textbf{Efficiency Innovation}: Overhauled GitLab CI/CD workflow within 48 hours, reducing execution time by \textbf{43\%} and accelerating the team's delivery velocity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {森淨科技 (AmasTek)}{Tainan, Taiwan (Hybrid)}
+      {Backend Developer}{May 2023 \textbf{--} Oct 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{End-to-End Ownership}: Owned full lifecycle of custom software projects, from initial system architecture and database design to final deployment.}
+        \resumeItem{\textbf{Digital Transformation}: Collaborated to build a digital transformation solution from scratch using \textbf{Ruby on Rails}, successfully digitizing core business processes.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- OTHER EXPERIENCE -----------
+\section{Other Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {好想工作室 (GoodIdea Studio) Backend Camp}{Tainan, Taiwan (Hybrid)}
+      {Technical Mentor}{Nov 2023 \textbf{--} Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Technical Leadership}: Guided 15+ career-changers by providing structured learning paths and resolving complex technical challenges in backend development.}
+        \resumeItem{\textbf{Code Quality}: Conducted rigorous code reviews and taught best practices in system design and testable code.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Tsing Hua University (國立清華大學)}{Hsinchu, Taiwan}
+      {Bachelor of Engineering}{Sep 2018 \textbf{--} Jun 2022}
+      \resumeItemListStart
+        \resumeItem{First Specialty: Industrial Engineering and Engineering Management}
+        \resumeItem{Second Specialty: Computer Science}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- CERTIFICATION -----------
+\section{Certification}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{TOEFL iBT 95:}{ Fluent in professional English communication and technical documentation.}
+    }}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
