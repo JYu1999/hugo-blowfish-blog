@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://jyu1999.com/</loc>
+    <lastmod>2026-01-01T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/2026-new-year-appreciation/</loc>
+    <lastmod>2026-01-01T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/2026-new-year-appreciation/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/2026-new-year-appreciation/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/tweets/</loc>
+    <lastmod>2026-01-01T09:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/"
+    />
+  </url>
+  <url>
     <loc>https://jyu1999.com/posts/2025-review/</loc>
     <lastmod>2025-12-31T09:07:31+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -32,38 +80,6 @@
       rel="alternate"
       hreflang="zh-tw"
       href="https://jyu1999.com/posts/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/</loc>
-    <lastmod>2025-12-31T09:07:31+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/tweets/</loc>
-    <lastmod>2025-12-30T01:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/tweets/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/"
     />
   </url>
   <url>
