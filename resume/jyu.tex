@@ -25,8 +25,9 @@
 \babelfont[chinese-traditional]{rm}{Songti TC}
 \babelfont[chinese-traditional]{sf}{Songti TC}
 
-% 設定螢光筆顏色 (預設為黃色)
-\sethlcolor{yellow}
+% 設定鵝黃色 (Goose Yellow) 用於文字高亮
+\definecolor{gooseyellow}{rgb}{0.9, 0.66, 0.09}
+\renewcommand{\hl}[1]{\textbf{\textcolor{gooseyellow}{#1}}}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -76,7 +77,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=\raisebox{0.2ex}{\tiny$\bullet$}, itemsep=1pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -96,19 +97,18 @@
 %----------- SUMMARY -----------
 \section{Professional Summary}
 \vspace{3pt}
-\small{Results-oriented \textbf{Backend Developer and Technical Mentor} with over 3 years of experience specializing in PHP/Laravel and Ruby on Rails. A \textbf{problem solver} with a strong sense of \textbf{ownership}, excelling at translating business requirements into scalable architectures. Proven track record in delivering high-value outcomes, including a 100\% boost in database performance and a 43\% reduction in CI/CD cycles.}
+\small{CHIEH-YU is a results-oriented \textbf{Backend Developer and Technical Mentor} with over 3 years of experience specializing in PHP/Laravel. He is a \textbf{problem solver} with a strong sense of \textbf{ownership}, excelling at translating business requirements into scalable architectures and consistently delivering high-value outcomes.}
 
 %----------- SKILLS -----------
-\section{Technical Skills}
+\section{Core Skills}
  \vspace{3pt}
- \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Languages \& Frameworks:}{ PHP (Laravel), Ruby (Ruby on Rails), SQL} \\ \vspace{2pt}
-        \textbf{Databases \& Caching:}{ MySQL, Redis} \\ \vspace{2pt}
-        \textbf{DevOps \& Tools:}{ Docker, GitLab CI/CD, Linux, Git, Unit/Integration Testing} \\ \vspace{2pt}
-        \textbf{Soft Skills:}{ Business Logic Analysis, System Architecture, Technical Mentoring, Agile (Jira/Confluence)}
-    }}
- \resumeSubHeadingListEnd
+ \resumeItemListStart
+    \resumeItem{Expert proficiency in \hl{PHP (Laravel)} with a focus on building scalable backend architectures and high-precision business engines, supported by comprehensive \hl{automated testing (PHPUnit)} for long-term maintainability.}
+    \resumeItem{Strong experience in database design and performance optimization using \hl{MySQL} and caching strategies with \hl{Redis}.}
+    \resumeItem{Working experience with DevOps practices and automation — specializing in \hl{Docker} and optimizing \hl{GitLab CI/CD} workflows.}
+    \resumeItem{Working experience with \hl{Agile} project management tools (\hl{Jira} and Confluence) to facilitate cross-functional collaboration and streamline delivery processes.}
+    \resumeItem{Professional background in \hl{business logic analysis and system architecture}, translating legal and financial regulations into robust technical solutions.}
+ \resumeItemListEnd
 
 %----------- EXPERIENCE -----------
 \section{Work Experience}
@@ -118,10 +118,10 @@
       {芙洛可文化科技 (Furuke)}{Taipei, Taiwan (Remote)}
       {Backend Developer}{Nov 2023 \textbf{--} Present}
       \resumeItemListStart
-        \resumeItem{\textbf{Business Transformation}: Spearheaded the architecture of a high-precision tax and automated payout engine, ensuring \textbf{100\% data integrity} and legal compliance for creator distributions.}
+        \resumeItem{\textbf{Business Transformation}: Spearheaded the architecture of a high-precision tax and automated payout engine, ensuring 100\% data integrity and legal compliance for creator distributions.}
         \resumeItem{\textbf{User-Centric Automation}: Designed self-service tax verification and automated withdrawal features, replacing manual back-office tasks and significantly increasing satisfaction.}
-        \resumeItem{\textbf{Performance Optimization}: Proactively identified bottlenecks; refactored complex SQL and optimized indexing, resulting in over \textbf{100\% performance improvement} for critical API endpoints.}
-        \resumeItem{\textbf{Efficiency Innovation}: Overhauled GitLab CI/CD workflow within 48 hours, \hl{reducing execution time by \textbf{43\%}} and accelerating the team's delivery velocity.}
+        \resumeItem{\textbf{Performance Optimization}: Proactively identified bottlenecks; refactored complex SQL and optimized indexing, resulting in over 100\% performance improvement for critical API endpoints.}
+        \resumeItem{\textbf{Efficiency Innovation}: Overhauled GitLab CI/CD workflow within 48 hours, reducing execution time by 43\% and accelerating the team's delivery velocity.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -129,7 +129,7 @@
       {Backend Developer}{May 2023 \textbf{--} Oct 2023}
       \resumeItemListStart
         \resumeItem{\textbf{End-to-End Ownership}: Owned full lifecycle of custom software projects, from initial system architecture and database design to final deployment.}
-        \resumeItem{\textbf{Digital Transformation}: Collaborated to build a digital transformation solution from scratch using \textbf{Ruby on Rails}, successfully digitizing core business processes.}
+        \resumeItem{\textbf{Digital Transformation}: Collaborated to build a digital transformation solution from scratch using Ruby on Rails, successfully digitizing core business processes.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -142,7 +142,7 @@
       {Technical Mentor}{Nov 2023 \textbf{--} Present}
       \resumeItemListStart
         \resumeItem{\textbf{Technical Leadership}: Guided 15+ career-changers by providing structured learning paths and resolving complex technical challenges in backend development.}
-        \resumeItem{\textbf{Code Quality}: Conducted rigorous code reviews and taught best practices in system design and testable code.}
+        \resumeItem{\textbf{Code Review \& Architecture}: Conducted regular code reviews and architectural discussions to ensure best practices in RESTful API design and database modeling.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -153,8 +153,8 @@
       {National Tsing Hua University (國立清華大學)}{Hsinchu, Taiwan}
       {Bachelor of Engineering}{Sep 2018 \textbf{--} Jun 2022}
       \resumeItemListStart
-        \resumeItem{First Specialty: Industrial Engineering and Engineering Management}
-        \resumeItem{Second Specialty: Computer Science}
+        \resumeItem{First Specialty: \textbf{Industrial Engineering and Engineering Management}}
+        \resumeItem{Second Specialty: \textbf{Computer Science}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 

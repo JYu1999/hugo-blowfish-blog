@@ -1,13 +1,16 @@
 # Fdb version 4
-["xdvipdfmx"] 1767178472.53646 "jyu.xdv" "jyu.pdf" "jyu" 1767178472.91265 0
-  "jyu.xdv" 1767178472.50344 31584 b7957d601f0fcdcafc33bfb2e891105e "xelatex"
+["xdvipdfmx"] 1767257737.41629 "jyu.xdv" "jyu.pdf" "jyu" 1767257737.78578 0
+  "jyu.xdv" 1767257737.3822 35680 603e349704d08cfd652ed19b3a887277 "xelatex"
   (generated)
   "jyu.pdf"
   (rewritten before read)
-["xelatex"] 1767178471.88237 "jyu.tex" "jyu.xdv" "jyu" 1767178472.91204 0
+["xelatex"] 1767257736.76815 "jyu.tex" "jyu.xdv" "jyu" 1767257737.78513 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel-ca-chinese.tex" 1735765002 4446 78736ddbc07a99387867d24498cb55e1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty" 1739572459 143388 b008e1666520ff43d0878397f2926242 ""
@@ -71,9 +74,9 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1767176031 5639818 9c26d7111ef79639683e2e2d213f8c2a ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "jyu.aux" 1767178472.50184 929 96f55062451c81892284024d2585da47 "xelatex"
-  "jyu.out" 1767178472.50306 715 5db8cec1b2a104cf61a234f98cac56fc "xelatex"
-  "jyu.tex" 1767178461.58467 6929 14d5bf80d10393322bd8fa9dff97c8a2 ""
+  "jyu.aux" 1767257737.38108 924 14937dc177738a2c80eef620136f4b48 "xelatex"
+  "jyu.out" 1767257737.38192 690 e06aad0bdbe2ed25971effa9706255b4 "xelatex"
+  "jyu.tex" 1767257733.55448 7473 28b103b799cb63b7980a59abd7203f2f ""
   (generated)
   "jyu.aux"
   "jyu.log"

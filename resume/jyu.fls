@@ -149,6 +149,9 @@ INPUT jyu.out
 INPUT ./jyu.out
 INPUT ./jyu.out
 OUTPUT jyu.out
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 OUTPUT jyu.xdv
 INPUT jyu.aux
 INPUT ./jyu.out
