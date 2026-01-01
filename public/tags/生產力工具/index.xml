@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生產力工具 on 結語JYu 的筆記</title>
-    <link>http://localhost:1313/tags/%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+    <link>https://jyu1999.com/tags/%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
     <description>Recent content in 生產力工具 on 結語JYu 的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>© 2025 結語JYu</copyright>
-    <lastBuildDate>Fri, 12 Dec 2025 09:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Fri, 12 Dec 2025 09:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/tags/%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>roadmap.sh 的 Projects 功能</title>
-      <link>http://localhost:1313/tweets/roadmap-sh-update-project/</link>
+      <link>https://jyu1999.com/tweets/roadmap-sh-update-project/</link>
       <pubDate>Fri, 12 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tweets/roadmap-sh-update-project/</guid>
+      <guid>https://jyu1999.com/tweets/roadmap-sh-update-project/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>看完 Heptabase 官方教學的想法</title>
-      <link>http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/</link>
+      <link>https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/</link>
       <pubDate>Wed, 02 Oct 2024 19:04:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/</guid>
+      <guid>https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
     </item>
     
     <item>
       <title>Jetbrains 系列 IDE 的一些快捷鍵（PHPStorm &amp; RubyMine）</title>
-      <link>http://localhost:1313/posts/jetbrains_shortcut/</link>
+      <link>https://jyu1999.com/posts/jetbrains_shortcut/</link>
       <pubDate>Mon, 22 May 2023 10:47:46 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/jetbrains_shortcut/</guid>
+      <guid>https://jyu1999.com/posts/jetbrains_shortcut/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jetbrains_shortcut/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/jetbrains_shortcut/featured.png" />
     </item>
     
   </channel>
