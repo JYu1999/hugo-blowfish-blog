@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jan 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI</title>
+      <link>https://jyu1999.com/en/tags/ai/</link>
+      <pubDate>Fri, 02 Jan 2026 09:00:00 +0800</pubDate>
+      
+      <guid>https://jyu1999.com/en/tags/ai/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Life</title>
@@ -35,16 +45,6 @@
       <pubDate>Tue, 30 Dec 2025 01:00:00 +0800</pubDate>
       
       <guid>https://jyu1999.com/en/tags/reading/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://jyu1999.com/en/tags/ai/</link>
-      <pubDate>Mon, 29 Dec 2025 08:30:00 +0800</pubDate>
-      
-      <guid>https://jyu1999.com/en/tags/ai/</guid>
       <description></description>
       
     </item>
