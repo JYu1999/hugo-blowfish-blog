@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://jyu1999.com/en/</loc>
-    <lastmod>2026-01-02T09:00:00+08:00</lastmod>
+    <lastmod>2026-01-03T01:30:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +16,38 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/tweets/leave-breadcrumds/</loc>
+    <lastmod>2026-01-03T01:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/leave-breadcrumds/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/leave-breadcrumds/"
+    />
+  </url>
+  <url>
+    <loc>https://jyu1999.com/en/tweets/</loc>
+    <lastmod>2026-01-03T01:30:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://jyu1999.com/tweets/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://jyu1999.com/en/tweets/"
     />
   </url>
   <url>
@@ -64,22 +96,6 @@
       rel="alternate"
       hreflang="en"
       href="https://jyu1999.com/en/tweets/2026-new-year-appreciation/"
-    />
-  </url>
-  <url>
-    <loc>https://jyu1999.com/en/tweets/</loc>
-    <lastmod>2026-01-01T09:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-tw"
-      href="https://jyu1999.com/tweets/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://jyu1999.com/en/tweets/"
     />
   </url>
   <url>
