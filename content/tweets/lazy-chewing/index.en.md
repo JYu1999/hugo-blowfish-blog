@@ -1,6 +1,6 @@
 ---
 title: "Life Revelation: Too Lazy to Chew"
-date: 2025-01-04T12:30:00+08:00
+date: 2026-01-04T19:30:00+08:00
 draft: false
 tags: ["Life"]
 ---
