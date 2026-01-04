@@ -55,6 +55,16 @@ Some details in the article weren't what I originally said—the AI "filled in" 
 
 If I use this method long-term, the blog's word choice and tone will differ from my own. While the concepts come from me, the expression is AI's.
 
+### 3. Model Limitations
+
+Claude Code's current model doesn't support image generation. Unlike Google Gemini or ChatGPT, when I need a cover image for an article, I can't ask Claude to handle it all at once.
+
+This reduces workflow flexibility—if cover images could be generated too, I could truly handle everything from my phone.
+
+Perhaps I'll try ChatGPT's Code feature or Google Gemini in the future to see if they solve this issue. But for now, the current solution is good enough.
+
+---
+
 This reminded me of an article I recently read by Huli: [AI and Ducks, Laziness and Truth](https://life.huli.tw/2026/01/03/ai-and-duck-lazy-and-fact/), which made an important point:
 
 > **"Not everything that AI can do for you should be delegated to AI."**
