@@ -5,7 +5,7 @@ draft: false
 tags: ["Life"]
 ---
 
-Today at lunch, while eating udon noodles, I had a shocking realization: **I'm someone who's too lazy even to chew.**
+Today at dinner, while eating udon noodles, I had a shocking realization: **I'm someone who's too lazy even to chew.**
 
 Here's what happened: as I picked up a bite of udon, a thought suddenly flashed through my mind:
 
@@ -47,3 +47,7 @@ Next time someone asks why I prefer soft foods, I'll honestly tell them:
 "Because I'm too lazy to chew."
 
 That's me, someone who's too lazy even to chew 🍜
+
+---
+
+*This article was written with the assistance of Claude AI*
