@@ -57,11 +57,11 @@ If I use this method long-term, the blog's word choice and tone will differ from
 
 ### 3. Model Limitations
 
-Claude Code's current model doesn't support image generation. Unlike Google Gemini or ChatGPT, when I need a cover image for an article, I can't ask Claude to handle it all at once.
+Claude Code's current model doesn't support image generation. When I need a cover image for an article, I can't ask Claude to handle it all at once.
 
 This reduces workflow flexibility—if cover images could be generated too, I could truly handle everything from my phone.
 
-Perhaps I'll try ChatGPT's Code feature or Google Gemini in the future to see if they solve this issue. But for now, the current solution is good enough.
+Perhaps I'll try other AI tools that support text-to-image generation (like Google Antigravity, which I've used before) to find a more complete solution. But for now, the current solution is good enough.
 
 ---
 
