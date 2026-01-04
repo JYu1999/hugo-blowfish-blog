@@ -57,7 +57,7 @@ If I use this method long-term, the blog's word choice and tone will differ from
 
 This reminded me of an article I recently read by Huli: [AI and Ducks, Laziness and Truth](https://life.huli.tw/2026/01/03/ai-and-duck-lazy-and-fact/), which made an important point:
 
-> **"What CAN be done by AI" and "what you WANT AI to do" are two different things.**
+> **"Not everything that AI can do for you should be delegated to AI."**
 
 Now it looks like my publishing workflow could be entirely handed to AI. But is that really what I want?
 
