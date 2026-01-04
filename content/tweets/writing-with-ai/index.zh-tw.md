@@ -2,14 +2,16 @@
 title: "當部落格遇上 AI：我的實驗與反思"
 date: 2026-01-05T00:00:00+08:00
 draft: false
-tags: ["AI", "生活", "寫作"]
+tags: ["Blogging", "Tools", "Life"]
 ---
 
-> **這篇文章是用來分享[上一篇文章](/tweets/lazy-chewing/)的創作過程**
+> **本文 100% 由 AI 撰寫**
 
 ## 起因
 
-[上一篇關於「懶得咀嚼」的推文](/tweets/lazy-chewing/)其實是我用 Claude Code 寫的。
+{{< article link="/tweets/lazy-chewing/" >}}
+
+上面這篇關於「懶得咀嚼」的推文其實是我用 Claude Code 寫的。
 
 事情是這樣的：某天晚上我在外面吃飯，突然有個體悟想記錄下來。但問題來了——我的部落格是用 Hugo 架的，平常都要在電腦前用 VSCode 編輯才能發文。不像 Twitter 或 Threads，拿起手機打幾個字就能發布。
 

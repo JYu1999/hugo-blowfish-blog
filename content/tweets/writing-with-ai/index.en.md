@@ -2,14 +2,16 @@
 title: "When Blogging Meets AI: My Experiment and Reflections"
 date: 2026-01-05T00:00:00+08:00
 draft: false
-tags: ["AI", "Life", "Writing"]
+tags: ["Blogging", "Tools", "Life"]
 ---
 
-> **This article shares the creative process behind [my previous post](/tweets/lazy-chewing/)**
+> **This article is 100% written by AI**
 
 ## The Beginning
 
-[My last tweet about being "too lazy to chew"](/tweets/lazy-chewing/) was actually written using Claude Code.
+{{< article link="/tweets/lazy-chewing/" >}}
+
+The tweet above about being "too lazy to chew" was actually written using Claude Code.
 
 Here's what happened: One evening while eating out, I had a sudden realization I wanted to record. But there was a problem—my blog is built with Hugo, which typically requires me to be at my computer with VSCode to publish. Unlike Twitter or Threads, where I can just pick up my phone and type a few words.
 
