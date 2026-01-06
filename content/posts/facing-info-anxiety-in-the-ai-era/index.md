@@ -1,6 +1,7 @@
 ---
 title: "面對 AI 時代的資訊焦慮：我的 Project Based Learning 生存指南"
 date: 2025-12-29T08:30:00+08:00
+lastmod: 2026-01-04T16:20:00+08:00
 draft: false
 tags: ["AI"]
 ---
@@ -26,9 +27,9 @@ tags: ["AI"]
 - 最新模型、工具、協議又出來了，超猛超好用
 - 雖然 AI 很強，但基礎知識也是很重要
 
-就連大神 Andrej Karpathy 都在 X 說道（[Source](https://x.com/karpathy/status/2004607146781278521?s=20)）：
+就連大神 Andrej Karpathy 都在 X 說道：
 
-![image](/tweets/fomo-of-learning-ai/image1.png)
+{{< x user="karpathy" id="2004607146781278521" >}}
 
 ---
 

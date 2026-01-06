@@ -1,6 +1,7 @@
 ---
 title: "Facing Information Anxiety in the AI Era: My Survival Guide with Project Based Learning"
 date: 2025-12-29T08:30:00+08:00
+lastmod: 2026-01-04T16:20:00+08:00
 draft: false
 tags: ["AI"]
 ---
@@ -30,9 +31,9 @@ At the same time, I saw endless discussions on social media:
 - New models, tools, and protocols coming out constantly, all powerful and super useful.
 - While AI is powerful, fundamental knowledge remains important.
 
-Even the legendary Andrej Karpathy said on X ([Source](https://x.com/karpathy/status/2004607146781278521?s=20)):
+Even the legendary Andrej Karpathy said on X:
 
-![image](/tweets/fomo-of-learning-ai/image1.png)
+{{< x user="karpathy" id="2004607146781278521" >}}
 
 ---
 
