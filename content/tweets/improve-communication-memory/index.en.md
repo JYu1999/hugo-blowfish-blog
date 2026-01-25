@@ -29,7 +29,7 @@ I don't have a perfect solution yet, but I'll start with:
 
 ## 2. Memory
 
-My memory is honestly not great. Sometimes I forget details mid-discussion with coworkers.
+My memory is honestly not great. A day or two after a discussion, I often forget what we talked about, or the concrete conclusions and details.
 
 I do take notes, but I realized note-taking can distract me, and I end up not fully listening.
 
