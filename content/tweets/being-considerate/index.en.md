@@ -2,7 +2,7 @@
 title: "Mutual Consideration"
 date: 2026-02-03T23:00:00+08:00
 draft: false
-tags: ["Social Observation", "Interpersonal Relationships"]
+tags: ["Life"]
 ---
 
 As someone who is very afraid of causing trouble for others, I sometimes genuinely wonder: Why do those who "know they will cause trouble for others," even after people have expressed their concerns to them, still feel so entitled and even repeatedly engage in such behavior?
