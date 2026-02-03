@@ -1,5 +1,5 @@
 ---
-title: "People Who Fear Causing Trouble vs Those Who Feel Entitled"
+title: "Mutual Consideration"
 date: 2026-02-03T23:00:00+08:00
 draft: false
 tags: ["Social Observation", "Interpersonal Relationships"]
