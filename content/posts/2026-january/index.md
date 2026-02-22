@@ -128,7 +128,7 @@ tags: ["生活"]
 
 剛好這個月看到一個影片：
 
-{{< youtubeLite id="dV_FjwwQfiE" label="创作 x 创业者：她從崩溃裸辞，到靠“搞钱副业”年入70万 | Ami专访" >}}
+{{< youtubeLite id="dV_FjwwQfiE" label="Ami专访 - 创作与创业者" >}}
 
 讓我突然在想，我是不是應該開啟副業？
 

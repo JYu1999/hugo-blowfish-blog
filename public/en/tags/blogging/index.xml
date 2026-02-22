@@ -2,51 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogging on JYu&#39;s Notes</title>
-    <link>https://jyu1999.com/en/tags/blogging/</link>
+    <link>http://localhost:1313/en/tags/blogging/</link>
     <description>Recent content in Blogging on JYu&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Wed, 26 Nov 2025 09:04:52 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>When Blogging Meets AI: My Experiment and Reflections</title>
+      <link>http://localhost:1313/en/tweets/writing-with-ai/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/writing-with-ai/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>The Difference Between Articles and Tweets</title>
-      <link>https://jyu1999.com/en/posts/the-difference-between-post-and-tweet/</link>
+      <link>http://localhost:1313/en/posts/the-difference-between-post-and-tweet/</link>
       <pubDate>Wed, 26 Nov 2025 09:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/the-difference-between-post-and-tweet/</guid>
+      <guid>http://localhost:1313/en/posts/the-difference-between-post-and-tweet/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/the-difference-between-post-and-tweet/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/the-difference-between-post-and-tweet/featured.png" />
     </item>
     
     <item>
       <title>Should I Use Other Blogging Platforms?</title>
-      <link>https://jyu1999.com/en/tweets/using-other-blog-platform-or-not/</link>
+      <link>http://localhost:1313/en/tweets/using-other-blog-platform-or-not/</link>
       <pubDate>Mon, 24 Nov 2025 01:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/using-other-blog-platform-or-not/</guid>
+      <guid>http://localhost:1313/en/tweets/using-other-blog-platform-or-not/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Some Unfulfilled Aspirations for the Blog?</title>
-      <link>https://jyu1999.com/en/tweets/some-scrapped-gems/</link>
+      <link>http://localhost:1313/en/tweets/some-scrapped-gems/</link>
       <pubDate>Fri, 21 Nov 2025 21:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/some-scrapped-gems/</guid>
+      <guid>http://localhost:1313/en/tweets/some-scrapped-gems/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/tweets/some-scrapped-gems/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/tweets/some-scrapped-gems/featured.png" />
     </item>
     
     <item>
       <title>Why This Blog Exists</title>
-      <link>https://jyu1999.com/en/why-blog/</link>
+      <link>http://localhost:1313/en/why-blog/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://jyu1999.com/en/why-blog/</guid>
+      <guid>http://localhost:1313/en/why-blog/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/why-blog/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/why-blog/featured.png" />
     </item>
     
   </channel>

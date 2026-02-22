@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>コミュニケーション on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/tags/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</link>
+    <description>Recent content in コミュニケーション on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Sun, 07 Dec 2025 17:04:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>進捗報告の仕方とは？</title>
+      <link>http://localhost:1313/ja/posts/how-to-report-progress/</link>
+      <pubDate>Sun, 07 Dec 2025 17:04:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/how-to-report-progress/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-report-progress/featured.png" />
+    </item>
+    
+    <item>
+      <title>進捗報告の価値</title>
+      <link>http://localhost:1313/ja/posts/value-of-progress-report/</link>
+      <pubDate>Fri, 05 Dec 2025 17:04:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/value-of-progress-report/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/value-of-progress-report/featured.png" />
+    </item>
+    
+    <item>
+      <title>職場の議論における論理的誤謬と心理的安全性</title>
+      <link>http://localhost:1313/ja/posts/logical-fallacies-and-psychological-safety/</link>
+      <pubDate>Thu, 27 Nov 2025 02:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/logical-fallacies-and-psychological-safety/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/logical-fallacies-and-psychological-safety/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

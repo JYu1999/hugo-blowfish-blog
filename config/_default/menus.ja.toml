@@ -1,0 +1,30 @@
+[[main]]
+name = "記事一覧"
+pre = "list"
+pageRef = "posts"
+identifier = "CSm9U46jPy"
+weight = 9_999
+
+[[main]]
+name = "タグ"
+pre = "tag"
+pageRef = "tags"
+identifier = "IARIuWG0v1"
+weight = 9_998
+
+[[main]]
+name = "カテゴリー"
+pre = "substack"
+pageRef = "categories"
+identifier = "I52PdQ9sah"
+weight = 9_997
+
+[[main]]
+name = "つぶやき"
+pre = "bell"
+pageRef = "tweets"
+identifier = "ADqLMsROeA"
+weight = 40
+
+[[footer]]
+none = "none"

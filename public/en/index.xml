@@ -2,451 +2,571 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JYu&#39;s Notes</title>
-    <link>https://jyu1999.com/en/</link>
+    <link>http://localhost:1313/en/</link>
     <description>Recent content on JYu&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Sat, 03 Jan 2026 01:30:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Feb 2026 23:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mutual Consideration</title>
+      <link>http://localhost:1313/en/tweets/being-considerate/</link>
+      <pubDate>Tue, 03 Feb 2026 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/being-considerate/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>January 2026</title>
+      <link>http://localhost:1313/en/posts/2026-january/</link>
+      <pubDate>Sat, 31 Jan 2026 09:07:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/2026-january/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2026-january/featured.png" />
+    </item>
+    
+    <item>
+      <title>Two Weaknesses I Want to Improve This Year: Expression &amp; Memory</title>
+      <link>http://localhost:1313/en/tweets/improve-communication-memory/</link>
+      <pubDate>Sun, 25 Jan 2026 14:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/improve-communication-memory/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pure Person</title>
+      <link>http://localhost:1313/en/tweets/pure-person/</link>
+      <pubDate>Mon, 19 Jan 2026 23:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/pure-person/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The First Step to Replacing Yourself: Learning to Express</title>
+      <link>http://localhost:1313/en/tweets/how-to-replace-yourself/</link>
+      <pubDate>Mon, 19 Jan 2026 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/how-to-replace-yourself/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Side Projects Built with AI Collaboration</title>
+      <link>http://localhost:1313/en/posts/problems-that-i-solved-with-ai/</link>
+      <pubDate>Sat, 17 Jan 2026 00:50:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/problems-that-i-solved-with-ai/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/problems-that-i-solved-with-ai/featured.png" />
+    </item>
+    
+    <item>
+      <title>Why I Quit After Building a YouTube Downloader in 3 Days — The &#39;Stop-Loss&#39; Philosophy of Side Projects</title>
+      <link>http://localhost:1313/en/posts/side-project-yt-laravel/</link>
+      <pubDate>Thu, 15 Jan 2026 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/side-project-yt-laravel/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/side-project-yt-laravel/featured.png" />
+    </item>
+    
+    <item>
+      <title>Missing Costco, Gaining More</title>
+      <link>http://localhost:1313/en/tweets/costco-parking-detour/</link>
+      <pubDate>Sun, 11 Jan 2026 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/costco-parking-detour/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Interesting Findings from My Health Checkup</title>
+      <link>http://localhost:1313/en/tweets/health-checkup-notes/</link>
+      <pubDate>Fri, 09 Jan 2026 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/health-checkup-notes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Reflections and Review After Two Years of Work</title>
+      <link>http://localhost:1313/en/posts/two-years-work-reflection/</link>
+      <pubDate>Wed, 07 Jan 2026 02:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/two-years-work-reflection/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/two-years-work-reflection/featured.png" />
+    </item>
+    
+    <item>
+      <title>When Blogging Meets AI: My Experiment and Reflections</title>
+      <link>http://localhost:1313/en/tweets/writing-with-ai/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/writing-with-ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Life Revelation: Too Lazy to Chew</title>
+      <link>http://localhost:1313/en/tweets/lazy-chewing/</link>
+      <pubDate>Sun, 04 Jan 2026 20:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/tweets/lazy-chewing/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Leaving Breadcrumbs</title>
-      <link>https://jyu1999.com/en/tweets/leave-breadcrumds/</link>
+      <link>http://localhost:1313/en/tweets/leave-breadcrumds/</link>
       <pubDate>Sat, 03 Jan 2026 01:30:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/leave-breadcrumds/</guid>
+      <guid>http://localhost:1313/en/tweets/leave-breadcrumds/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MCP Second Flop Experience</title>
-      <link>https://jyu1999.com/en/posts/mcp-experience-summarize-job/</link>
+      <link>http://localhost:1313/en/posts/mcp-experience-summarize-job/</link>
       <pubDate>Fri, 02 Jan 2026 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/mcp-experience-summarize-job/</guid>
+      <guid>http://localhost:1313/en/posts/mcp-experience-summarize-job/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/mcp-experience-summarize-job/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcp-experience-summarize-job/featured.png" />
     </item>
     
     <item>
       <title>Starting the New Year with Gratitude</title>
-      <link>https://jyu1999.com/en/tweets/2026-new-year-appreciation/</link>
+      <link>http://localhost:1313/en/tweets/2026-new-year-appreciation/</link>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/2026-new-year-appreciation/</guid>
+      <guid>http://localhost:1313/en/tweets/2026-new-year-appreciation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>2025 Year in Review</title>
-      <link>https://jyu1999.com/en/posts/2025-review/</link>
+      <link>http://localhost:1313/en/posts/2025-review/</link>
       <pubDate>Wed, 31 Dec 2025 09:07:31 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/2025-review/</guid>
+      <guid>http://localhost:1313/en/posts/2025-review/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/2025-review/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2025-review/featured.png" />
     </item>
     
     <item>
       <title>The Essence of the Workplace is Mutual Benefit</title>
-      <link>https://jyu1999.com/en/tweets/take-what-your-need/</link>
+      <link>http://localhost:1313/en/tweets/take-what-your-need/</link>
       <pubDate>Tue, 30 Dec 2025 01:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/take-what-your-need/</guid>
+      <guid>http://localhost:1313/en/tweets/take-what-your-need/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Facing Information Anxiety in the AI Era: My Survival Guide with Project Based Learning</title>
-      <link>https://jyu1999.com/en/posts/facing-info-anxiety-in-the-ai-era/</link>
+      <link>http://localhost:1313/en/posts/facing-info-anxiety-in-the-ai-era/</link>
       <pubDate>Mon, 29 Dec 2025 08:30:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/facing-info-anxiety-in-the-ai-era/</guid>
+      <guid>http://localhost:1313/en/posts/facing-info-anxiety-in-the-ai-era/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/facing-info-anxiety-in-the-ai-era/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/facing-info-anxiety-in-the-ai-era/featured.png" />
     </item>
     
     <item>
       <title>The Uncertainty of AI</title>
-      <link>https://jyu1999.com/en/tweets/uncertainty-of-ai/</link>
+      <link>http://localhost:1313/en/tweets/uncertainty-of-ai/</link>
       <pubDate>Thu, 25 Dec 2025 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/uncertainty-of-ai/</guid>
+      <guid>http://localhost:1313/en/tweets/uncertainty-of-ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Convention Over Configuration</title>
-      <link>https://jyu1999.com/en/tweets/convention-over-configuration/</link>
+      <link>http://localhost:1313/en/tweets/convention-over-configuration/</link>
       <pubDate>Wed, 24 Dec 2025 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/convention-over-configuration/</guid>
+      <guid>http://localhost:1313/en/tweets/convention-over-configuration/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Time Will Clarify Many Things, Except...</title>
-      <link>https://jyu1999.com/en/tweets/some-things-cant-wait/</link>
+      <link>http://localhost:1313/en/tweets/some-things-cant-wait/</link>
       <pubDate>Tue, 23 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/some-things-cant-wait/</guid>
+      <guid>http://localhost:1313/en/tweets/some-things-cant-wait/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>The Biggest Risk is Always What No One Expected</title>
-      <link>https://jyu1999.com/en/posts/unexpected-risks/</link>
+      <link>http://localhost:1313/en/posts/unexpected-risks/</link>
       <pubDate>Tue, 23 Dec 2025 00:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/unexpected-risks/</guid>
+      <guid>http://localhost:1313/en/posts/unexpected-risks/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/unexpected-risks/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unexpected-risks/featured.png" />
     </item>
     
     <item>
       <title>From 12 Minutes to 7 Minutes: How I Cut Our Company’s CI Time by 43% in Two Days</title>
-      <link>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
+      <link>http://localhost:1313/en/posts/speed-up-ci-by-43-percent-in-2-days/</link>
       <pubDate>Mon, 22 Dec 2025 10:47:46 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
+      <guid>http://localhost:1313/en/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
     </item>
     
     <item>
       <title>What Should DCA Be?</title>
-      <link>https://jyu1999.com/en/tweets/dca-rethink/</link>
+      <link>http://localhost:1313/en/tweets/dca-rethink/</link>
       <pubDate>Sun, 21 Dec 2025 21:30:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/dca-rethink/</guid>
+      <guid>http://localhost:1313/en/tweets/dca-rethink/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>First Experience with MCP</title>
-      <link>https://jyu1999.com/en/posts/mcp-first-experience/</link>
+      <link>http://localhost:1313/en/posts/mcp-first-experience/</link>
       <pubDate>Sat, 20 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/mcp-first-experience/</guid>
+      <guid>http://localhost:1313/en/posts/mcp-first-experience/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/mcp-first-experience/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcp-first-experience/featured.png" />
     </item>
     
     <item>
       <title>Stop Chasing Passion</title>
-      <link>https://jyu1999.com/en/tweets/stop-chasing-motivation/</link>
+      <link>http://localhost:1313/en/tweets/stop-chasing-motivation/</link>
       <pubDate>Fri, 19 Dec 2025 01:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/stop-chasing-motivation/</guid>
+      <guid>http://localhost:1313/en/tweets/stop-chasing-motivation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>The Book That Changed Me Most in 2025: &#34;The Cafe on the Edge of the World: A Story About the Meaning of Life&#34;</title>
-      <link>https://jyu1999.com/en/posts/why-i-am-alive/</link>
+      <link>http://localhost:1313/en/posts/why-i-am-alive/</link>
       <pubDate>Tue, 16 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/why-i-am-alive/</guid>
+      <guid>http://localhost:1313/en/posts/why-i-am-alive/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/why-i-am-alive/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/why-i-am-alive/featured.png" />
     </item>
     
     <item>
       <title>People with Unfounded Confidence</title>
-      <link>https://jyu1999.com/en/posts/people-with-unfounded-confidence/</link>
+      <link>http://localhost:1313/en/posts/people-with-unfounded-confidence/</link>
       <pubDate>Tue, 16 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/people-with-unfounded-confidence/</guid>
+      <guid>http://localhost:1313/en/posts/people-with-unfounded-confidence/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/people-with-unfounded-confidence/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/people-with-unfounded-confidence/featured.png" />
     </item>
     
     <item>
       <title>Review of &#39;People Who Intersect&#39;</title>
-      <link>https://jyu1999.com/en/posts/review-of-kasanariau-hito-e/</link>
+      <link>http://localhost:1313/en/posts/review-of-kasanariau-hito-e/</link>
       <pubDate>Mon, 15 Dec 2025 13:00:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/review-of-kasanariau-hito-e/</guid>
+      <guid>http://localhost:1313/en/posts/review-of-kasanariau-hito-e/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/review-of-kasanariau-hito-e/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/review-of-kasanariau-hito-e/featured.png" />
     </item>
     
     <item>
       <title>Let It Go</title>
-      <link>https://jyu1999.com/en/tweets/let-it-go/</link>
+      <link>http://localhost:1313/en/tweets/let-it-go/</link>
       <pubDate>Fri, 12 Dec 2025 18:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/let-it-go/</guid>
+      <guid>http://localhost:1313/en/tweets/let-it-go/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>roadmap.sh&#39;s Projects Feature</title>
-      <link>https://jyu1999.com/en/tweets/roadmap-sh-update-project/</link>
+      <link>http://localhost:1313/en/tweets/roadmap-sh-update-project/</link>
       <pubDate>Fri, 12 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/roadmap-sh-update-project/</guid>
+      <guid>http://localhost:1313/en/tweets/roadmap-sh-update-project/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>It&#39;s almost 2026, how to use AI to assist in reading difficult books</title>
-      <link>https://jyu1999.com/en/posts/strategy-to-read-difficult-books/</link>
+      <link>http://localhost:1313/en/posts/strategy-to-read-difficult-books/</link>
       <pubDate>Wed, 10 Dec 2025 10:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/strategy-to-read-difficult-books/</guid>
+      <guid>http://localhost:1313/en/posts/strategy-to-read-difficult-books/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/strategy-to-read-difficult-books/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/strategy-to-read-difficult-books/featured.png" />
     </item>
     
     <item>
       <title>Maybe I&#39;m Just Not a Morning Person</title>
-      <link>https://jyu1999.com/en/tweets/maybe-i-am-not-morning-guy/</link>
+      <link>http://localhost:1313/en/tweets/maybe-i-am-not-morning-guy/</link>
       <pubDate>Mon, 08 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/maybe-i-am-not-morning-guy/</guid>
+      <guid>http://localhost:1313/en/tweets/maybe-i-am-not-morning-guy/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>How to Report Progress?</title>
-      <link>https://jyu1999.com/en/posts/how-to-report-progress/</link>
+      <link>http://localhost:1313/en/posts/how-to-report-progress/</link>
       <pubDate>Sun, 07 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/how-to-report-progress/</guid>
+      <guid>http://localhost:1313/en/posts/how-to-report-progress/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/how-to-report-progress/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-report-progress/featured.png" />
     </item>
     
     <item>
       <title>The Value of Progress Reporting</title>
-      <link>https://jyu1999.com/en/posts/value-of-progress-report/</link>
+      <link>http://localhost:1313/en/posts/value-of-progress-report/</link>
       <pubDate>Fri, 05 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/value-of-progress-report/</guid>
+      <guid>http://localhost:1313/en/posts/value-of-progress-report/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/value-of-progress-report/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/value-of-progress-report/featured.png" />
     </item>
     
     <item>
       <title>The HTTP Status Code 200 Scam</title>
-      <link>https://jyu1999.com/en/tweets/200-scam/</link>
+      <link>http://localhost:1313/en/tweets/200-scam/</link>
       <pubDate>Wed, 03 Dec 2025 21:30:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/200-scam/</guid>
+      <guid>http://localhost:1313/en/tweets/200-scam/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/tweets/200-scam/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/tweets/200-scam/featured.png" />
     </item>
     
     <item>
       <title>Joining Wuthering Waves</title>
-      <link>https://jyu1999.com/en/tweets/join-wutheringwaves/</link>
+      <link>http://localhost:1313/en/tweets/join-wutheringwaves/</link>
       <pubDate>Wed, 03 Dec 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/join-wutheringwaves/</guid>
+      <guid>http://localhost:1313/en/tweets/join-wutheringwaves/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>My Painful Personal Experience - Is My Effort Invisible?</title>
-      <link>https://jyu1999.com/en/posts/my-painful-lesson-on-visibility/</link>
+      <link>http://localhost:1313/en/posts/my-painful-lesson-on-visibility/</link>
       <pubDate>Mon, 01 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/my-painful-lesson-on-visibility/</guid>
+      <guid>http://localhost:1313/en/posts/my-painful-lesson-on-visibility/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/my-painful-lesson-on-visibility/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-painful-lesson-on-visibility/featured.png" />
     </item>
     
     <item>
       <title>A Chill Afternoon at the Kaohsiung Science and Technology Museum</title>
-      <link>https://jyu1999.com/en/tweets/chill-nstm/</link>
+      <link>http://localhost:1313/en/tweets/chill-nstm/</link>
       <pubDate>Sat, 29 Nov 2025 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/chill-nstm/</guid>
+      <guid>http://localhost:1313/en/tweets/chill-nstm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>The Most Touching and Thought-Provoking Video I Saw in 2025</title>
-      <link>https://jyu1999.com/en/tweets/if-ai-can-replace-me-what-is-my-purpose/</link>
+      <link>http://localhost:1313/en/tweets/if-ai-can-replace-me-what-is-my-purpose/</link>
       <pubDate>Fri, 28 Nov 2025 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/if-ai-can-replace-me-what-is-my-purpose/</guid>
+      <guid>http://localhost:1313/en/tweets/if-ai-can-replace-me-what-is-my-purpose/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Fallacies and Psychological Safety in Workplace Discussions</title>
-      <link>https://jyu1999.com/en/posts/logical-fallacies-and-psychological-safety/</link>
+      <link>http://localhost:1313/en/posts/logical-fallacies-and-psychological-safety/</link>
       <pubDate>Thu, 27 Nov 2025 02:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/logical-fallacies-and-psychological-safety/</guid>
+      <guid>http://localhost:1313/en/posts/logical-fallacies-and-psychological-safety/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/logical-fallacies-and-psychological-safety/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/logical-fallacies-and-psychological-safety/featured.png" />
     </item>
     
     <item>
       <title>The Difference Between Articles and Tweets</title>
-      <link>https://jyu1999.com/en/posts/the-difference-between-post-and-tweet/</link>
+      <link>http://localhost:1313/en/posts/the-difference-between-post-and-tweet/</link>
       <pubDate>Wed, 26 Nov 2025 09:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/the-difference-between-post-and-tweet/</guid>
+      <guid>http://localhost:1313/en/posts/the-difference-between-post-and-tweet/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/the-difference-between-post-and-tweet/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/the-difference-between-post-and-tweet/featured.png" />
     </item>
     
     <item>
       <title>Should I Use Other Blogging Platforms?</title>
-      <link>https://jyu1999.com/en/tweets/using-other-blog-platform-or-not/</link>
+      <link>http://localhost:1313/en/tweets/using-other-blog-platform-or-not/</link>
       <pubDate>Mon, 24 Nov 2025 01:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/using-other-blog-platform-or-not/</guid>
+      <guid>http://localhost:1313/en/tweets/using-other-blog-platform-or-not/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Why I Bald Head?</title>
-      <link>https://jyu1999.com/en/tweets/why-i-bald/</link>
+      <link>http://localhost:1313/en/tweets/why-i-bald/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/why-i-bald/</guid>
+      <guid>http://localhost:1313/en/tweets/why-i-bald/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Some Unfulfilled Aspirations for the Blog?</title>
-      <link>https://jyu1999.com/en/tweets/some-scrapped-gems/</link>
+      <link>http://localhost:1313/en/tweets/some-scrapped-gems/</link>
       <pubDate>Fri, 21 Nov 2025 21:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/some-scrapped-gems/</guid>
+      <guid>http://localhost:1313/en/tweets/some-scrapped-gems/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/tweets/some-scrapped-gems/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/tweets/some-scrapped-gems/featured.png" />
     </item>
     
     <item>
       <title>Review: The Clearest Story in the World by Hikaru Sugii</title>
-      <link>https://jyu1999.com/en/posts/review-of-the-clearest-story-in-the-world/</link>
+      <link>http://localhost:1313/en/posts/review-of-the-clearest-story-in-the-world/</link>
       <pubDate>Fri, 21 Nov 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/review-of-the-clearest-story-in-the-world/</guid>
+      <guid>http://localhost:1313/en/posts/review-of-the-clearest-story-in-the-world/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/review-of-the-clearest-story-in-the-world/featured.png" />
     </item>
     
     <item>
       <title>Is It Possible for Me to Work in Japan?</title>
-      <link>https://jyu1999.com/en/posts/is-it-possible-for-me-to-work-in-japan/</link>
+      <link>http://localhost:1313/en/posts/is-it-possible-for-me-to-work-in-japan/</link>
       <pubDate>Thu, 20 Nov 2025 19:18:36 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/is-it-possible-for-me-to-work-in-japan/</guid>
+      <guid>http://localhost:1313/en/posts/is-it-possible-for-me-to-work-in-japan/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/is-it-possible-for-me-to-work-in-japan/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/is-it-possible-for-me-to-work-in-japan/featured.png" />
     </item>
     
     <item>
       <title>Why This Blog Exists</title>
-      <link>https://jyu1999.com/en/why-blog/</link>
+      <link>http://localhost:1313/en/why-blog/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://jyu1999.com/en/why-blog/</guid>
+      <guid>http://localhost:1313/en/why-blog/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/why-blog/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/why-blog/featured.png" />
     </item>
     
     <item>
       <title>2025 Fukuoka Marathon Completed!</title>
-      <link>https://jyu1999.com/en/tweets/2025-fukuoka-marathon/</link>
+      <link>http://localhost:1313/en/tweets/2025-fukuoka-marathon/</link>
       <pubDate>Sun, 09 Nov 2025 10:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/2025-fukuoka-marathon/</guid>
+      <guid>http://localhost:1313/en/tweets/2025-fukuoka-marathon/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>The Charm of Solo Travel?</title>
-      <link>https://jyu1999.com/en/tweets/traveling-alone/</link>
+      <link>http://localhost:1313/en/tweets/traveling-alone/</link>
       <pubDate>Wed, 17 Sep 2025 21:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/traveling-alone/</guid>
+      <guid>http://localhost:1313/en/tweets/traveling-alone/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>OWASP Top 10(1) - Broken Access Control</title>
-      <link>https://jyu1999.com/en/posts/owasp-top-broken-access-control/</link>
+      <link>http://localhost:1313/en/posts/owasp-top-broken-access-control/</link>
       <pubDate>Sun, 24 Aug 2025 10:47:46 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/owasp-top-broken-access-control/</guid>
+      <guid>http://localhost:1313/en/posts/owasp-top-broken-access-control/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/owasp-top-broken-access-control/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/owasp-top-broken-access-control/featured.jpeg" />
     </item>
     
     <item>
       <title>Is Your Code Leaking Company Secrets?</title>
-      <link>https://jyu1999.com/en/posts/is-your-code-leaking-company-secrets/</link>
+      <link>http://localhost:1313/en/posts/is-your-code-leaking-company-secrets/</link>
       <pubDate>Sat, 26 Jul 2025 19:07:31 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/is-your-code-leaking-company-secrets/</guid>
+      <guid>http://localhost:1313/en/posts/is-your-code-leaking-company-secrets/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/is-your-code-leaking-company-secrets/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/is-your-code-leaking-company-secrets/featured.jpeg" />
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://jyu1999.com/en/about/</link>
+      <link>http://localhost:1313/en/about/</link>
       <pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://jyu1999.com/en/about/</guid>
+      <guid>http://localhost:1313/en/about/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Reflections on the Official Heptabase Tutorials</title>
-      <link>https://jyu1999.com/en/posts/thoughts-after-reading-heptabase-tutorials/</link>
+      <link>http://localhost:1313/en/posts/thoughts-after-reading-heptabase-tutorials/</link>
       <pubDate>Wed, 02 Oct 2024 19:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/thoughts-after-reading-heptabase-tutorials/</guid>
+      <guid>http://localhost:1313/en/posts/thoughts-after-reading-heptabase-tutorials/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
     </item>
     
     <item>
       <title>About Sense of Achievement</title>
-      <link>https://jyu1999.com/en/tweets/about-sense-of-achievement/</link>
+      <link>http://localhost:1313/en/tweets/about-sense-of-achievement/</link>
       <pubDate>Sat, 04 May 2024 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/tweets/about-sense-of-achievement/</guid>
+      <guid>http://localhost:1313/en/tweets/about-sense-of-achievement/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Common Shortcuts for JetBrains IDEs (PHPStorm &amp; RubyMine)</title>
-      <link>https://jyu1999.com/en/posts/jetbrains_shortcut/</link>
+      <link>http://localhost:1313/en/posts/jetbrains_shortcut/</link>
       <pubDate>Mon, 22 May 2023 10:47:46 +0800</pubDate>
       
-      <guid>https://jyu1999.com/en/posts/jetbrains_shortcut/</guid>
+      <guid>http://localhost:1313/en/posts/jetbrains_shortcut/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/jetbrains_shortcut/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jetbrains_shortcut/featured.png" />
     </item>
     
   </channel>

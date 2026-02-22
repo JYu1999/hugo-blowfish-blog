@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>閱讀 on 結語JYu 的筆記</title>
-    <link>https://jyu1999.com/tags/%E9%96%B1%E8%AE%80/</link>
+    <link>http://localhost:1313/tags/%E9%96%B1%E8%AE%80/</link>
     <description>Recent content in 閱讀 on 結語JYu 的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Tue, 30 Dec 2025 01:00:00 +0800</lastBuildDate><atom:link href="https://jyu1999.com/tags/%E9%96%B1%E8%AE%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Dec 2025 01:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E9%96%B1%E8%AE%80/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>職場的本質就是各取所需</title>
-      <link>https://jyu1999.com/tweets/take-what-your-need/</link>
+      <link>http://localhost:1313/tweets/take-what-your-need/</link>
       <pubDate>Tue, 30 Dec 2025 01:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/tweets/take-what-your-need/</guid>
+      <guid>http://localhost:1313/tweets/take-what-your-need/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AI 的不確定性</title>
-      <link>https://jyu1999.com/tweets/uncertainty-of-ai/</link>
+      <link>http://localhost:1313/tweets/uncertainty-of-ai/</link>
       <pubDate>Thu, 25 Dec 2025 23:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/tweets/uncertainty-of-ai/</guid>
+      <guid>http://localhost:1313/tweets/uncertainty-of-ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>沒有人預料到的事永遠是最大的風險</title>
-      <link>https://jyu1999.com/posts/unexpected-risks/</link>
+      <link>http://localhost:1313/posts/unexpected-risks/</link>
       <pubDate>Tue, 23 Dec 2025 00:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/unexpected-risks/</guid>
+      <guid>http://localhost:1313/posts/unexpected-risks/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/unexpected-risks/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unexpected-risks/featured.png" />
     </item>
     
     <item>
       <title>2025 改變我最大的一本書：《世界盡頭的咖啡館：這一生，我為何而存在？》</title>
-      <link>https://jyu1999.com/posts/why-i-am-alive/</link>
+      <link>http://localhost:1313/posts/why-i-am-alive/</link>
       <pubDate>Tue, 16 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/why-i-am-alive/</guid>
+      <guid>http://localhost:1313/posts/why-i-am-alive/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/why-i-am-alive/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/why-i-am-alive/featured.png" />
     </item>
     
     <item>
       <title>《有所交集的人》閱讀心得</title>
-      <link>https://jyu1999.com/posts/review-of-kasanariau-hito-e/</link>
+      <link>http://localhost:1313/posts/review-of-kasanariau-hito-e/</link>
       <pubDate>Mon, 15 Dec 2025 13:00:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/review-of-kasanariau-hito-e/</guid>
+      <guid>http://localhost:1313/posts/review-of-kasanariau-hito-e/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/review-of-kasanariau-hito-e/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/review-of-kasanariau-hito-e/featured.png" />
     </item>
     
     <item>
       <title>快 2026 了，如何透過 AI 輔助閱讀困難書籍</title>
-      <link>https://jyu1999.com/posts/strategy-to-read-difficult-books/</link>
+      <link>http://localhost:1313/posts/strategy-to-read-difficult-books/</link>
       <pubDate>Wed, 10 Dec 2025 10:00:00 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/strategy-to-read-difficult-books/</guid>
+      <guid>http://localhost:1313/posts/strategy-to-read-difficult-books/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/strategy-to-read-difficult-books/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/strategy-to-read-difficult-books/featured.png" />
     </item>
     
     <item>
       <title>《世界上最透明的故事》閱讀心得</title>
-      <link>https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/</link>
+      <link>http://localhost:1313/posts/review-of-the-clearest-story-in-the-world/</link>
       <pubDate>Fri, 21 Nov 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/</guid>
+      <guid>http://localhost:1313/posts/review-of-the-clearest-story-in-the-world/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/review-of-the-clearest-story-in-the-world/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/review-of-the-clearest-story-in-the-world/featured.png" />
     </item>
     
     <item>
       <title>看完 Heptabase 官方教學的想法</title>
-      <link>https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/</link>
+      <link>http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/</link>
       <pubDate>Wed, 02 Oct 2024 19:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/</guid>
+      <guid>http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
     </item>
     
   </channel>

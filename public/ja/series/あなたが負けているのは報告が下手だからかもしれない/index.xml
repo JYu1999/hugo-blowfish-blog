@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>あなたが負けているのは報告が下手だからかもしれない on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/series/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%8C%E8%B2%A0%E3%81%91%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%AF%E5%A0%B1%E5%91%8A%E3%81%8C%E4%B8%8B%E6%89%8B%E3%81%A0%E3%81%8B%E3%82%89%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84/</link>
+    <description>Recent content in あなたが負けているのは報告が下手だからかもしれない on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Fri, 05 Dec 2025 17:04:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/series/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%8C%E8%B2%A0%E3%81%91%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%AF%E5%A0%B1%E5%91%8A%E3%81%8C%E4%B8%8B%E6%89%8B%E3%81%A0%E3%81%8B%E3%82%89%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>進捗報告の価値</title>
+      <link>http://localhost:1313/ja/posts/value-of-progress-report/</link>
+      <pubDate>Fri, 05 Dec 2025 17:04:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/value-of-progress-report/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/value-of-progress-report/featured.png" />
+    </item>
+    
+    <item>
+      <title>私の苦い経験 - 誰も私の努力を見ていないのか QQ</title>
+      <link>http://localhost:1313/ja/posts/my-painful-lesson-on-visibility/</link>
+      <pubDate>Mon, 01 Dec 2025 17:04:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/my-painful-lesson-on-visibility/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-painful-lesson-on-visibility/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

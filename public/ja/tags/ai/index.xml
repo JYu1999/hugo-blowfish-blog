@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/tags/ai/</link>
+    <description>Recent content in AI on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Sat, 17 Jan 2026 00:50:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AIと協力して作ったサイドプロジェクト</title>
+      <link>http://localhost:1313/ja/posts/problems-that-i-solved-with-ai/</link>
+      <pubDate>Sat, 17 Jan 2026 00:50:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/problems-that-i-solved-with-ai/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/problems-that-i-solved-with-ai/featured.png" />
+    </item>
+    
+    <item>
+      <title>パンくずを残す</title>
+      <link>http://localhost:1313/ja/tweets/leave-breadcrumds/</link>
+      <pubDate>Sat, 03 Jan 2026 01:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/leave-breadcrumds/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MCP 二度目の体験談</title>
+      <link>http://localhost:1313/ja/posts/mcp-experience-summarize-job/</link>
+      <pubDate>Fri, 02 Jan 2026 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/mcp-experience-summarize-job/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcp-experience-summarize-job/featured.png" />
+    </item>
+    
+    <item>
+      <title>AI 時代の情報不安と向き合う：私のプロジェクト・ベースド・ラーニング（PBL）サバイバルガイド</title>
+      <link>http://localhost:1313/ja/posts/facing-info-anxiety-in-the-ai-era/</link>
+      <pubDate>Mon, 29 Dec 2025 08:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/facing-info-anxiety-in-the-ai-era/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/facing-info-anxiety-in-the-ai-era/featured.png" />
+    </item>
+    
+    <item>
+      <title>MCP 初体験</title>
+      <link>http://localhost:1313/ja/posts/mcp-first-experience/</link>
+      <pubDate>Sat, 20 Dec 2025 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/mcp-first-experience/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcp-first-experience/featured.png" />
+    </item>
+    
+    <item>
+      <title>もうすぐ 2026 年、AI を活用して難しい本を読む方法</title>
+      <link>http://localhost:1313/ja/posts/strategy-to-read-difficult-books/</link>
+      <pubDate>Wed, 10 Dec 2025 10:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/strategy-to-read-difficult-books/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/strategy-to-read-difficult-books/featured.png" />
+    </item>
+    
+    <item>
+      <title>2025年に見た中で最も感動的で考えさせられた動画</title>
+      <link>http://localhost:1313/ja/tweets/if-ai-can-replace-me-what-is-my-purpose/</link>
+      <pubDate>Fri, 28 Nov 2025 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/if-ai-can-replace-me-what-is-my-purpose/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

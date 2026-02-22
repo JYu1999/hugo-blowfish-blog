@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技術 on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/tags/%E6%8A%80%E8%A1%93/</link>
+    <description>Recent content in 技術 on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Thu, 25 Dec 2025 23:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AIの不確実性</title>
+      <link>http://localhost:1313/ja/tweets/uncertainty-of-ai/</link>
+      <pubDate>Thu, 25 Dec 2025 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/uncertainty-of-ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>コミュニティの慣習に従う</title>
+      <link>http://localhost:1313/ja/tweets/convention-over-configuration/</link>
+      <pubDate>Wed, 24 Dec 2025 23:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/convention-over-configuration/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>12分から7分へ：2日間で会社のCI時間を43%削減した実戦記録</title>
+      <link>http://localhost:1313/ja/posts/speed-up-ci-by-43-percent-in-2-days/</link>
+      <pubDate>Mon, 22 Dec 2025 10:47:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/speed-up-ci-by-43-percent-in-2-days/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/speed-up-ci-by-43-percent-in-2-days/featured.png" />
+    </item>
+    
+    <item>
+      <title>MCP 初体験</title>
+      <link>http://localhost:1313/ja/posts/mcp-first-experience/</link>
+      <pubDate>Sat, 20 Dec 2025 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/mcp-first-experience/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcp-first-experience/featured.png" />
+    </item>
+    
+    <item>
+      <title>roadmap.sh の Projects 機能</title>
+      <link>http://localhost:1313/ja/tweets/roadmap-sh-update-project/</link>
+      <pubDate>Fri, 12 Dec 2025 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/roadmap-sh-update-project/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>HTTPステータスコード200の罠</title>
+      <link>http://localhost:1313/ja/tweets/200-scam/</link>
+      <pubDate>Wed, 03 Dec 2025 21:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/200-scam/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/tweets/200-scam/featured.png" />
+    </item>
+    
+    <item>
+      <title>OWASP Top 10 - Broken Access Control</title>
+      <link>http://localhost:1313/ja/posts/owasp-top-broken-access-control/</link>
+      <pubDate>Sun, 24 Aug 2025 10:47:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/owasp-top-broken-access-control/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/owasp-top-broken-access-control/featured.jpeg" />
+    </item>
+    
+    <item>
+      <title>あなたのコード、会社の機密を漏らしていませんか？</title>
+      <link>http://localhost:1313/ja/posts/is-your-code-leaking-company-secrets/</link>
+      <pubDate>Sat, 26 Jul 2025 19:07:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/is-your-code-leaking-company-secrets/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/is-your-code-leaking-company-secrets/featured.jpeg" />
+    </item>
+    
+    <item>
+      <title>JetBrains系列IDEのショートカットキー（PHPStorm &amp; RubyMine）</title>
+      <link>http://localhost:1313/ja/posts/jetbrains_shortcut/</link>
+      <pubDate>Mon, 22 May 2023 10:47:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/jetbrains_shortcut/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jetbrains_shortcut/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

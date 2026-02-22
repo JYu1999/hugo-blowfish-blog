@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>你很有可能只是輸在不會工作匯報 on 結語JYu 的筆記</title>
-    <link>https://jyu1999.com/series/%E4%BD%A0%E5%BE%88%E6%9C%89%E5%8F%AF%E8%83%BD%E5%8F%AA%E6%98%AF%E8%BC%B8%E5%9C%A8%E4%B8%8D%E6%9C%83%E5%B7%A5%E4%BD%9C%E5%8C%AF%E5%A0%B1/</link>
+    <link>http://localhost:1313/series/%E4%BD%A0%E5%BE%88%E6%9C%89%E5%8F%AF%E8%83%BD%E5%8F%AA%E6%98%AF%E8%BC%B8%E5%9C%A8%E4%B8%8D%E6%9C%83%E5%B7%A5%E4%BD%9C%E5%8C%AF%E5%A0%B1/</link>
     <description>Recent content in 你很有可能只是輸在不會工作匯報 on 結語JYu 的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Sun, 07 Dec 2025 17:04:52 +0800</lastBuildDate><atom:link href="https://jyu1999.com/series/%E4%BD%A0%E5%BE%88%E6%9C%89%E5%8F%AF%E8%83%BD%E5%8F%AA%E6%98%AF%E8%BC%B8%E5%9C%A8%E4%B8%8D%E6%9C%83%E5%B7%A5%E4%BD%9C%E5%8C%AF%E5%A0%B1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Dec 2025 17:04:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/series/%E4%BD%A0%E5%BE%88%E6%9C%89%E5%8F%AF%E8%83%BD%E5%8F%AA%E6%98%AF%E8%BC%B8%E5%9C%A8%E4%B8%8D%E6%9C%83%E5%B7%A5%E4%BD%9C%E5%8C%AF%E5%A0%B1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>如何工作匯報？</title>
-      <link>https://jyu1999.com/posts/how-to-report-progress/</link>
+      <link>http://localhost:1313/posts/how-to-report-progress/</link>
       <pubDate>Sun, 07 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/how-to-report-progress/</guid>
+      <guid>http://localhost:1313/posts/how-to-report-progress/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/how-to-report-progress/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-report-progress/featured.png" />
     </item>
     
     <item>
       <title>進度匯報的價值</title>
-      <link>https://jyu1999.com/posts/value-of-progress-report/</link>
+      <link>http://localhost:1313/posts/value-of-progress-report/</link>
       <pubDate>Fri, 05 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/value-of-progress-report/</guid>
+      <guid>http://localhost:1313/posts/value-of-progress-report/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/value-of-progress-report/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/value-of-progress-report/featured.png" />
     </item>
     
     <item>
       <title>我個人的慘痛經驗 - 沒人看見我的努力嗎QQ </title>
-      <link>https://jyu1999.com/posts/my-painful-lesson-on-visibility/</link>
+      <link>http://localhost:1313/posts/my-painful-lesson-on-visibility/</link>
       <pubDate>Mon, 01 Dec 2025 17:04:52 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/my-painful-lesson-on-visibility/</guid>
+      <guid>http://localhost:1313/posts/my-painful-lesson-on-visibility/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/my-painful-lesson-on-visibility/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-painful-lesson-on-visibility/featured.png" />
     </item>
     
   </channel>

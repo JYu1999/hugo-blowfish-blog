@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>資安 on 結語JYu 的筆記</title>
-    <link>https://jyu1999.com/tags/%E8%B3%87%E5%AE%89/</link>
+    <link>http://localhost:1313/tags/%E8%B3%87%E5%AE%89/</link>
     <description>Recent content in 資安 on 結語JYu 的筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2026 結語JYu</copyright>
-    <lastBuildDate>Sun, 24 Aug 2025 10:47:46 +0800</lastBuildDate><atom:link href="https://jyu1999.com/tags/%E8%B3%87%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Aug 2025 10:47:46 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%B3%87%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>OWASP Top 10 - Broken Access Control</title>
-      <link>https://jyu1999.com/posts/owasp-top-broken-access-control/</link>
+      <link>http://localhost:1313/posts/owasp-top-broken-access-control/</link>
       <pubDate>Sun, 24 Aug 2025 10:47:46 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/owasp-top-broken-access-control/</guid>
+      <guid>http://localhost:1313/posts/owasp-top-broken-access-control/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/owasp-top-broken-access-control/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/owasp-top-broken-access-control/featured.jpeg" />
     </item>
     
     <item>
       <title>你寫的 Code，正在洩漏公司的機密嗎？</title>
-      <link>https://jyu1999.com/posts/is-your-code-leaking-company-secrets/</link>
+      <link>http://localhost:1313/posts/is-your-code-leaking-company-secrets/</link>
       <pubDate>Sat, 26 Jul 2025 19:07:31 +0800</pubDate>
       
-      <guid>https://jyu1999.com/posts/is-your-code-leaking-company-secrets/</guid>
+      <guid>http://localhost:1313/posts/is-your-code-leaking-company-secrets/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://jyu1999.com/posts/is-your-code-leaking-company-secrets/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/is-your-code-leaking-company-secrets/featured.jpeg" />
     </item>
     
   </channel>

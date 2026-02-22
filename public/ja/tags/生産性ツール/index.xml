@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生産性ツール on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/tags/%E7%94%9F%E7%94%A3%E6%80%A7%E3%83%84%E3%83%BC%E3%83%AB/</link>
+    <description>Recent content in 生産性ツール on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Sat, 17 Jan 2026 00:50:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/%E7%94%9F%E7%94%A3%E6%80%A7%E3%83%84%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AIと協力して作ったサイドプロジェクト</title>
+      <link>http://localhost:1313/ja/posts/problems-that-i-solved-with-ai/</link>
+      <pubDate>Sat, 17 Jan 2026 00:50:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/problems-that-i-solved-with-ai/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/problems-that-i-solved-with-ai/featured.png" />
+    </item>
+    
+    <item>
+      <title>roadmap.sh の Projects 機能</title>
+      <link>http://localhost:1313/ja/tweets/roadmap-sh-update-project/</link>
+      <pubDate>Fri, 12 Dec 2025 09:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/tweets/roadmap-sh-update-project/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Heptabase 公式チュートリアルを読んで</title>
+      <link>http://localhost:1313/ja/posts/thoughts-after-reading-heptabase-tutorials/</link>
+      <pubDate>Wed, 02 Oct 2024 19:04:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/thoughts-after-reading-heptabase-tutorials/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thoughts-after-reading-heptabase-tutorials/featured.jpeg" />
+    </item>
+    
+    <item>
+      <title>JetBrains系列IDEのショートカットキー（PHPStorm &amp; RubyMine）</title>
+      <link>http://localhost:1313/ja/posts/jetbrains_shortcut/</link>
+      <pubDate>Mon, 22 May 2023 10:47:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/jetbrains_shortcut/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jetbrains_shortcut/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

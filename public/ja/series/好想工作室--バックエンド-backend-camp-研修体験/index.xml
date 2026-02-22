@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>好想工作室 — バックエンド (Backend Camp) 研修体験 on 結語JYu のノート</title>
+    <link>http://localhost:1313/ja/series/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4--%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89-backend-camp-%E7%A0%94%E4%BF%AE%E4%BD%93%E9%A8%93/</link>
+    <description>Recent content in 好想工作室 — バックエンド (Backend Camp) 研修体験 on 結語JYu のノート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2026 結語JYu</copyright>
+    <lastBuildDate>Sun, 18 Jun 2023 19:18:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/ja/series/%E5%A5%BD%E6%83%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4--%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89-backend-camp-%E7%A0%94%E4%BF%AE%E4%BD%93%E9%A8%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>好想工作室 — バックエンド (Backend Camp) 研修体験（五）：こんなに多くのことを、どうやって効率よく学ぶか？</title>
+      <link>http://localhost:1313/ja/posts/goodidea-mind-5/</link>
+      <pubDate>Sun, 18 Jun 2023 19:18:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/goodidea-mind-5/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/goodidea-mind-5/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
