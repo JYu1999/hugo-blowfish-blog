@@ -72,24 +72,6 @@ Tags are strictly controlled. Always use the exact string for the post's languag
 | Blog | 部落格 | ブログ |
 | AI | 人工智慧 | AI |
 
-### Allowed Tags
-
-Tags are strictly controlled. Always use the exact string for the post's language.
-
-| English | 中文 | 日文 |
-|---|---|---|
-| Technical | 技術 | 技術 |
-| Career | 職涯 | キャリア |
-| Life | 生活 | 生活 |
-| Reading | 閱讀 | 読書 |
-| Travel | 旅遊 | 旅行 |
-| Goodidea Studio | 好想工作室 | グッドアイデアスタジオ |
-| Japan | 日本 | 日本 |
-| Security | 資安 | セキュリティ |
-| Tools | 生產力工具 | 生産性ツール |
-| Blog | 部落格 | ブログ |
-| AI | 人工智慧 | AI |
-
 ### AI Translation Alert
 
 All English posts (`index.en.md`) must begin with this alert immediately after the front matter:
