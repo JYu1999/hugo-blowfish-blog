@@ -65,4 +65,4 @@ I feel like this might be the way to survive in this highly volatile era? As lon
 
 It will definitely be messy at the beginning, but just like in my previous article, the key to success is not the initial performance, but whether you can persevere:
 
-{{< article link="/posts/2026-february/" >}}
+{{< article link="/en/posts/2026-february/" >}}

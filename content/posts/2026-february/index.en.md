@@ -13,7 +13,7 @@ This article was translated by AI. If you find any errors, please feel free to e
 
 Let's review January first~
 
-{{< article link="/posts/2026-january/" >}}
+{{< article link="/en/posts/2026-january/" >}}
 
 In January, my conclusion was as follows:
 

@@ -13,7 +13,7 @@ tags: ["生活"]
 
 まずは1月の振り返りから～
 
-{{< article link="/posts/2026-january/" >}}
+{{< article link="/ja/posts/2026-january/" >}}
 
 1月時点での私のまとめは以下の通りでした：
 
