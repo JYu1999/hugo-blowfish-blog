@@ -2,7 +2,7 @@
 title: "When Blogging Meets AI: My Experiment and Reflections"
 date: 2026-01-05T00:00:00+08:00
 draft: false
-tags: ["Blogging", "Tools", "Life"]
+tags: ["Blog", "Tools", "Life"]
 ---
 
 > **This article is 100% written by AI**

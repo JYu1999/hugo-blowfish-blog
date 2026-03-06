@@ -2,7 +2,7 @@
 title: "與 AI 協作的 Side Project"
 date: 2026-01-17T00:50:40+08:00
 draft: false
-tags: ["AI", "生產力工具"]
+tags: ["人工智慧", "生產力工具"]
 ---
 
 剛好最近在求職，公司要求要展示一些 AI 相關的經驗，所以就整理了幾個搭配 AI 做的 Side Project，跟大家分享 XD

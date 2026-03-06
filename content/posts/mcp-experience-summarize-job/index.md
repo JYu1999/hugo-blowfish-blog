@@ -2,7 +2,7 @@
 title: "MCP 二次烙賽體驗"
 date: 2026-01-02T9:00:00+08:00
 draft: false
-tags: ["AI"]
+tags: ["人工智慧"]
 ---
 
 接續上一篇文章，我又來嘗試 MCP。

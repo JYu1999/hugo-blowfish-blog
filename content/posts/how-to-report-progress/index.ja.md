@@ -7,7 +7,7 @@ categories:
   - becoming-a-better-professional
 series: ["進捗報告が下手なだけで負けている可能性がある"]
 series_order: 3
-tags: ["キャリア", "コミュニケーション"]
+tags: ["キャリア"]
 ---
 
 {{< alert "circle-info">}}
