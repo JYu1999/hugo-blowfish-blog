@@ -11,3 +11,6 @@ For more details on the difference between articles and tweets, please refer to 
 
 This section is updated more frequently, so if you're a new reader, I suggest starting here!
 
+{{< alert "circle-info">}}
+Almost every article was translated by AI. If you notice any errors, please let me know by emailing me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
