@@ -2,7 +2,7 @@
 title: "Short to Mid-term Bottlenecks for AI?"
 date: 2026-03-06T10:30:00+08:00
 draft: false
-tags: ["Technology", "Career", "Reading"]
+tags: ["Technical", "Career", "Reading"]
 ---
 
 [Software Engineering Accounts for Nearly 50% of AI Agentic API Calls — The Reality and Future of Agent Autonomy from Data](https://blog.aihao.tw/2026/02/23/agent-autonomy-domains/)

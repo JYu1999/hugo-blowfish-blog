@@ -7,7 +7,7 @@ categories:
   - becoming-a-better-professional
 series: ["You Might Be Losing Out Just Because of Poor Reporting"]
 series_order: 3
-tags: ["Career", "Communication"]
+tags: ["Career"]
 ---
 
 {{< alert "circle-info">}}

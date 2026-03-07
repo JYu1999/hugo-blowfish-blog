@@ -3,7 +3,7 @@ title: "面對 AI 時代的資訊焦慮：我的 Project Based Learning 生存�
 date: 2025-12-29T08:30:00+08:00
 lastmod: 2026-01-04T16:20:00+08:00
 draft: false
-tags: ["AI"]
+tags: ["人工智慧"]
 ---
 
 今年（2025），我經歷了不小的職業倦怠。

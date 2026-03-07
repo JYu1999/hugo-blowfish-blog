@@ -2,7 +2,7 @@
 title: "誰も予想しなかったことが常に最大のリスクである"
 date: 2025-12-23T00:04:52+08:00
 draft: false
-tags: ["読書", "職場"]
+tags: ["読書"]
 ---
 
 {{< alert "circle-info">}}

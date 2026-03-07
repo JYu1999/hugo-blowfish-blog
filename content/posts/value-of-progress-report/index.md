@@ -7,7 +7,7 @@ categories:
   - becoming-a-better-professional
 series: ["你很有可能只是輸在不會工作匯報"]
 series_order: 2
-tags: ["職涯", "溝通"]
+tags: ["職涯"]
 ---
 
 {{< alert "circle-info">}}

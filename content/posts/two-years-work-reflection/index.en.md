@@ -7,6 +7,10 @@ categories:
 tags: ["Career"]
 ---
 
+{{< alert "circle-info">}}
+This article was translated by AI. If you find any errors, please feel free to email me at jk29666338@gmail.com 🙏.
+{{< /alert >}}
+
 I joined my current company in November 2023, and as of January 2026, two years and three months have passed in the blink of an eye.
 
 This period has been a significant "run-in" period in my career. Looking back, I've navigated quite a few challenges and made mistakes that now seem rather "basic." To remind my future self and to organize my current state of mind, I want to document in detail a few things I feel I didn't do well during this time.

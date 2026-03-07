@@ -2,7 +2,7 @@
 title: "Fallacies and Psychological Safety in Workplace Discussions"
 date: 2025-11-27T02:00:00+08:00
 draft: false
-tags: ["Career", "Communication"]
+tags: ["Career"]
 ---
 
 {{< alert "circle-info">}}

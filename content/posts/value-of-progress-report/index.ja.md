@@ -7,7 +7,7 @@ categories:
   - becoming-a-better-professional
 series: ["あなたが負けているのは報告が下手だからかもしれない"]
 series_order: 2
-tags: ["キャリア", "コミュニケーション"]
+tags: ["キャリア"]
 ---
 
 {{< alert "circle-info">}}

@@ -2,7 +2,7 @@
 title: "Should I Use Other Blogging Platforms?"
 date: 2025-11-24T01:00:00+08:00
 draft: false
-tags: ["Blogging"]
+tags: ["Blog"]
 ---
 
 After setting up this blog, a thought suddenly occurred to me:
