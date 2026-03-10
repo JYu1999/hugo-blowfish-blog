@@ -34,3 +34,5 @@ I just happened to see Takeru's retirement fight ONE SAMURAI 1 against Rodtang, 
 After discussing it with my girlfriend, we'll probably go to Japan as digital nomads for a month, traveling from Aomori all the way to Tokyo, and dropping by to see the currently very popular Japanese baby macaque Panchi (パンチ).
 
 My girlfriend said my smile was noticeably brighter when booking the ONE tickets than when booking the tickets to Greece... I don't think so 😆
+
+![image](/tweets/fail-to-go-greece/image.png)
