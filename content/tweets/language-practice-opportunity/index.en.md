@@ -22,3 +22,5 @@ The process was a bit makeshift: I typed what I wanted to say, ran it through Ch
 It was actually a really interesting process — it forces you to think about how to express your own thoughts, rather than just repeating sentences from a textbook or YouTube video.
 
 Pure input only teaches you how others speak. You have to start outputting to learn how to say things your own way.
+
+![](IMG_D5D7D99D1950-1.jpeg)
