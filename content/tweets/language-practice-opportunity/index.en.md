@@ -1,6 +1,6 @@
 ---
 title: "Seize Every Opportunity to Practice a Language"
-date: 2026-03-15T20:00:00+08:00
+date: 2026-03-15T18:00:00+08:00
 draft: false
 tags: ["Life"]
 ---
