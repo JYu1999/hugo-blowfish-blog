@@ -1,6 +1,6 @@
 ---
 title: "It Took Us a Month to Realize the System Was Broken: Opportunities and Practices for Introducing Monitoring in the Company"
-date: 2026-03-22T00:04:52+08:00
+date: 2026-03-21T00:04:52+08:00
 draft: false
 tags: ["Career", "Technical"]
 ---
